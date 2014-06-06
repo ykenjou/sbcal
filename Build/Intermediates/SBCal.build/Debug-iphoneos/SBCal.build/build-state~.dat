@@ -1,0 +1,987 @@
+TSBCal
+v6
+r1
+cCheck dependencies
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/SBCal.app/ResourceRules.plist
+cProcessPCH /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch.pch SBCal/SBCal-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/main.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBToolBar.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBToolBar.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBMainViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal normal armv7s
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list@2x.png SBCal/list@2x.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week_select.png SBCal/week_select.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder_select@2x.png SBCal/reminder_select@2x.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week.png SBCal/week.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month_select@2x.png SBCal/month_select@2x.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month@2x.png SBCal/month@2x.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add.png SBCal/add.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add_select.png SBCal/add_select.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week@2x.png SBCal/week@2x.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add@2x.png SBCal/add@2x.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day@2x.png SBCal/day@2x.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder_select.png SBCal/reminder_select.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month.png SBCal/month.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list_select@2x.png SBCal/list_select@2x.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day.png SBCal/day.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week_select@2x.png SBCal/week_select@2x.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting_select@2x.png SBCal/setting_select@2x.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder@2x.png SBCal/reminder@2x.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month_select.png SBCal/month_select.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day_select@2x.png SBCal/day_select@2x.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting.png SBCal/setting.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add_select@2x.png SBCal/add_select@2x.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder.png SBCal/reminder.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting@2x.png SBCal/setting@2x.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting_select.png SBCal/setting_select.png
+cCopyStringsFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/en.lproj/InfoPlist.strings SBCal/en.lproj/InfoPlist.strings
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day_select.png SBCal/day_select.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list_select.png SBCal/list_select.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list.png SBCal/list.png
+cCompileAssetCatalog /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/Images.xcassets
+cProcessInfoPlistFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/Info.plist /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBCal-Info.plist
+cGenerateDSYMFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app.dSYM /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal
+cProcessProductPackaging /Users/kenjou/Library/MobileDevice/Provisioning\ Profiles/39B7F3AE-F05E-446F-A127-CE012A1DFF10.mobileprovision /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/embedded.mobileprovision
+cTouch /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent
+cCodeSign /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk
+c000000005349A6D80000000000000132
+t1397335768
+s306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist
+c00000000531E426D0000000000000094
+t1394492013
+s148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist
+c00000000531E426D0000000000000096
+t1394492013
+s150
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/SDKSettings.plist
+c00000000531E426D000000000000036B
+t1394492013
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531E426E000000000000019E
+t1394492014
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000005349A6A500000000004D7BC0
+t1397335717
+s5077952
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000531E42700000000000A90C10
+t1394492016
+s11078672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000531E42760000000002759920
+t1394492022
+s41261344
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c00000000531E42A00000000000000ADC
+t1394492064
+s2780
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch.pch
+t1400637641
+s93808
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o
+t1400637641
+s65572
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBCal.LinkFileList
+c00000000537C08C90000000000000226
+t1400637641
+s550
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o
+t1400637641
+s51364
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBToolBar.o
+t1400637641
+s61316
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/main.o
+t1400637641
+s3784
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent
+t1400637646
+s412
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/assetcatalog_dependencies.txt
+t1400637646
+s354
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/assetcatalog_generated_info.plist
+t1400637646
+s525
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app
+t1400637646
+s1292
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app.dSYM
+t2
+s0
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/Info.plist
+t1400637646
+s1171
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/PkgInfo
+t1400637646
+s8
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/ResourceRules.plist
+t1400637641
+s150
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal
+t1400637641
+s58236
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add.png
+t1400637641
+s4054
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add@2x.png
+t1400637641
+s4826
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add_select.png
+t1400637641
+s4749
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add_select@2x.png
+t1400637641
+s7042
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day.png
+t1400637641
+s3916
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day@2x.png
+t1400637641
+s4153
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day_select.png
+t1400637641
+s4746
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day_select@2x.png
+t1400637641
+s6692
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/embedded.mobileprovision
+t1400637646
+s7431
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/en.lproj/InfoPlist.strings
+t1400637641
+s42
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list.png
+t1400637641
+s3945
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list@2x.png
+t1400637641
+s4721
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list_select.png
+t1400637641
+s4745
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list_select@2x.png
+t1400637641
+s7039
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month.png
+t1400637641
+s4049
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month@2x.png
+t1400637641
+s4446
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month_select.png
+t1400637641
+s4879
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month_select@2x.png
+t1400637641
+s6926
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder.png
+t1400637641
+s4381
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder@2x.png
+t1400637641
+s5717
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder_select.png
+t1400637641
+s5068
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder_select@2x.png
+t1400637641
+s7619
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting.png
+t1400637641
+s4149
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting@2x.png
+t1400637641
+s5890
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting_select.png
+t1400637641
+s4957
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting_select@2x.png
+t1400637641
+s7979
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week.png
+t1400637641
+s4542
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week@2x.png
+t1400637641
+s5450
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week_select.png
+t1400637641
+s5237
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week_select@2x.png
+t1400637641
+s7708
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/Images.xcassets
+c000000005379E4AF0000000000000088
+t1400497327
+s136
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBAppDelegate.m
+c000000005379E982000000000000093E
+t1400498562
+s2366
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBCal-Info.plist
+c000000005379EC730000000000000423
+t1400499315
+s1059
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBCal-Prefix.pch
+c000000005379E4AF0000000000000158
+t1400497327
+s344
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMainViewController.m
+c00000000537B8A340000000000000628
+t1400605236
+s1576
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBToolBar.m
+c00000000537C08030000000000001419
+t1400637443
+s5145
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/add.png
+c00000000537B3EF20000000000000FE4
+t1400585970
+s4068
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/add@2x.png
+c00000000537B3F0A000000000000130D
+t1400585994
+s4877
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/add_select.png
+c00000000537AE8010000000000001372
+t1400563713
+s4978
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/add_select@2x.png
+c00000000537AE7540000000000001D4A
+t1400563540
+s7498
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/day.png
+c00000000537AE3390000000000000F91
+t1400562489
+s3985
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/day@2x.png
+c00000000537AE32500000000000010AC
+t1400562469
+s4268
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/day_select.png
+c00000000537C0172000000000000134E
+t1400635762
+s4942
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/day_select@2x.png
+c00000000537C00DE0000000000001ACF
+t1400635614
+s6863
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/en.lproj/InfoPlist.strings
+c000000005379E4AF000000000000002D
+t1400497327
+s45
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/list.png
+c00000000537AE11A0000000000000FFC
+t1400561946
+s4092
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/list@2x.png
+c00000000537AE0A20000000000001284
+t1400561826
+s4740
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/list_select.png
+c00000000537C000A00000000000013C6
+t1400635402
+s5062
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/list_select@2x.png
+c00000000537BFFF10000000000001C91
+t1400635377
+s7313
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/main.m
+c000000005379E4AF000000000000015D
+t1400497327
+s349
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/month.png
+c00000000537AE55D0000000000001004
+t1400563037
+s4100
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/month@2x.png
+c00000000537AE5490000000000001195
+t1400563017
+s4501
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/month_select.png
+c00000000537C01B200000000000013E2
+t1400635826
+s5090
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/month_select@2x.png
+c00000000537C01990000000000001BDE
+t1400635801
+s7134
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/reminder.png
+c00000000537AE7010000000000001105
+t1400563457
+s4357
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/reminder@2x.png
+c00000000537AE6EA0000000000001607
+t1400563434
+s5639
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/reminder_select.png
+c00000000537C024400000000000014EF
+t1400635972
+s5359
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/reminder_select@2x.png
+c00000000537C022D0000000000001FB8
+t1400635949
+s8120
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/setting.png
+c00000000537AE6CF00000000000010C8
+t1400563407
+s4296
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/setting@2x.png
+c00000000537AE6B6000000000000176D
+t1400563382
+s5997
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/setting_select.png
+c00000000537C02150000000000001510
+t1400635925
+s5392
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/setting_select@2x.png
+c00000000537C01FB000000000000219B
+t1400635899
+s8603
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/week.png
+c00000000537AE6010000000000001109
+t1400563201
+s4361
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/week@2x.png
+c00000000537AE5E000000000000014A5
+t1400563168
+s5285
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/week_select.png
+c00000000537C01E50000000000001589
+t1400635877
+s5513
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/week_select@2x.png
+c00000000537C01D00000000000001F7D
+t1400635856
+s8061
+
+N/Users/kenjou/Library/MobileDevice/Provisioning Profiles/39B7F3AE-F05E-446F-A127-CE012A1DFF10.mobileprovision
+c000000005334EE060000000000001D07
+t1395977734
+s7431
+
+CBuild AST from /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBAppDelegate.m
+r0
+
+CBuild AST from /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBMainViewController.m
+r0
+
+CBuild AST from /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBToolBar.m
+r0
+
+CBuild AST from /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesb5353249402cb941^1c603e49402cb941^---0#1#1#--18"Check dependencies36"5365E5ED-D89F-4D18-AE35-3AE0F2CC3C79-
+
+CCodeSign /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app
+s422330446.628361
+e422330446.841974
+r1
+xCodeSign
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"CodeSign Build/Products/Debug-iphoneos/SBCal.app48"CodeSign Build/Products/Debug-iphoneos/SBCal.appa2eda04e402cb941^768cd74e402cb941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/kenjou/Desktop/xcode%20project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/0000000000000000^1009"CodeSign Build/Products/Debug-iphoneos/SBCal.app    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    Using code signing identity "iPhone Developer: YUTAKA KENJO (EPTFARKL9F)" and provisioning profile "iOS Team Provisioning Profile: *" (39B7F3AE-F05E-446F-A127-CE012A1DFF10)    /usr/bin/codesign --force --sign BA80B1EE8DD01327B88F7530149943C9987972D3 --resource-rules=/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/ResourceRules.plist --entitlements /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app36"D1D09BD4-7176-4B09-B08A-8BAF3494C8CE-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCompileAssetCatalog /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/Images.xcassets
+s422330441.645311
+e422330446.535887
+r1
+xCompileAssetCatalog
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app
+x/Users/kenjou/Desktop/xcode project/SBCal/SBCal/Images.xcassets
+o2014-05-21 11:00:45.862 IBCocoaTouchImageCatalogTool[891:303] CFPreferences: user home directory at file:///Users/kenjou/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+o/* com.apple.actool.compilation-results */
+o/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/LaunchImage-700-568h@2x.png
+o/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/Assets.car
+o/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/assetcatalog_generated_info.plist
+o
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"CompileAssetCatalog Build/Products/Debug-iphoneos/SBCal.app SBCal/Images.xcassets81"CompileAssetCatalog Build/Products/Debug-iphoneos/SBCal.app SBCal/Images.xcassets4644a549402cb941^7b30894e402cb941^-605"2014-05-21 11:00:45.862 IBCocoaTouchImageCatalogTool[891:303] CFPreferences: user home directory at file:///Users/kenjou/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile./* com.apple.actool.compilation-results *//Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/LaunchImage-700-568h@2x.png/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/Assets.car/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/assetcatalog_generated_info.plist-0#0#1#-19%DVTDocumentLocation2@73"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/Images.xcassets/0000000000000000^1056"CompileAssetCatalog Build/Products/Debug-iphoneos/SBCal.app SBCal/Images.xcassets    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/usr/bin/actool --output-format human-readable-text --notices --warnings --export-dependency-info /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/assetcatalog_dependencies.txt --output-partial-info-plist /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/assetcatalog_generated_info.plist --app-icon AppIcon --launch-image LaunchImage --platform iphoneos --minimum-deployment-target 7.0 --target-device iphone --compress-pngs --compile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/Images.xcassets36"259450BD-6675-445E-94D1-47E885502F92-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422330441.306496
+e422330441.382840
+r1
+xCompileC
+xBuild/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o
+x/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBAppDelegate.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBAppDelegate.m
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBAppDelegate.h
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMainViewController.h
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBToolBar.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBAppDelegate.m197"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o SBCal/SBAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler0d8e4e49402cb941^0c036249402cb941^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBAppDelegate.m0000000000000000^3499"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o SBCal/SBAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBAppDelegate.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o36"4FA916DE-A86D-4615-BDC9-DD6F8A05C5AD-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBMainViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422330441.307362
+e422330441.375716
+r1
+xCompileC
+xBuild/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o
+x/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMainViewController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMainViewController.m
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMainViewController.h
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBToolBar.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMainViewController.m211"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o SBCal/SBMainViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilera8c74e49402cb941^622f6049402cb941^---0#0#1#-19%DVTDocumentLocation2@79"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBMainViewController.m0000000000000000^3541"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o SBCal/SBMainViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBMainViewController.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o36"06319070-1CBC-402C-8321-3BB8830E3968-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBToolBar.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBToolBar.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422330441.306746
+e422330441.390415
+r1
+xCompileC
+xBuild/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBToolBar.o
+x/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBToolBar.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBToolBar.m
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBToolBar.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBToolBar.m189"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBToolBar.o SBCal/SBToolBar.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilereca04e49402cb941^ba4d6449402cb941^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBToolBar.m0000000000000000^3475"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBToolBar.o SBCal/SBToolBar.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBToolBar.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBToolBar.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBToolBar.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBToolBar.o36"08A36153-8AFB-48B9-97BE-4B38C27EA126-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/main.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422330441.306249
+e422330441.341037
+r1
+xCompileC
+xBuild/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/main.o
+x/Users/kenjou/Desktop/xcode project/SBCal/SBCal/main.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/main.m
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBAppDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/main.m179"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/main.o SBCal/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler39804e49402cb941^ca4e5749402cb941^---0#0#1#-19%DVTDocumentLocation2@63"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/main.m0000000000000000^3445"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/main.o SBCal/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/main.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/main.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/main.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/main.o36"1A9CA287-9A1C-4C5B-BE2A-D65C49294B84-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add.png SBCal/add.png
+s422330441.463265
+e422330441.489462
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add.png
+xSBCal/add.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/add.png SBCal/add.png73"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/add.png SBCal/add.png5da67649402cb941^a7777d49402cb941^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/add.png0000000000000000^572"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/add.png SBCal/add.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/add.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add.png36"F3CCFD31-FD83-4317-A72B-0427AF867937-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add@2x.png SBCal/add@2x.png
+s422330441.490725
+e422330441.521965
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add@2x.png
+xSBCal/add@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/add@2x.png SBCal/add@2x.png79"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/add@2x.png SBCal/add@2x.png21ad7d49402cb941^29948549402cb941^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/add@2x.png0000000000000000^584"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/add@2x.png SBCal/add@2x.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/add@2x.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add@2x.png36"53EEA9E7-5E93-4B50-96D7-C2D928403120-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add_select.png SBCal/add_select.png
+s422330441.467632
+e422330441.498359
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add_select.png
+xSBCal/add_select.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/add_select.png SBCal/add_select.png87"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/add_select.png SBCal/add_select.png7ac57749402cb941^70997f49402cb941^---0#0#1#-19%DVTDocumentLocation2@71"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/add_select.png0000000000000000^600"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/add_select.png SBCal/add_select.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/add_select.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add_select.png36"E98E0171-C518-4580-A126-55482C0970C5-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add_select@2x.png SBCal/add_select@2x.png
+s422330441.587137
+e422330441.617938
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add_select@2x.png
+xSBCal/add_select@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/add_select@2x.png SBCal/add_select@2x.png93"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/add_select@2x.png SBCal/add_select@2x.pngde5a9649402cb941^e8319e49402cb941^---0#0#1#-19%DVTDocumentLocation2@74"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/add_select@2x.png0000000000000000^612"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/add_select@2x.png SBCal/add_select@2x.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/add_select@2x.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add_select@2x.png36"F6845569-3D9C-48B1-9ECF-F8E845F4A45A-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day.png SBCal/day.png
+s422330441.524517
+e422330441.551808
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day.png
+xSBCal/day.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/day.png SBCal/day.png73"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/day.png SBCal/day.pngfc538649402cb941^1b468d49402cb941^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/day.png0000000000000000^572"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/day.png SBCal/day.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/day.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day.png36"13E68AE1-B48A-463B-A8F2-307BE6F71E74-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day@2x.png SBCal/day@2x.png
+s422330441.494512
+e422330441.524395
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day@2x.png
+xSBCal/day@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/day@2x.png SBCal/day@2x.png79"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/day@2x.png SBCal/day@2x.png8fa67e49402cb941^b3418649402cb941^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/day@2x.png0000000000000000^584"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/day@2x.png SBCal/day@2x.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/day@2x.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day@2x.png36"6B170746-4EF1-4077-AFAD-63A982574C11-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day_select.png SBCal/day_select.png
+s422330441.621731
+e422330441.661722
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day_select.png
+xSBCal/day_select.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/day_select.png SBCal/day_select.png87"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/day_select.png SBCal/day_select.png473a9f49402cb941^6667a949402cb941^---0#0#1#-19%DVTDocumentLocation2@71"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/day_select.png0000000000000000^600"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/day_select.png SBCal/day_select.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/day_select.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day_select.png36"1B595BDE-58FE-4199-803A-503A2AB32412-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day_select@2x.png SBCal/day_select@2x.png
+s422330441.575814
+e422330441.609979
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day_select@2x.png
+xSBCal/day_select@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/day_select@2x.png SBCal/day_select@2x.png93"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/day_select@2x.png SBCal/day_select@2x.png9f779349402cb941^70289c49402cb941^---0#0#1#-19%DVTDocumentLocation2@74"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/day_select@2x.png0000000000000000^612"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/day_select@2x.png SBCal/day_select@2x.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/day_select@2x.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day_select@2x.png36"22C53CDF-EC66-4444-93A4-38A1026C94AD-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list.png SBCal/list.png
+s422330441.640066
+e422330441.669944
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list.png
+xSBCal/list.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/list.png SBCal/list.png75"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/list.png SBCal/list.png70eaa349402cb941^643fab49402cb941^---0#0#1#-19%DVTDocumentLocation2@65"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/list.png0000000000000000^576"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/list.png SBCal/list.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/list.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list.png36"DA7551BA-6ECD-4AFA-8725-89C0FE3442C8-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list@2x.png SBCal/list@2x.png
+s422330441.420574
+e422330441.462532
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list@2x.png
+xSBCal/list@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/list@2x.png SBCal/list@2x.png81"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/list@2x.png SBCal/list@2x.png0bb86b49402cb941^27697649402cb941^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/list@2x.png0000000000000000^588"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/list@2x.png SBCal/list@2x.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/list@2x.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list@2x.png36"84F3E67B-49B3-4AF7-8034-5D7BE96B18D6-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list_select.png SBCal/list_select.png
+s422330441.632698
+e422330441.662142
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list_select.png
+xSBCal/list_select.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/list_select.png SBCal/list_select.png89"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/list_select.png SBCal/list_select.png0708a249402cb941^f089a949402cb941^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/list_select.png0000000000000000^604"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/list_select.png SBCal/list_select.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/list_select.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list_select.png36"18FFB00D-F56D-4AF5-8794-FB8E0B0B93D9-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list_select@2x.png SBCal/list_select@2x.png
+s422330441.522099
+e422330441.557398
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list_select@2x.png
+xSBCal/list_select@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/list_select@2x.png SBCal/list_select@2x.png95"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/list_select@2x.png SBCal/list_select@2x.pnge9b58549402cb941^eab48e49402cb941^---0#0#1#-19%DVTDocumentLocation2@75"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/list_select@2x.png0000000000000000^616"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/list_select@2x.png SBCal/list_select@2x.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/list_select@2x.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list_select@2x.png36"3F450861-E59F-4722-9450-1C8438E17E1B-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month.png SBCal/month.png
+s422330441.520533
+e422330441.547694
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month.png
+xSBCal/month.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/month.png SBCal/month.png77"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/month.png SBCal/month.pngfc508549402cb941^af5b8c49402cb941^---0#0#1#-19%DVTDocumentLocation2@66"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/month.png0000000000000000^580"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/month.png SBCal/month.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/month.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month.png36"D9E0CA52-17A9-432A-BAE0-6715A6D8C59C-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month@2x.png SBCal/month@2x.png
+s422330441.463241
+e422330441.490405
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month@2x.png
+xSBCal/month@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/month@2x.png SBCal/month@2x.png83"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/month@2x.png SBCal/month@2x.png25af7649402cb941^73b97d49402cb941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/month@2x.png0000000000000000^592"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/month@2x.png SBCal/month@2x.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/month@2x.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month@2x.png36"68A75F0A-B647-45D0-9F1F-2DDE233B5072-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month_select.png SBCal/month_select.png
+s422330441.557881
+e422330441.589313
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month_select.png
+xSBCal/month_select.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/month_select.png SBCal/month_select.png91"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/month_select.png SBCal/month_select.png09e08e49402cb941^f8df9649402cb941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/month_select.png0000000000000000^608"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/month_select.png SBCal/month_select.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/month_select.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month_select.png36"1D33D9CD-F305-4A34-B175-452E0BCBD5FA-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month_select@2x.png SBCal/month_select@2x.png
+s422330441.462941
+e422330441.494135
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month_select@2x.png
+xSBCal/month_select@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/month_select@2x.png SBCal/month_select@2x.png97"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/month_select@2x.png SBCal/month_select@2x.png37a77649402cb941^7f837e49402cb941^---0#0#1#-19%DVTDocumentLocation2@76"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/month_select@2x.png0000000000000000^620"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/month_select@2x.png SBCal/month_select@2x.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/month_select@2x.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month_select@2x.png36"E07270E8-3E81-4F9C-BCB2-B0D5787C2397-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder.png SBCal/reminder.png
+s422330441.589923
+e422330441.621404
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder.png
+xSBCal/reminder.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/reminder.png SBCal/reminder.png83"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/reminder.png SBCal/reminder.png06139749402cb941^fa289f49402cb941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/reminder.png0000000000000000^592"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/reminder.png SBCal/reminder.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/reminder.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder.png36"861485AA-EF94-4EDA-9E45-054AACBB6F0A-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder@2x.png SBCal/reminder@2x.png
+s422330441.552330
+e422330441.586108
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder@2x.png
+xSBCal/reminder@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/reminder@2x.png SBCal/reminder@2x.png89"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/reminder@2x.png SBCal/reminder@2x.pngc9738d49402cb941^d40b9649402cb941^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/reminder@2x.png0000000000000000^604"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/reminder@2x.png SBCal/reminder@2x.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/reminder@2x.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder@2x.png36"EF0965C5-B775-46FD-B52D-D710379282A5-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder_select.png SBCal/reminder_select.png
+s422330441.498818
+e422330441.533589
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder_select.png
+xSBCal/reminder_select.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/reminder_select.png SBCal/reminder_select.png97"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/reminder_select.png SBCal/reminder_select.png27c17f49402cb941^15588849402cb941^---0#0#1#-19%DVTDocumentLocation2@76"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/reminder_select.png0000000000000000^620"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/reminder_select.png SBCal/reminder_select.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/reminder_select.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder_select.png36"0A8774C9-C6D1-4541-AFB5-A78B269155C5-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder_select@2x.png SBCal/reminder_select@2x.png
+s422330441.420879
+e422330441.462696
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder_select@2x.png
+xSBCal/reminder_select@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/reminder_select@2x.png SBCal/reminder_select@2x.png103"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/reminder_select@2x.png SBCal/reminder_select@2x.png14cd6b49402cb941^3c877649402cb941^---0#0#1#-19%DVTDocumentLocation2@79"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/reminder_select@2x.png0000000000000000^632"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/reminder_select@2x.png SBCal/reminder_select@2x.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/reminder_select@2x.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder_select@2x.png36"732D2A34-89B5-4284-92D2-00EBBD9F548E-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting.png SBCal/setting.png
+s422330441.586461
+e422330441.619591
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting.png
+xSBCal/setting.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/setting.png SBCal/setting.png81"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/setting.png SBCal/setting.pnga73c9649402cb941^e99d9e49402cb941^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/setting.png0000000000000000^588"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/setting.png SBCal/setting.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/setting.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting.png36"5BAE6550-FE9C-40F6-AF17-9E6E68F62919-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting@2x.png SBCal/setting@2x.png
+s422330441.610175
+e422330441.639684
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting@2x.png
+xSBCal/setting@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/setting@2x.png SBCal/setting@2x.png87"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/setting@2x.png SBCal/setting@2x.png3d439c49402cb941^b9c2a349402cb941^---0#0#1#-19%DVTDocumentLocation2@71"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/setting@2x.png0000000000000000^600"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/setting@2x.png SBCal/setting@2x.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/setting@2x.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting@2x.png36"A668BD67-6568-409F-B9B8-DD58A056E50A-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting_select.png SBCal/setting_select.png
+s422330441.618761
+e422330441.645157
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting_select.png
+xSBCal/setting_select.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/setting_select.png SBCal/setting_select.png95"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/setting_select.png SBCal/setting_select.pngde759e49402cb941^6729a549402cb941^---0#0#1#-19%DVTDocumentLocation2@75"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/setting_select.png0000000000000000^616"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/setting_select.png SBCal/setting_select.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/setting_select.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting_select.png36"1E4724BA-8683-4365-A808-4E5AA609C12F-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting_select@2x.png SBCal/setting_select@2x.png
+s422330441.547864
+e422330441.586596
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting_select@2x.png
+xSBCal/setting_select@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/setting_select@2x.png SBCal/setting_select@2x.png101"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/setting_select@2x.png SBCal/setting_select@2x.png3c4f8c49402cb941^ae2b9649402cb941^---0#0#1#-19%DVTDocumentLocation2@78"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/setting_select@2x.png0000000000000000^628"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/setting_select@2x.png SBCal/setting_select@2x.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/setting_select@2x.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting_select@2x.png36"336121E4-899D-4AEA-8214-FFAD380C5002-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week.png SBCal/week.png
+s422330441.421766
+e422330441.461918
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week.png
+xSBCal/week.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/week.png SBCal/week.png75"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/week.png SBCal/week.pngc9046c49402cb941^4d497649402cb941^---0#0#1#-19%DVTDocumentLocation2@65"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/week.png0000000000000000^576"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/week.png SBCal/week.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/week.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week.png36"5F4EA29C-568E-4507-B68E-B6F3E6472287-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week@2x.png SBCal/week@2x.png
+s422330441.489629
+e422330441.520375
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week@2x.png
+xSBCal/week@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/week@2x.png SBCal/week@2x.png81"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/week@2x.png SBCal/week@2x.png55677d49402cb941^a33a8549402cb941^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/week@2x.png0000000000000000^588"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/week@2x.png SBCal/week@2x.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/week@2x.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week@2x.png36"321FC5B4-5D91-437F-BE76-0A0FF67D0C5A-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week_select.png SBCal/week_select.png
+s422330441.420737
+e422330441.466426
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week_select.png
+xSBCal/week_select.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/week_select.png SBCal/week_select.png89"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/week_select.png SBCal/week_select.png4cc46b49402cb941^2b6b7749402cb941^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/week_select.png0000000000000000^604"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/week_select.png SBCal/week_select.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/week_select.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week_select.png36"8A477C62-9D86-4F1E-B144-DE929CA0EBC3-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week_select@2x.png SBCal/week_select@2x.png
+s422330441.533746
+e422330441.574480
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week_select@2x.png
+xSBCal/week_select@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/week_select@2x.png SBCal/week_select@2x.png95"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/week_select@2x.png SBCal/week_select@2x.pnga7b28849402cb941^db149349402cb941^---0#0#1#-19%DVTDocumentLocation2@75"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/week_select@2x.png0000000000000000^616"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/week_select@2x.png SBCal/week_select@2x.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/week_select@2x.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week_select@2x.png36"F0EC0DA8-08B3-45FE-A1E9-7CCD0C6CC9C4-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCopyStringsFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/en.lproj/InfoPlist.strings SBCal/en.lproj/InfoPlist.strings
+s422330441.619738
+e422330441.631486
+r1
+xCopyStringsFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/en.lproj/InfoPlist.strings
+xSBCal/en.lproj/InfoPlist.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Copy SBCal/en.lproj/InfoPlist.strings115"CopyStringsFile Build/Products/Debug-iphoneos/SBCal.app/en.lproj/InfoPlist.strings SBCal/en.lproj/InfoPlist.strings49d59e49402cb941^fca9a149402cb941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/en.lproj/InfoPlist.strings0000000000000000^573"CopyStringsFile Build/Products/Debug-iphoneos/SBCal.app/en.lproj/InfoPlist.strings SBCal/en.lproj/InfoPlist.strings    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/en.lproj -- SBCal/en.lproj/InfoPlist.strings36"A7E4E959-0C10-42B3-8FD4-BD55329ACB7E-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/SBCal.app/ResourceRules.plist
+s422330441.244266
+e422330441.245266
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist
+xBuild/Products/Debug-iphoneos/SBCal.app/ResourceRules.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy Build/Products/Debug-iphoneos/SBCal.app/ResourceRules.plist192"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/SBCal.app/ResourceRules.plist0b963e49402cb941^c2fb3e49402cb941^---0#0#1#-19%DVTDocumentLocation2@110"file:///Users/kenjou/Desktop/xcode%20project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/ResourceRules.plist0034dc0fdeffdf42^749"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/SBCal.app/ResourceRules.plist    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app36"F8035CDB-DCCD-4A29-BE27-C31C4CF53570-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CGenerateDSYMFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app.dSYM /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal
+s422330446.567577
+e422330446.597714
+r1
+xGenerateDSYMFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app.dSYM
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Generate /Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app.dSYM107"GenerateDSYMFile Build/Products/Debug-iphoneos/SBCal.app.dSYM Build/Products/Debug-iphoneos/SBCal.app/SBCal6059914e402cb941^9204994e402cb941^---0#0#1#-19%DVTDocumentLocation2@95"file:///Users/kenjou/Desktop/xcode%20project/SBCal/Build/Products/Debug-iphoneos/SBCal.app.dSYM0034dc0fdeffdf42^627"GenerateDSYMFile Build/Products/Debug-iphoneos/SBCal.app.dSYM Build/Products/Debug-iphoneos/SBCal.app/SBCal    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app.dSYM36"437DCDD5-3709-444B-8DBE-235234720E01-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CLd /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal normal armv7s
+s422330441.391249
+e422330441.419892
+r1
+xLd
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal
+xnormal
+xarmv7s
+d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBCal.LinkFileList
+d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/main.o
+d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o
+d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBToolBar.o
+d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework/Security
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libxpc.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Link /Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal62"Ld Build/Products/Debug-iphoneos/SBCal.app/SBCal normal armv7s69396449402cb941^c37e6b49402cb941^---0#0#1#--1279"Ld Build/Products/Debug-iphoneos/SBCal.app/SBCal normal armv7s    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7s -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -filelist /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBCal.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=7.0 -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBCal_dependency_info.dat -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal36"CC281BF4-72F6-45C7-AEE8-F8BF938C94FC-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CProcessInfoPlistFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/Info.plist /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBCal-Info.plist
+s422330446.536446
+e422330446.567091
+r1
+xProcessInfoPlistFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/Info.plist
+x/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBCal-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Process /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBCal-Info.plist94"ProcessInfoPlistFile Build/Products/Debug-iphoneos/SBCal.app/Info.plist SBCal/SBCal-Info.plist6f65894e402cb941^4d2f914e402cb941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBCal-Info.plist0000000000000000^965"ProcessInfoPlistFile Build/Products/Debug-iphoneos/SBCal.app/Info.plist SBCal/SBCal-Info.plist    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBCal-Info.plist -genpkginfo /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/ResourceRules.plist -additionalcontentfile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/assetcatalog_generated_info.plist -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/Info.plist36"00E3B121-9988-4D3A-8437-0A9A434B5CC2-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CProcessPCH /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch.pch SBCal/SBCal-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422330441.245878
+e422330441.305631
+r1
+xProcessPCH
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch.pch
+xSBCal/SBCal-Prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBCal-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile SBCal/SBCal-Prefix.pch205"ProcessPCH Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch.pch SBCal/SBCal-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerd5063f49402cb941^cd3f4e49402cb941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBCal-Prefix.pch0000000000000000^3376"ProcessPCH Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch.pch SBCal/SBCal-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch.dia -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch.d -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBCal-Prefix.pch -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch.pch36"54FC873F-5B3F-4AB5-BC75-04C0DC66AB98-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CProcessPCH /Users/kenjou/Library/Developer/Xcode/DerivedData/SBCal-dfzbxrgqtatuqncokirqnguscuml/Index/PrecompiledHeaders/SBCal-Prefix-bynlwxoyojrdoyaovnnezxjmnffu_ast/SBCal-Prefix.pch.pch SBCal/SBCal-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent
+s422330446.627030
+e422330446.628036
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection215"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent215"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcentd191a04e402cb941^47c8a04e402cb941^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/kenjou/Desktop/xcode%20project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent0034dc0fdeffdf42^755"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent36"62AB9825-20BC-4A7F-9FCE-3C1D764A9497-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CProcessProductPackaging /Users/kenjou/Library/MobileDevice/Provisioning\ Profiles/39B7F3AE-F05E-446F-A127-CE012A1DFF10.mobileprovision /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/embedded.mobileprovision
+s422330446.598151
+e422330446.625418
+r1
+xProcessProductPackaging
+x/Users/kenjou/Library/MobileDevice/Provisioning Profiles/39B7F3AE-F05E-446F-A127-CE012A1DFF10.mobileprovision
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/embedded.mobileprovision
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection199"ProcessProductPackaging /Users/kenjou/Library/MobileDevice/Provisioning\ Profiles/39B7F3AE-F05E-446F-A127-CE012A1DFF10.mobileprovision Build/Products/Debug-iphoneos/SBCal.app/embedded.mobileprovision199"ProcessProductPackaging /Users/kenjou/Library/MobileDevice/Provisioning\ Profiles/39B7F3AE-F05E-446F-A127-CE012A1DFF10.mobileprovision Build/Products/Debug-iphoneos/SBCal.app/embedded.mobileprovision0e2e994e402cb941^711ca04e402cb941^---0#0#1#-19%DVTDocumentLocation2@115"file:///Users/kenjou/Desktop/xcode%20project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/embedded.mobileprovision0034dc0fdeffdf42^697"ProcessProductPackaging /Users/kenjou/Library/MobileDevice/Provisioning\ Profiles/39B7F3AE-F05E-446F-A127-CE012A1DFF10.mobileprovision Build/Products/Debug-iphoneos/SBCal.app/embedded.mobileprovision    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Users/kenjou/Library/MobileDevice/Provisioning\ Profiles/39B7F3AE-F05E-446F-A127-CE012A1DFF10.mobileprovision -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/embedded.mobileprovision36"2CFB74EB-5098-4574-B668-471800B7742E-
+bA5D169F8-18F7-460F-9778-EB73D71A53AE
+
+CTouch /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app
+r0
+

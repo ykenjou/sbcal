@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F24381DB192DEA460008BAB5 /* calendarDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F24381D6192DEA460008BAB5 /* calendarDayCell.m */; };
+		F24381DC192DEA460008BAB5 /* calendarFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F24381D8192DEA460008BAB5 /* calendarFlowLayout.m */; };
+		F24381DD192DEA460008BAB5 /* dayListView.m in Sources */ = {isa = PBXBuildFile; fileRef = F24381DA192DEA460008BAB5 /* dayListView.m */; };
+		F24381FA192E4FEA0008BAB5 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381DE192E4FEA0008BAB5 /* add.png */; };
+		F24381FB192E4FEA0008BAB5 /* add_select.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381DF192E4FEA0008BAB5 /* add_select.png */; };
+		F24381FC192E4FEA0008BAB5 /* add_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381E0192E4FEA0008BAB5 /* add_select@2x.png */; };
+		F24381FD192E4FEA0008BAB5 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381E1192E4FEA0008BAB5 /* add@2x.png */; };
+		F24381FE192E4FEA0008BAB5 /* day.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381E2192E4FEA0008BAB5 /* day.png */; };
+		F24381FF192E4FEA0008BAB5 /* day_select.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381E3192E4FEA0008BAB5 /* day_select.png */; };
+		F2438200192E4FEA0008BAB5 /* day_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381E4192E4FEA0008BAB5 /* day_select@2x.png */; };
+		F2438201192E4FEA0008BAB5 /* day@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381E5192E4FEA0008BAB5 /* day@2x.png */; };
+		F2438202192E4FEA0008BAB5 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381E6192E4FEA0008BAB5 /* list.png */; };
+		F2438203192E4FEA0008BAB5 /* list_select.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381E7192E4FEA0008BAB5 /* list_select.png */; };
+		F2438204192E4FEA0008BAB5 /* list_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381E8192E4FEA0008BAB5 /* list_select@2x.png */; };
+		F2438205192E4FEA0008BAB5 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381E9192E4FEA0008BAB5 /* list@2x.png */; };
+		F2438206192E4FEA0008BAB5 /* month.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381EA192E4FEA0008BAB5 /* month.png */; };
+		F2438207192E4FEA0008BAB5 /* month_select.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381EB192E4FEA0008BAB5 /* month_select.png */; };
+		F2438208192E4FEA0008BAB5 /* month_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381EC192E4FEA0008BAB5 /* month_select@2x.png */; };
+		F2438209192E4FEA0008BAB5 /* month@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381ED192E4FEA0008BAB5 /* month@2x.png */; };
+		F243820A192E4FEA0008BAB5 /* reminder.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381EE192E4FEA0008BAB5 /* reminder.png */; };
+		F243820B192E4FEA0008BAB5 /* reminder_select.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381EF192E4FEA0008BAB5 /* reminder_select.png */; };
+		F243820C192E4FEA0008BAB5 /* reminder_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381F0192E4FEA0008BAB5 /* reminder_select@2x.png */; };
+		F243820D192E4FEA0008BAB5 /* reminder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381F1192E4FEA0008BAB5 /* reminder@2x.png */; };
+		F243820E192E4FEA0008BAB5 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381F2192E4FEA0008BAB5 /* setting.png */; };
+		F243820F192E4FEA0008BAB5 /* setting_select.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381F3192E4FEA0008BAB5 /* setting_select.png */; };
+		F2438210192E4FEA0008BAB5 /* setting_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381F4192E4FEA0008BAB5 /* setting_select@2x.png */; };
+		F2438211192E4FEA0008BAB5 /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381F5192E4FEA0008BAB5 /* setting@2x.png */; };
+		F2438212192E4FEA0008BAB5 /* week.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381F6192E4FEA0008BAB5 /* week.png */; };
+		F2438213192E4FEA0008BAB5 /* week_select.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381F7192E4FEA0008BAB5 /* week_select.png */; };
+		F2438214192E4FEA0008BAB5 /* week_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381F8192E4FEA0008BAB5 /* week_select@2x.png */; };
+		F2438215192E4FEA0008BAB5 /* week@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24381F9192E4FEA0008BAB5 /* week@2x.png */; };
+		F251BC86193E9DBA008182F2 /* SBRemindarAccessCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = F251BC85193E9DBA008182F2 /* SBRemindarAccessCheck.m */; };
+		F257C14F1939A3E100A313C1 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = F257C14D1939A3E100A313C1 /* map.png */; };
+		F257C1501939A3E100A313C1 /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F257C14E1939A3E100A313C1 /* map@2x.png */; };
+		F26294E4192C560F00178DCD /* SBDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26294E3192C560F00178DCD /* SBDayViewController.m */; };
+		F26294EA192CB0EE00178DCD /* SBWeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26294E9192CB0EE00178DCD /* SBWeekViewController.m */; };
+		F26294ED192CB10100178DCD /* SBMonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26294EC192CB10100178DCD /* SBMonthViewController.m */; };
+		F26294F0192CB11300178DCD /* SBAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26294EF192CB11300178DCD /* SBAddViewController.m */; };
+		F26294F3192CB12A00178DCD /* SBListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26294F2192CB12A00178DCD /* SBListViewController.m */; };
+		F26294F6192CB14200178DCD /* SBReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26294F5192CB14200178DCD /* SBReminderViewController.m */; };
+		F26294F9192CB15100178DCD /* SBSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26294F8192CB15100178DCD /* SBSettingViewController.m */; };
+		F26294FC192CEE0100178DCD /* DataUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F26294FB192CEE0100178DCD /* DataUtility.m */; };
+		F2629503192CEE1600178DCD /* calendarAccessCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = F26294FE192CEE1600178DCD /* calendarAccessCheck.m */; };
+		F2629504192CEE1600178DCD /* getEKData.m in Sources */ = {isa = PBXBuildFile; fileRef = F2629500192CEE1600178DCD /* getEKData.m */; };
+		F2629505192CEE1600178DCD /* UICircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2629502192CEE1600178DCD /* UICircleView.m */; };
+		F2629508192CEFA000178DCD /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2629506192CEFA000178DCD /* EventKit.framework */; };
+		F2629509192CEFA000178DCD /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2629507192CEFA000178DCD /* EventKitUI.framework */; };
+		F262950B192CEFB700178DCD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F262950A192CEFB700178DCD /* QuartzCore.framework */; };
+		F26AEE84192EEC27001316B3 /* SBEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AEE83192EEC27001316B3 /* SBEventManager.m */; };
+		F2C00E501932CF950027C06F /* SBWeekDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C00E4F1932CF950027C06F /* SBWeekDayView.m */; };
+		F2C00E56193311590027C06F /* SBTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C00E55193311590027C06F /* SBTriangleView.m */; };
+		F2DBD060192A1C2F00DC72ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DBD05F192A1C2F00DC72ED /* Foundation.framework */; };
+		F2DBD062192A1C2F00DC72ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DBD061192A1C2F00DC72ED /* CoreGraphics.framework */; };
+		F2DBD064192A1C2F00DC72ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DBD063192A1C2F00DC72ED /* UIKit.framework */; };
+		F2DBD06A192A1C2F00DC72ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2DBD068192A1C2F00DC72ED /* InfoPlist.strings */; };
+		F2DBD06C192A1C2F00DC72ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBD06B192A1C2F00DC72ED /* main.m */; };
+		F2DBD070192A1C2F00DC72ED /* SBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBD06F192A1C2F00DC72ED /* SBAppDelegate.m */; };
+		F2DBD072192A1C2F00DC72ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2DBD071192A1C2F00DC72ED /* Images.xcassets */; };
+		F2DBD079192A1C2F00DC72ED /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DBD078192A1C2F00DC72ED /* XCTest.framework */; };
+		F2DBD07A192A1C2F00DC72ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DBD05F192A1C2F00DC72ED /* Foundation.framework */; };
+		F2DBD07B192A1C2F00DC72ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DBD063192A1C2F00DC72ED /* UIKit.framework */; };
+		F2DBD083192A1C2F00DC72ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2DBD081192A1C2F00DC72ED /* InfoPlist.strings */; };
+		F2DBD085192A1C2F00DC72ED /* SBCalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBD084192A1C2F00DC72ED /* SBCalTests.m */; };
+		F2DBD091192A1C7B00DC72ED /* SBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBD090192A1C7B00DC72ED /* SBMainViewController.m */; };
+		F2DBD094192A227900DC72ED /* SBToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBD093192A227900DC72ED /* SBToolBar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2DBD07C192A1C2F00DC72ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2DBD054192A1C2F00DC72ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2DBD05B192A1C2F00DC72ED;
+			remoteInfo = SBCal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F24381D5192DEA460008BAB5 /* calendarDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = calendarDayCell.h; sourceTree = "<group>"; };
+		F24381D6192DEA460008BAB5 /* calendarDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = calendarDayCell.m; sourceTree = "<group>"; };
+		F24381D7192DEA460008BAB5 /* calendarFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = calendarFlowLayout.h; sourceTree = "<group>"; };
+		F24381D8192DEA460008BAB5 /* calendarFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = calendarFlowLayout.m; sourceTree = "<group>"; };
+		F24381D9192DEA460008BAB5 /* dayListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dayListView.h; sourceTree = "<group>"; };
+		F24381DA192DEA460008BAB5 /* dayListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dayListView.m; sourceTree = "<group>"; };
+		F24381DE192E4FEA0008BAB5 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		F24381DF192E4FEA0008BAB5 /* add_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_select.png; sourceTree = "<group>"; };
+		F24381E0192E4FEA0008BAB5 /* add_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_select@2x.png"; sourceTree = "<group>"; };
+		F24381E1192E4FEA0008BAB5 /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = "<group>"; };
+		F24381E2192E4FEA0008BAB5 /* day.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = day.png; sourceTree = "<group>"; };
+		F24381E3192E4FEA0008BAB5 /* day_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = day_select.png; sourceTree = "<group>"; };
+		F24381E4192E4FEA0008BAB5 /* day_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "day_select@2x.png"; sourceTree = "<group>"; };
+		F24381E5192E4FEA0008BAB5 /* day@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "day@2x.png"; sourceTree = "<group>"; };
+		F24381E6192E4FEA0008BAB5 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		F24381E7192E4FEA0008BAB5 /* list_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_select.png; sourceTree = "<group>"; };
+		F24381E8192E4FEA0008BAB5 /* list_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_select@2x.png"; sourceTree = "<group>"; };
+		F24381E9192E4FEA0008BAB5 /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
+		F24381EA192E4FEA0008BAB5 /* month.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = month.png; sourceTree = "<group>"; };
+		F24381EB192E4FEA0008BAB5 /* month_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = month_select.png; sourceTree = "<group>"; };
+		F24381EC192E4FEA0008BAB5 /* month_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "month_select@2x.png"; sourceTree = "<group>"; };
+		F24381ED192E4FEA0008BAB5 /* month@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "month@2x.png"; sourceTree = "<group>"; };
+		F24381EE192E4FEA0008BAB5 /* reminder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reminder.png; sourceTree = "<group>"; };
+		F24381EF192E4FEA0008BAB5 /* reminder_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reminder_select.png; sourceTree = "<group>"; };
+		F24381F0192E4FEA0008BAB5 /* reminder_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reminder_select@2x.png"; sourceTree = "<group>"; };
+		F24381F1192E4FEA0008BAB5 /* reminder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reminder@2x.png"; sourceTree = "<group>"; };
+		F24381F2192E4FEA0008BAB5 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
+		F24381F3192E4FEA0008BAB5 /* setting_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_select.png; sourceTree = "<group>"; };
+		F24381F4192E4FEA0008BAB5 /* setting_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting_select@2x.png"; sourceTree = "<group>"; };
+		F24381F5192E4FEA0008BAB5 /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@2x.png"; sourceTree = "<group>"; };
+		F24381F6192E4FEA0008BAB5 /* week.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = week.png; sourceTree = "<group>"; };
+		F24381F7192E4FEA0008BAB5 /* week_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = week_select.png; sourceTree = "<group>"; };
+		F24381F8192E4FEA0008BAB5 /* week_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "week_select@2x.png"; sourceTree = "<group>"; };
+		F24381F9192E4FEA0008BAB5 /* week@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "week@2x.png"; sourceTree = "<group>"; };
+		F251BC84193E9DBA008182F2 /* SBRemindarAccessCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRemindarAccessCheck.h; sourceTree = "<group>"; };
+		F251BC85193E9DBA008182F2 /* SBRemindarAccessCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRemindarAccessCheck.m; sourceTree = "<group>"; };
+		F257C14D1939A3E100A313C1 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		F257C14E1939A3E100A313C1 /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map@2x.png"; sourceTree = "<group>"; };
+		F26294E2192C560F00178DCD /* SBDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDayViewController.h; sourceTree = "<group>"; };
+		F26294E3192C560F00178DCD /* SBDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDayViewController.m; sourceTree = "<group>"; };
+		F26294E8192CB0EE00178DCD /* SBWeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBWeekViewController.h; sourceTree = "<group>"; };
+		F26294E9192CB0EE00178DCD /* SBWeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBWeekViewController.m; sourceTree = "<group>"; };
+		F26294EB192CB10100178DCD /* SBMonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBMonthViewController.h; sourceTree = "<group>"; };
+		F26294EC192CB10100178DCD /* SBMonthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBMonthViewController.m; sourceTree = "<group>"; };
+		F26294EE192CB11300178DCD /* SBAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAddViewController.h; sourceTree = "<group>"; };
+		F26294EF192CB11300178DCD /* SBAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBAddViewController.m; sourceTree = "<group>"; };
+		F26294F1192CB12A00178DCD /* SBListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBListViewController.h; sourceTree = "<group>"; };
+		F26294F2192CB12A00178DCD /* SBListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBListViewController.m; sourceTree = "<group>"; };
+		F26294F4192CB14200178DCD /* SBReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBReminderViewController.h; sourceTree = "<group>"; };
+		F26294F5192CB14200178DCD /* SBReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBReminderViewController.m; sourceTree = "<group>"; };
+		F26294F7192CB15100178DCD /* SBSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSettingViewController.h; sourceTree = "<group>"; };
+		F26294F8192CB15100178DCD /* SBSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSettingViewController.m; sourceTree = "<group>"; };
+		F26294FA192CEE0100178DCD /* DataUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUtility.h; sourceTree = "<group>"; };
+		F26294FB192CEE0100178DCD /* DataUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataUtility.m; sourceTree = "<group>"; };
+		F26294FD192CEE1600178DCD /* calendarAccessCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = calendarAccessCheck.h; sourceTree = "<group>"; };
+		F26294FE192CEE1600178DCD /* calendarAccessCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = calendarAccessCheck.m; sourceTree = "<group>"; };
+		F26294FF192CEE1600178DCD /* getEKData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getEKData.h; sourceTree = "<group>"; };
+		F2629500192CEE1600178DCD /* getEKData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getEKData.m; sourceTree = "<group>"; };
+		F2629501192CEE1600178DCD /* UICircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICircleView.h; sourceTree = "<group>"; };
+		F2629502192CEE1600178DCD /* UICircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICircleView.m; sourceTree = "<group>"; };
+		F2629506192CEFA000178DCD /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		F2629507192CEFA000178DCD /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		F262950A192CEFB700178DCD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F26AEE82192EEC27001316B3 /* SBEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBEventManager.h; sourceTree = "<group>"; };
+		F26AEE83192EEC27001316B3 /* SBEventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBEventManager.m; sourceTree = "<group>"; };
+		F2C00E4E1932CF950027C06F /* SBWeekDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBWeekDayView.h; sourceTree = "<group>"; };
+		F2C00E4F1932CF950027C06F /* SBWeekDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBWeekDayView.m; sourceTree = "<group>"; };
+		F2C00E54193311590027C06F /* SBTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTriangleView.h; sourceTree = "<group>"; };
+		F2C00E55193311590027C06F /* SBTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTriangleView.m; sourceTree = "<group>"; };
+		F2DBD05C192A1C2F00DC72ED /* SBCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DBD05F192A1C2F00DC72ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F2DBD061192A1C2F00DC72ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F2DBD063192A1C2F00DC72ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F2DBD067192A1C2F00DC72ED /* SBCal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SBCal-Info.plist"; sourceTree = "<group>"; };
+		F2DBD069192A1C2F00DC72ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2DBD06B192A1C2F00DC72ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2DBD06D192A1C2F00DC72ED /* SBCal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBCal-Prefix.pch"; sourceTree = "<group>"; };
+		F2DBD06E192A1C2F00DC72ED /* SBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBAppDelegate.h; sourceTree = "<group>"; };
+		F2DBD06F192A1C2F00DC72ED /* SBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBAppDelegate.m; sourceTree = "<group>"; };
+		F2DBD071192A1C2F00DC72ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F2DBD077192A1C2F00DC72ED /* SBCalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBCalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DBD078192A1C2F00DC72ED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F2DBD080192A1C2F00DC72ED /* SBCalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SBCalTests-Info.plist"; sourceTree = "<group>"; };
+		F2DBD082192A1C2F00DC72ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2DBD084192A1C2F00DC72ED /* SBCalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBCalTests.m; sourceTree = "<group>"; };
+		F2DBD08F192A1C7B00DC72ED /* SBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBMainViewController.h; sourceTree = "<group>"; };
+		F2DBD090192A1C7B00DC72ED /* SBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBMainViewController.m; sourceTree = "<group>"; };
+		F2DBD092192A227900DC72ED /* SBToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBToolBar.h; sourceTree = "<group>"; };
+		F2DBD093192A227900DC72ED /* SBToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBToolBar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2DBD059192A1C2F00DC72ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F262950B192CEFB700178DCD /* QuartzCore.framework in Frameworks */,
+				F2629508192CEFA000178DCD /* EventKit.framework in Frameworks */,
+				F2629509192CEFA000178DCD /* EventKitUI.framework in Frameworks */,
+				F2DBD062192A1C2F00DC72ED /* CoreGraphics.framework in Frameworks */,
+				F2DBD064192A1C2F00DC72ED /* UIKit.framework in Frameworks */,
+				F2DBD060192A1C2F00DC72ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DBD074192A1C2F00DC72ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DBD079192A1C2F00DC72ED /* XCTest.framework in Frameworks */,
+				F2DBD07B192A1C2F00DC72ED /* UIKit.framework in Frameworks */,
+				F2DBD07A192A1C2F00DC72ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F257C14C1939A3B700A313C1 /* eventIcon */ = {
+			isa = PBXGroup;
+			children = (
+				F257C14D1939A3E100A313C1 /* map.png */,
+				F257C14E1939A3E100A313C1 /* map@2x.png */,
+			);
+			name = eventIcon;
+			sourceTree = "<group>";
+		};
+		F26294E5192C73CF00178DCD /* dayView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = dayView;
+			sourceTree = "<group>";
+		};
+		F26294E6192C73E000178DCD /* weekView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = weekView;
+			sourceTree = "<group>";
+		};
+		F26294E7192C73E800178DCD /* monthView */ = {
+			isa = PBXGroup;
+			children = (
+				F24381D5192DEA460008BAB5 /* calendarDayCell.h */,
+				F24381D6192DEA460008BAB5 /* calendarDayCell.m */,
+				F24381D7192DEA460008BAB5 /* calendarFlowLayout.h */,
+				F24381D8192DEA460008BAB5 /* calendarFlowLayout.m */,
+				F24381D9192DEA460008BAB5 /* dayListView.h */,
+				F24381DA192DEA460008BAB5 /* dayListView.m */,
+				F2C00E4E1932CF950027C06F /* SBWeekDayView.h */,
+				F2C00E4F1932CF950027C06F /* SBWeekDayView.m */,
+				F2C00E54193311590027C06F /* SBTriangleView.h */,
+				F2C00E55193311590027C06F /* SBTriangleView.m */,
+			);
+			name = monthView;
+			sourceTree = "<group>";
+		};
+		F262950C192D04A800178DCD /* listView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = listView;
+			sourceTree = "<group>";
+		};
+		F2743929192B11A300B4DA06 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F257C14C1939A3B700A313C1 /* eventIcon */,
+				F274392A192B259E00B4DA06 /* toolbarbutton */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		F274392A192B259E00B4DA06 /* toolbarbutton */ = {
+			isa = PBXGroup;
+			children = (
+				F24381DE192E4FEA0008BAB5 /* add.png */,
+				F24381DF192E4FEA0008BAB5 /* add_select.png */,
+				F24381E0192E4FEA0008BAB5 /* add_select@2x.png */,
+				F24381E1192E4FEA0008BAB5 /* add@2x.png */,
+				F24381E2192E4FEA0008BAB5 /* day.png */,
+				F24381E3192E4FEA0008BAB5 /* day_select.png */,
+				F24381E4192E4FEA0008BAB5 /* day_select@2x.png */,
+				F24381E5192E4FEA0008BAB5 /* day@2x.png */,
+				F24381E6192E4FEA0008BAB5 /* list.png */,
+				F24381E7192E4FEA0008BAB5 /* list_select.png */,
+				F24381E8192E4FEA0008BAB5 /* list_select@2x.png */,
+				F24381E9192E4FEA0008BAB5 /* list@2x.png */,
+				F24381EA192E4FEA0008BAB5 /* month.png */,
+				F24381EB192E4FEA0008BAB5 /* month_select.png */,
+				F24381EC192E4FEA0008BAB5 /* month_select@2x.png */,
+				F24381ED192E4FEA0008BAB5 /* month@2x.png */,
+				F24381EE192E4FEA0008BAB5 /* reminder.png */,
+				F24381EF192E4FEA0008BAB5 /* reminder_select.png */,
+				F24381F0192E4FEA0008BAB5 /* reminder_select@2x.png */,
+				F24381F1192E4FEA0008BAB5 /* reminder@2x.png */,
+				F24381F2192E4FEA0008BAB5 /* setting.png */,
+				F24381F3192E4FEA0008BAB5 /* setting_select.png */,
+				F24381F4192E4FEA0008BAB5 /* setting_select@2x.png */,
+				F24381F5192E4FEA0008BAB5 /* setting@2x.png */,
+				F24381F6192E4FEA0008BAB5 /* week.png */,
+				F24381F7192E4FEA0008BAB5 /* week_select.png */,
+				F24381F8192E4FEA0008BAB5 /* week_select@2x.png */,
+				F24381F9192E4FEA0008BAB5 /* week@2x.png */,
+			);
+			name = toolbarbutton;
+			sourceTree = "<group>";
+		};
+		F2DBD053192A1C2F00DC72ED = {
+			isa = PBXGroup;
+			children = (
+				F2DBD065192A1C2F00DC72ED /* SBCal */,
+				F2DBD07E192A1C2F00DC72ED /* SBCalTests */,
+				F2DBD05E192A1C2F00DC72ED /* Frameworks */,
+				F2DBD05D192A1C2F00DC72ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2DBD05D192A1C2F00DC72ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBD05C192A1C2F00DC72ED /* SBCal.app */,
+				F2DBD077192A1C2F00DC72ED /* SBCalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2DBD05E192A1C2F00DC72ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F262950A192CEFB700178DCD /* QuartzCore.framework */,
+				F2629506192CEFA000178DCD /* EventKit.framework */,
+				F2629507192CEFA000178DCD /* EventKitUI.framework */,
+				F2DBD05F192A1C2F00DC72ED /* Foundation.framework */,
+				F2DBD061192A1C2F00DC72ED /* CoreGraphics.framework */,
+				F2DBD063192A1C2F00DC72ED /* UIKit.framework */,
+				F2DBD078192A1C2F00DC72ED /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2DBD065192A1C2F00DC72ED /* SBCal */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBD08E192A1C3F00DC72ED /* common */,
+				F2DBD06E192A1C2F00DC72ED /* SBAppDelegate.h */,
+				F2DBD06F192A1C2F00DC72ED /* SBAppDelegate.m */,
+				F2DBD08F192A1C7B00DC72ED /* SBMainViewController.h */,
+				F2DBD090192A1C7B00DC72ED /* SBMainViewController.m */,
+				F26294E2192C560F00178DCD /* SBDayViewController.h */,
+				F26294E3192C560F00178DCD /* SBDayViewController.m */,
+				F26294E5192C73CF00178DCD /* dayView */,
+				F26294E8192CB0EE00178DCD /* SBWeekViewController.h */,
+				F26294E9192CB0EE00178DCD /* SBWeekViewController.m */,
+				F26294E6192C73E000178DCD /* weekView */,
+				F26294EB192CB10100178DCD /* SBMonthViewController.h */,
+				F26294EC192CB10100178DCD /* SBMonthViewController.m */,
+				F26294E7192C73E800178DCD /* monthView */,
+				F26294EE192CB11300178DCD /* SBAddViewController.h */,
+				F26294EF192CB11300178DCD /* SBAddViewController.m */,
+				F26294F1192CB12A00178DCD /* SBListViewController.h */,
+				F26294F2192CB12A00178DCD /* SBListViewController.m */,
+				F262950C192D04A800178DCD /* listView */,
+				F26294F4192CB14200178DCD /* SBReminderViewController.h */,
+				F26294F5192CB14200178DCD /* SBReminderViewController.m */,
+				F26294F7192CB15100178DCD /* SBSettingViewController.h */,
+				F26294F8192CB15100178DCD /* SBSettingViewController.m */,
+				F2DBD071192A1C2F00DC72ED /* Images.xcassets */,
+				F2DBD066192A1C2F00DC72ED /* Supporting Files */,
+			);
+			path = SBCal;
+			sourceTree = "<group>";
+		};
+		F2DBD066192A1C2F00DC72ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2743929192B11A300B4DA06 /* images */,
+				F2DBD067192A1C2F00DC72ED /* SBCal-Info.plist */,
+				F2DBD068192A1C2F00DC72ED /* InfoPlist.strings */,
+				F2DBD06B192A1C2F00DC72ED /* main.m */,
+				F2DBD06D192A1C2F00DC72ED /* SBCal-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2DBD07E192A1C2F00DC72ED /* SBCalTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBD084192A1C2F00DC72ED /* SBCalTests.m */,
+				F2DBD07F192A1C2F00DC72ED /* Supporting Files */,
+			);
+			path = SBCalTests;
+			sourceTree = "<group>";
+		};
+		F2DBD07F192A1C2F00DC72ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBD080192A1C2F00DC72ED /* SBCalTests-Info.plist */,
+				F2DBD081192A1C2F00DC72ED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2DBD08E192A1C3F00DC72ED /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F26294FD192CEE1600178DCD /* calendarAccessCheck.h */,
+				F26294FE192CEE1600178DCD /* calendarAccessCheck.m */,
+				F26294FF192CEE1600178DCD /* getEKData.h */,
+				F2629500192CEE1600178DCD /* getEKData.m */,
+				F2629501192CEE1600178DCD /* UICircleView.h */,
+				F2629502192CEE1600178DCD /* UICircleView.m */,
+				F26294FA192CEE0100178DCD /* DataUtility.h */,
+				F26294FB192CEE0100178DCD /* DataUtility.m */,
+				F2DBD092192A227900DC72ED /* SBToolBar.h */,
+				F2DBD093192A227900DC72ED /* SBToolBar.m */,
+				F26AEE82192EEC27001316B3 /* SBEventManager.h */,
+				F26AEE83192EEC27001316B3 /* SBEventManager.m */,
+				F251BC84193E9DBA008182F2 /* SBRemindarAccessCheck.h */,
+				F251BC85193E9DBA008182F2 /* SBRemindarAccessCheck.m */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2DBD05B192A1C2F00DC72ED /* SBCal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2DBD088192A1C2F00DC72ED /* Build configuration list for PBXNativeTarget "SBCal" */;
+			buildPhases = (
+				F2DBD058192A1C2F00DC72ED /* Sources */,
+				F2DBD059192A1C2F00DC72ED /* Frameworks */,
+				F2DBD05A192A1C2F00DC72ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SBCal;
+			productName = SBCal;
+			productReference = F2DBD05C192A1C2F00DC72ED /* SBCal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2DBD076192A1C2F00DC72ED /* SBCalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2DBD08B192A1C2F00DC72ED /* Build configuration list for PBXNativeTarget "SBCalTests" */;
+			buildPhases = (
+				F2DBD073192A1C2F00DC72ED /* Sources */,
+				F2DBD074192A1C2F00DC72ED /* Frameworks */,
+				F2DBD075192A1C2F00DC72ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2DBD07D192A1C2F00DC72ED /* PBXTargetDependency */,
+			);
+			name = SBCalTests;
+			productName = SBCalTests;
+			productReference = F2DBD077192A1C2F00DC72ED /* SBCalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2DBD054192A1C2F00DC72ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "kenjou yutaka";
+				TargetAttributes = {
+					F2DBD076192A1C2F00DC72ED = {
+						TestTargetID = F2DBD05B192A1C2F00DC72ED;
+					};
+				};
+			};
+			buildConfigurationList = F2DBD057192A1C2F00DC72ED /* Build configuration list for PBXProject "SBCal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F2DBD053192A1C2F00DC72ED;
+			productRefGroup = F2DBD05D192A1C2F00DC72ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2DBD05B192A1C2F00DC72ED /* SBCal */,
+				F2DBD076192A1C2F00DC72ED /* SBCalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2DBD05A192A1C2F00DC72ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2438205192E4FEA0008BAB5 /* list@2x.png in Resources */,
+				F2438213192E4FEA0008BAB5 /* week_select.png in Resources */,
+				F243820C192E4FEA0008BAB5 /* reminder_select@2x.png in Resources */,
+				F2438212192E4FEA0008BAB5 /* week.png in Resources */,
+				F2438208192E4FEA0008BAB5 /* month_select@2x.png in Resources */,
+				F257C1501939A3E100A313C1 /* map@2x.png in Resources */,
+				F24381FA192E4FEA0008BAB5 /* add.png in Resources */,
+				F2438209192E4FEA0008BAB5 /* month@2x.png in Resources */,
+				F24381FB192E4FEA0008BAB5 /* add_select.png in Resources */,
+				F2438215192E4FEA0008BAB5 /* week@2x.png in Resources */,
+				F24381FD192E4FEA0008BAB5 /* add@2x.png in Resources */,
+				F257C14F1939A3E100A313C1 /* map.png in Resources */,
+				F2438201192E4FEA0008BAB5 /* day@2x.png in Resources */,
+				F243820B192E4FEA0008BAB5 /* reminder_select.png in Resources */,
+				F2438206192E4FEA0008BAB5 /* month.png in Resources */,
+				F2438204192E4FEA0008BAB5 /* list_select@2x.png in Resources */,
+				F24381FE192E4FEA0008BAB5 /* day.png in Resources */,
+				F2438214192E4FEA0008BAB5 /* week_select@2x.png in Resources */,
+				F2438210192E4FEA0008BAB5 /* setting_select@2x.png in Resources */,
+				F243820D192E4FEA0008BAB5 /* reminder@2x.png in Resources */,
+				F2438207192E4FEA0008BAB5 /* month_select.png in Resources */,
+				F2438200192E4FEA0008BAB5 /* day_select@2x.png in Resources */,
+				F243820E192E4FEA0008BAB5 /* setting.png in Resources */,
+				F24381FC192E4FEA0008BAB5 /* add_select@2x.png in Resources */,
+				F243820A192E4FEA0008BAB5 /* reminder.png in Resources */,
+				F2438211192E4FEA0008BAB5 /* setting@2x.png in Resources */,
+				F243820F192E4FEA0008BAB5 /* setting_select.png in Resources */,
+				F2DBD06A192A1C2F00DC72ED /* InfoPlist.strings in Resources */,
+				F24381FF192E4FEA0008BAB5 /* day_select.png in Resources */,
+				F2438203192E4FEA0008BAB5 /* list_select.png in Resources */,
+				F2438202192E4FEA0008BAB5 /* list.png in Resources */,
+				F2DBD072192A1C2F00DC72ED /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DBD075192A1C2F00DC72ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DBD083192A1C2F00DC72ED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2DBD058192A1C2F00DC72ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2629505192CEE1600178DCD /* UICircleView.m in Sources */,
+				F2629504192CEE1600178DCD /* getEKData.m in Sources */,
+				F2DBD06C192A1C2F00DC72ED /* main.m in Sources */,
+				F24381DD192DEA460008BAB5 /* dayListView.m in Sources */,
+				F26294EA192CB0EE00178DCD /* SBWeekViewController.m in Sources */,
+				F26AEE84192EEC27001316B3 /* SBEventManager.m in Sources */,
+				F24381DB192DEA460008BAB5 /* calendarDayCell.m in Sources */,
+				F2629503192CEE1600178DCD /* calendarAccessCheck.m in Sources */,
+				F2C00E56193311590027C06F /* SBTriangleView.m in Sources */,
+				F251BC86193E9DBA008182F2 /* SBRemindarAccessCheck.m in Sources */,
+				F2C00E501932CF950027C06F /* SBWeekDayView.m in Sources */,
+				F2DBD070192A1C2F00DC72ED /* SBAppDelegate.m in Sources */,
+				F26294F3192CB12A00178DCD /* SBListViewController.m in Sources */,
+				F2DBD094192A227900DC72ED /* SBToolBar.m in Sources */,
+				F26294ED192CB10100178DCD /* SBMonthViewController.m in Sources */,
+				F26294F9192CB15100178DCD /* SBSettingViewController.m in Sources */,
+				F26294F0192CB11300178DCD /* SBAddViewController.m in Sources */,
+				F24381DC192DEA460008BAB5 /* calendarFlowLayout.m in Sources */,
+				F26294F6192CB14200178DCD /* SBReminderViewController.m in Sources */,
+				F2DBD091192A1C7B00DC72ED /* SBMainViewController.m in Sources */,
+				F26294FC192CEE0100178DCD /* DataUtility.m in Sources */,
+				F26294E4192C560F00178DCD /* SBDayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DBD073192A1C2F00DC72ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DBD085192A1C2F00DC72ED /* SBCalTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2DBD07D192A1C2F00DC72ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2DBD05B192A1C2F00DC72ED /* SBCal */;
+			targetProxy = F2DBD07C192A1C2F00DC72ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2DBD068192A1C2F00DC72ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2DBD069192A1C2F00DC72ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F2DBD081192A1C2F00DC72ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2DBD082192A1C2F00DC72ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2DBD086192A1C2F00DC72ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F2DBD087192A1C2F00DC72ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2DBD089192A1C2F00DC72ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBCal/SBCal-Prefix.pch";
+				INFOPLIST_FILE = "SBCal/SBCal-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F2DBD08A192A1C2F00DC72ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBCal/SBCal-Prefix.pch";
+				INFOPLIST_FILE = "SBCal/SBCal-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F2DBD08C192A1C2F00DC72ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SBCal.app/SBCal";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBCal/SBCal-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SBCalTests/SBCalTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F2DBD08D192A1C2F00DC72ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SBCal.app/SBCal";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBCal/SBCal-Prefix.pch";
+				INFOPLIST_FILE = "SBCalTests/SBCalTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2DBD057192A1C2F00DC72ED /* Build configuration list for PBXProject "SBCal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DBD086192A1C2F00DC72ED /* Debug */,
+				F2DBD087192A1C2F00DC72ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2DBD088192A1C2F00DC72ED /* Build configuration list for PBXNativeTarget "SBCal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DBD089192A1C2F00DC72ED /* Debug */,
+				F2DBD08A192A1C2F00DC72ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2DBD08B192A1C2F00DC72ED /* Build configuration list for PBXNativeTarget "SBCalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DBD08C192A1C2F00DC72ED /* Debug */,
+				F2DBD08D192A1C2F00DC72ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2DBD054192A1C2F00DC72ED /* Project object */;
+}
