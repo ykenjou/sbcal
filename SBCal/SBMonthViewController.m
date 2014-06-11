@@ -52,8 +52,15 @@ static float cellWidth = 45.6f;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [self resetCalendarDate];
-    [self dateChangeNotification];
+    //[self resetCalendarDate];
+    _nowDate = [NSDate date];
+    startDate = [DataUtility setStartDate:_nowDate];
+    endDate = [DataUtility setEndDate:_nowDate];
+    
+    allDays = [DataUtility daysBetween:startDate and:endDate];
+    firstDayIndex = [DataUtility daysBetween:startDate and:_nowDate];
+    
+    //[self dateChangeNotification];
     
     _screenRect = [[UIScreen mainScreen] bounds];
     
@@ -84,6 +91,7 @@ static float cellWidth = 45.6f;
     
     [self.view addSubview:naviBar];
     
+    
     calendarFlowLayout *calLayout = [calendarFlowLayout new];
     
     //float width = screenRect.size.width/7;
@@ -110,134 +118,17 @@ static float cellWidth = 45.6f;
     self.navigationController.navigationBar.translucent = NO;
     
     //タブバー非透過設定
-    self.tabBarController.tabBar.translucent = NO;
+    //self.tabBarController.tabBar.translucent = NO;
     
     UIView *weekView = [SBWeekDayView weekDayView:_screenRect.size.width];
     [self.view addSubview:weekView];
-    
-    calendarAccessCheck *check = [calendarAccessCheck new];
-    [check EKAccessCheck];
-    
-    SBRemindarAccessCheck *remindarCheck = [SBRemindarAccessCheck new];
-    [remindarCheck RemindarAccessCheck];
     
     _ekData = [getEKData new];
     _ekData.delegate = self;
     
     [_ekData EKDataDictionary:_eventMg.sharedEventKitStore];
     
-    /*
-    _sections = [_ekData EKDataDictionary:_eventMg.sharedEventKitStore];
-    
-    NSArray *unsortedDays = [_sections allKeys];
-    
-    _sortedDays = [unsortedDays sortedArrayUsingSelector:@selector(compare:)];
-    //NSLog(@"sortedDays %@",_sortedDays);
-    
-    //NSMutableDictionary *sortedSections = [NSMutableDictionary new];
-    NSArray *eventsByKey = [NSArray new];
-    
-    _rowIndexs = [NSMutableDictionary new];
-    
-    for (int i = 0; i < [_sections count]; i++)
-    {
-        eventsByKey = [_sections objectForKey:_sortedDays[i]];
-        
-        NSDate *sortedDay = _sortedDays[i];
-        NSMutableArray *reservedNum = [NSMutableArray new];
-        
-        BOOL isReserved = NO;
-        
-        for (int i = 0; i < [eventsByKey count]; i++)
-        {
-            if ([[eventsByKey objectAtIndex:i] isKindOfClass:[EKEvent class]]) {
-                EKEvent *event = [eventsByKey objectAtIndex:i];
-                NSString *eventIdentifer = event.eventIdentifier;
-                NSDate *eventStartDate = [DataUtility dateAtBeginningOfDayForDate:event.startDate];
-                
-                if ([sortedDay compare:eventStartDate] != NSOrderedSame)
-                {
-                    [reservedNum addObject:[_rowIndexs objectForKey:eventIdentifer]];
-                    isReserved = YES;
-                }
-            }
-            
-        }
-        
-        if (!isReserved) {
-            for (int i = 0; i < [eventsByKey count]; i++) {
-                if ([[eventsByKey objectAtIndex:i] isKindOfClass:[EKEvent class]]) {
-                    EKEvent *event = [eventsByKey objectAtIndex:i];
-                    NSString *eventIdentifer = event.eventIdentifier;
-                    NSNumber *num = [NSNumber numberWithInt:(i + 1)];
-                    [_rowIndexs setObject:num forKey:eventIdentifer];
-                    
-                } else if ([[eventsByKey objectAtIndex:i] isKindOfClass:[EKReminder class]]){
-                    EKReminder *reminder = [eventsByKey objectAtIndex:i];
-                    NSString *reminderIdentifer = reminder.calendarItemIdentifier;
-                    NSNumber *num = [NSNumber numberWithInt:(i + 1)];
-                    [_rowIndexs setObject:num forKey:reminderIdentifer];
-                }
-                
-            }
-        }
-        
-        if (isReserved) {
-            
-            NSMutableArray *usableNum = [NSMutableArray new];
-            
-            for (int i = 1; i < 100 ;i++)
-            {
-                BOOL isNum = NO;
-                for (int ii = 0; ii < [reservedNum count]; ii++) {
-                    NSNumber *checkNum = [reservedNum objectAtIndex:ii];
-                    int checkInt = checkNum.intValue;
-                    if (checkInt == i) {
-                        isNum = YES;
-                    }
-                }
-                if (!isNum) {
-                    NSNumber *num = [NSNumber numberWithInt:i];
-                    [usableNum addObject:num];
-                }
-            }
-            
-            NSMutableArray *eventsThisDayStart = [NSMutableArray new];
-            for (int i = 0; i < [eventsByKey count]; i++) {
-                if ([[eventsByKey objectAtIndex:i] isKindOfClass:[EKEvent class]]) {
-                    EKEvent *event = [eventsByKey objectAtIndex:i];
-                    NSDate *eventStartDate = [DataUtility dateAtBeginningOfDayForDate:event.startDate];
-                    
-                    if ([sortedDay compare:eventStartDate] == NSOrderedSame) {
-                        [eventsThisDayStart addObject:event];
-                    }
-                } else if ([[eventsByKey objectAtIndex:i] isKindOfClass:[EKReminder class]]) {
-                    EKReminder *reminder = [eventsByKey objectAtIndex:i];
-                    NSDate *reminderDueDate = [DataUtility dateAtBeginningOfDayForDate:[_calendar dateFromComponents:reminder.dueDateComponents]];
-                    
-                    if ([sortedDay compare:reminderDueDate] == NSOrderedSame) {
-                        [eventsThisDayStart addObject:reminder];
-                    }
-                }
-                
-            }
-            
-            for (int i = 0; i < [eventsThisDayStart count]; i++)
-            {
-                if ([[eventsThisDayStart objectAtIndex:i] isKindOfClass:[EKEvent class]]) {
-                    EKEvent *event = [eventsThisDayStart objectAtIndex:i];
-                    NSString *eventIdentifer = event.eventIdentifier;
-                    [_rowIndexs setObject:[usableNum objectAtIndex:i] forKey:eventIdentifer];
-                } else if ([[eventsThisDayStart objectAtIndex:i] isKindOfClass:[EKReminder class]]) {
-                    EKReminder *reminder = [eventsThisDayStart objectAtIndex:i];
-                    NSString *reminderIderntifer = reminder.calendarItemIdentifier;
-                    [_rowIndexs setObject:[usableNum objectAtIndex:i] forKey:reminderIderntifer];
-                }
-                
-            }
-        }
-     
-    }*/
+
 }
 
 
@@ -255,7 +146,6 @@ static float cellWidth = 45.6f;
 -(void)dateReloadDelegate:(NSDictionary *)dictionary
 {
     NSLog(@"complete!");
-    //NSLog(@"dic %@",dictionary);
     _sections = [dictionary mutableCopy];
     //NSLog(@"sections %@",_sections);
     
@@ -369,6 +259,9 @@ static float cellWidth = 45.6f;
     }
     
     [_collectionView reloadData];
+    
+    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:firstDayIndex inSection:0];
+    [_collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -396,7 +289,14 @@ static float cellWidth = 45.6f;
 
 -(void)reloadCalendar:(NSNotification *)notification
 {
-    [self resetCalendarDate];
+    _nowDate = [NSDate date];
+    startDate = [DataUtility setStartDate:_nowDate];
+    endDate = [DataUtility setEndDate:_nowDate];
+    
+    allDays = [DataUtility daysBetween:startDate and:endDate];
+    firstDayIndex = [DataUtility daysBetween:startDate and:_nowDate];
+    [_collectionView reloadData];
+    //[self resetCalendarDate];
 }
 
 -(void)handleNotification:(NSNotification *)note
@@ -409,8 +309,8 @@ static float cellWidth = 45.6f;
 -(void)resetCalendarDate
 {
     _nowDate = [NSDate date];
-    startDate = [self setStartDate:_nowDate];
-    endDate = [self setEndDate:_nowDate];
+    startDate = [DataUtility setStartDate:_nowDate];
+    endDate = [DataUtility setEndDate:_nowDate];
     
     allDays = [DataUtility daysBetween:startDate and:endDate];
     firstDayIndex = [DataUtility daysBetween:startDate and:_nowDate];
@@ -430,7 +330,7 @@ static float cellWidth = 45.6f;
 -(void)reloadView:(NSNotification *)notification
 {
     [_handleTimer invalidate];
-    self.sections = [_ekData EKDataDictionary:_eventMg.sharedEventKitStore];
+    [_ekData EKDataDictionary:_eventMg.sharedEventKitStore];
     
     NSLog(@"reloadView");
     
@@ -484,9 +384,8 @@ static float cellWidth = 45.6f;
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    dayCell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
-    
-    //_nowDate = [NSDate new];
+    calendarDayCell *dayCell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    dayCell.delegate = self;
     
     NSDate *cellDate = [_calendar dateByAddingComponents:((^{
         NSDateComponents *datecomponents = [NSDateComponents new];
@@ -494,8 +393,8 @@ static float cellWidth = 45.6f;
         return datecomponents;
     })()) toDate:startDate options:0];
     
-    NSDateComponents *weekDayComp = [_calendar components:NSWeekdayCalendarUnit fromDate:cellDate];
-    NSInteger weekDay = weekDayComp.weekday;
+    //NSDateComponents *weekDayComp = [_calendar components:NSWeekdayCalendarUnit fromDate:cellDate];
+    //NSInteger weekDay = weekDayComp.weekday;
     //NSLog(@"weekDay %d",weekDay);
     
     //NSLog(@"cellDate : %@",cellDate);
@@ -504,14 +403,14 @@ static float cellWidth = 45.6f;
     NSInteger seconds = [timeZone secondsFromGMT];
     NSDate *gtmDate = [cellDate dateByAddingTimeInterval:-seconds];
     
-    NSArray *events = [_sections objectForKey:gtmDate];
+    //NSArray *events = [_sections objectForKey:gtmDate];
     
     //EKEvent *event;
-    float labelHeight = 13.0f;
+    //float labelHeight = 13.0f;
     
-    BOOL Holiday = NO;
+    //BOOL Holiday = NO;
     
-    
+    /*
     NSInteger rows = 0;
     NSInteger restRows = 0;
     if ([events count] > 4) {
@@ -520,8 +419,13 @@ static float cellWidth = 45.6f;
     } else {
         rows = [events count];
     }
+     */
+    
+    [dayCell setDate:cellDate nowDate:_nowDate events:[_sections objectForKey:gtmDate] rowIndexs:_rowIndexs eventStore:_eventMg.sharedEventKitStore];
+    
     
     //イベントラベル生成
+    /*
     if (events) {
         for (int i = 0; i < rows; i++) {
             
@@ -560,8 +464,9 @@ static float cellWidth = 45.6f;
             
                 UIView *eventView = [UIView new];
                 eventView.layer.borderColor = [UIColor lightGrayColor].CGColor;
-            
                 eventView.tag = i + 2;
+                //eventView.layer.cornerRadius = 2;
+                //eventView.clipsToBounds = YES;
             
                 UILabel *eventLabel = [UILabel new];
                 eventLabel.textColor = [UIColor blackColor];
@@ -607,7 +512,7 @@ static float cellWidth = 45.6f;
                 if ([eventDateStatus isEqualToString:@"endOnly"]) {
                     eventView.frame = CGRectMake(0, (labelHeight * numInt) + 3 , dayCell.bounds.size.width -1, 12.0);
                 }
-            
+                
                 if (![eventDateStatus isEqualToString:@"complete"]) {
                     eventView.backgroundColor = alphaColor;
                 } else {
@@ -626,10 +531,8 @@ static float cellWidth = 45.6f;
             
                 [eventView addSubview:eventLabel];
             
-                [dayCell addSubview:eventView];
-            
-            
-            
+                [dayCell.contentView addSubview:eventView];
+                
                 if (!Holiday) {
                     if ([event.calendar.title  isEqual: @"日本の祝日"])
                     {
@@ -651,25 +554,27 @@ static float cellWidth = 45.6f;
                 eventView.frame = CGRectMake(1, (labelHeight * numInt) + 3 , dayCell.bounds.size.width - 2, 12.0);
                 eventView.layer.borderWidth = 0.5f;
                 eventView.tag = i + 2;
+                eventView.backgroundColor = [UIColor colorWithCGColor:reminder.calendar.CGColor];
+                //eventView.layer.cornerRadius = 2;
                 
                 UIView *leftSquareView = [UIView new];
-                leftSquareView.frame = CGRectMake(0, 0, 12, 12);
-                leftSquareView.backgroundColor = [UIColor colorWithCGColor:reminder.calendar.CGColor];
+                leftSquareView.frame = CGRectMake(3, 3, 6, 6);
+                leftSquareView.backgroundColor = [UIColor whiteColor];
                 
                 
                 UIView *checkBoxView = [UIView new];
-                checkBoxView.frame = CGRectMake(2.5, 2.5, 7, 7);
+                checkBoxView.frame = CGRectMake(3, 3, 6, 6);
                 checkBoxView.backgroundColor = [UIColor whiteColor];
-                [leftSquareView addSubview:checkBoxView];
+                //[leftSquareView addSubview:checkBoxView];
                 
                 UILabel *eventLabel = [UILabel new];
-                eventLabel.textColor = [UIColor blackColor];
+                eventLabel.textColor = [UIColor whiteColor];
                 eventLabel.numberOfLines = 1;
                 eventLabel.adjustsFontSizeToFitWidth = NO;
                 eventLabel.lineBreakMode = NSLineBreakByClipping;
                 eventLabel.font = [UIFont fontWithName:@"Helvetica" size:10.0f];
                 eventLabel.text = reminder.title;
-                eventLabel.frame = CGRectMake(13, 1.5 , 29.6, 10.0);
+                eventLabel.frame = CGRectMake(12, 1.5 ,30.6, 10.0);
                 
                 [eventView addSubview:leftSquareView];
                 [eventView addSubview:eventLabel];
@@ -677,8 +582,10 @@ static float cellWidth = 45.6f;
             }
         }
     }
+     */
     
     //三角の追加
+    /*
     if (restRows > 0) {
         SBTriangleView *triangle = [[SBTriangleView alloc] initWithFrame:CGRectMake(31.6, 56, 14, 14)];
         UILabel *restRowsLabel = [[UILabel alloc] initWithFrame:CGRectMake(8, 5, 9, 9)];
@@ -692,11 +599,13 @@ static float cellWidth = 45.6f;
         [triangle addSubview:restRowsLabel];
         [dayCell addSubview:triangle];
     }
+     */
     
     NSDateComponents *cellDateComponents = [_calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit|NSWeekdayCalendarUnit fromDate:cellDate];
     
     NSDateComponents *nowDateComponents = [_calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:_nowDate];
     
+    /*
     //日付ラベル処理
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(1, 1, cellWidth-2,13)];
     //NSString *strYear = @(cellDateComponents.year).stringValue;
@@ -731,22 +640,42 @@ static float cellWidth = 45.6f;
     label.tag = 1;
     
     [dayCell.contentView addSubview:label];
+    */
+     
+    //日付が今日だった場合の処理
+    if (nowDateComponents.year == cellDateComponents.year && nowDateComponents.month == cellDateComponents.month && nowDateComponents.day == cellDateComponents.day) {
+        dayCell.backgroundColor = [UIColor colorWithRed:0.949 green:0.973 blue:0.992 alpha:1.0];
+    }
+    
     
     //セル背景色処理
     
     dayCell.backgroundColor = [UIColor whiteColor];
     
+    BOOL isMonthEven = NO;
+    
+    //今月が偶数月かをチェック
+    if (nowDateComponents.month % 2 == 0) {
+        isMonthEven = YES;
+    }
+    
+    if (isMonthEven) {
+        if (cellDateComponents.month % 2 == 1) {
+            dayCell.backgroundColor = [UIColor colorWithRed:0.973 green:0.973 blue:0.973 alpha:1.0];
+        }
+    } else {
+        if (cellDateComponents.month % 2 == 0) {
+            dayCell.backgroundColor = [UIColor colorWithRed:0.973 green:0.973 blue:0.973 alpha:1.0];
+        }
+    }
+    
+    
+    /*
     if (cellDateComponents.month % 2 == 0) {
         //cell.backgroundColor = [UIColor grayColor];
         dayCell.backgroundColor = [UIColor colorWithRed:0.973 green:0.973 blue:0.973 alpha:1.0];
-    }
+    }*/
     
-    //日付が今日だった場合の処理
-    if (nowDateComponents.year == cellDateComponents.year && nowDateComponents.month == cellDateComponents.month && nowDateComponents.day == cellDateComponents.day) {
-        dayCell.backgroundColor = [UIColor colorWithRed:0.949 green:0.973 blue:0.992 alpha:1.0];
-        label.backgroundColor = [UIColor colorWithRed:0.282 green:0.024 blue:0.647 alpha:1.0];
-        label.textColor = [UIColor whiteColor];
-    }
     
     NSArray *array = [NSArray arrayWithArray:[collectionView indexPathsForVisibleItems]];
     NSArray *sortedIndexPaths = [array sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
@@ -771,11 +700,8 @@ static float cellWidth = 45.6f;
     NSString *title = [[NSString alloc] initWithFormat:@"%ld年 %ld月",(long)titleYear,(long)titleMonth];
     
     _naviTitle.text = title;
-    
-    
     return dayCell;
 }
-
 
 //選択時の色変更
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
@@ -842,6 +768,7 @@ static float cellWidth = 45.6f;
     [[cell viewWithTag:5] removeFromSuperview];
     [[cell viewWithTag:6] removeFromSuperview];
     [[cell viewWithTag:11] removeFromSuperview];
+    [[cell viewWithTag:12] removeFromSuperview];
 }
 
 -(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
@@ -882,77 +809,5 @@ static float cellWidth = 45.6f;
     }
     
 }
-
--(NSDate *)setStartDate:(NSDate *)date
-{
-    //NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDate *pastDate = [_calendar dateByAddingComponents:((^{
-        NSDateComponents *datecomponents = [NSDateComponents new];
-        datecomponents.month = -3;
-        return datecomponents;
-    })()) toDate:_nowDate options:0];
-    
-    NSDateComponents *pastComponents = [_calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSWeekdayCalendarUnit fromDate:pastDate];
-    [pastComponents setDay:1];
-    
-    pastDate = [_calendar dateFromComponents:pastComponents];
-    
-    pastComponents = [_calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit|NSWeekdayCalendarUnit fromDate:pastDate];
-    
-    NSInteger pastWeekDay = pastComponents.weekday;
-    
-    NSDate *firstDate = [_calendar dateByAddingComponents:((^{
-        NSDateComponents *datecomponents = [NSDateComponents new];
-        datecomponents.day = -pastWeekDay + 1;
-        return datecomponents;
-    })()) toDate:pastDate options:0];
-    
-    NSDateComponents *firstDateComponents = [_calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:firstDate];
-    
-    date = [_calendar dateFromComponents:firstDateComponents];
-    
-    NSTimeZone *timeZone = [NSTimeZone systemTimeZone];
-    NSInteger seconds = [timeZone secondsFromGMTForDate:_nowDate];
-    date = [date dateByAddingTimeInterval:seconds];
-    return date;
-}
-
--(NSDate *)setEndDate:(NSDate *)date
-{
-    NSDate *futureDate = [_calendar dateByAddingComponents:((^{
-        NSDateComponents *datecomponents = [NSDateComponents new];
-        datecomponents.month = 11;
-        return datecomponents;
-    })()) toDate:_nowDate options:0];
-    
-    NSDateComponents *futureDateComponents = [_calendar components:NSYearCalendarUnit|NSMonthCalendarUnit fromDate:futureDate];
-    
-    futureDate = [_calendar dateFromComponents:futureDateComponents];
-    
-    NSDate *preEndDate = [_calendar dateByAddingComponents:((^{
-        NSDateComponents *datecomponents = [NSDateComponents new];
-        datecomponents.month = 1;
-        datecomponents.day = -1;
-        return datecomponents;
-    })()) toDate:futureDate options:0];
-    
-    futureDateComponents = [_calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit|NSWeekdayCalendarUnit fromDate:preEndDate];
-    NSInteger weekDay = futureDateComponents.weekday;
-    
-    if (weekDay != 7) {
-        weekDay = 7 - weekDay;
-        preEndDate = [_calendar dateByAddingComponents:((^{
-            NSDateComponents *datecomponents = [NSDateComponents new];
-            datecomponents.day = weekDay;
-            return datecomponents;
-        })()) toDate:preEndDate options:0];
-    }
-    
-    NSTimeZone *timeZone = [NSTimeZone systemTimeZone];
-    NSInteger seconds = [timeZone secondsFromGMTForDate:_nowDate];
-    preEndDate = [preEndDate dateByAddingTimeInterval:seconds];
-    
-    return preEndDate;
-}
-
+ 
 @end

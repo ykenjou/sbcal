@@ -10,8 +10,10 @@
 #import <QuartzCore/QuartzCore.h>
 #import "SBToolBar.h"
 #import "SBDayViewController.h"
+#import "SBWeekViewController.h"
 #import "SBListViewController.h"
 #import "SBMonthViewController.h"
+#import "SBRemindarAccessCheck.h"
 
 @interface SBMainViewController : UIViewController<SBToolBarDelegate>
 
@@ -19,5 +21,6 @@
 @property (strong,nonatomic) SBDayViewController *dayViewController;
 @property (strong,nonatomic) SBListViewController *listViewController;
 @property (strong,nonatomic) SBMonthViewController *monthViewController;
+@property (strong,nonatomic) SBWeekViewController *weekViewController;
 
 @end

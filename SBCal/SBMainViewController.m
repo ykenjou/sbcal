@@ -37,9 +37,19 @@
     _mainView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height -44 -44)];
     [self.view addSubview:_mainView];
     
+    calendarAccessCheck *check = [calendarAccessCheck new];
+    [check EKAccessCheck];
+    
+    SBRemindarAccessCheck *remindarCheck = [SBRemindarAccessCheck new];
+    [remindarCheck RemindarAccessCheck];
+    
     _dayViewController = [SBDayViewController new];
     [self addChildViewController:_dayViewController];
     [_dayViewController didMoveToParentViewController:self];
+    
+    _weekViewController = [SBWeekViewController new];
+    [self addChildViewController:_weekViewController];
+    [_weekViewController didMoveToParentViewController:self];
     
     _monthViewController = [SBMonthViewController new];
     [self addChildViewController:_monthViewController];
@@ -53,6 +63,7 @@
 -(void)removeAllView
 {
     [_dayViewController.view removeFromSuperview];
+    [_weekViewController.view removeFromSuperview];
     [_monthViewController.view removeFromSuperview];
     [_listViewController.view removeFromSuperview];
 }
@@ -67,6 +78,7 @@
 -(void)weekViewDelegate
 {
     [self removeAllView];
+    [_mainView addSubview:_weekViewController.view];
 }
 
 -(void)monthViewDelegate

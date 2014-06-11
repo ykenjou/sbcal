@@ -72,6 +72,8 @@
 		F2DBD085192A1C2F00DC72ED /* SBCalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBD084192A1C2F00DC72ED /* SBCalTests.m */; };
 		F2DBD091192A1C7B00DC72ED /* SBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBD090192A1C7B00DC72ED /* SBMainViewController.m */; };
 		F2DBD094192A227900DC72ED /* SBToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBD093192A227900DC72ED /* SBToolBar.m */; };
+		F2DE580C19481F9C00991BE4 /* SBWeekDayCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DE580B19481F9C00991BE4 /* SBWeekDayCollectionViewFlowLayout.m */; };
+		F2DE580F194822CB00991BE4 /* SBWeekDayVireCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DE580E194822CB00991BE4 /* SBWeekDayVireCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +176,10 @@
 		F2DBD090192A1C7B00DC72ED /* SBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBMainViewController.m; sourceTree = "<group>"; };
 		F2DBD092192A227900DC72ED /* SBToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBToolBar.h; sourceTree = "<group>"; };
 		F2DBD093192A227900DC72ED /* SBToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBToolBar.m; sourceTree = "<group>"; };
+		F2DE580A19481F9C00991BE4 /* SBWeekDayCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBWeekDayCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		F2DE580B19481F9C00991BE4 /* SBWeekDayCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBWeekDayCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		F2DE580D194822CB00991BE4 /* SBWeekDayVireCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBWeekDayVireCell.h; sourceTree = "<group>"; };
+		F2DE580E194822CB00991BE4 /* SBWeekDayVireCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBWeekDayVireCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +228,10 @@
 		F26294E6192C73E000178DCD /* weekView */ = {
 			isa = PBXGroup;
 			children = (
+				F2DE580A19481F9C00991BE4 /* SBWeekDayCollectionViewFlowLayout.h */,
+				F2DE580B19481F9C00991BE4 /* SBWeekDayCollectionViewFlowLayout.m */,
+				F2DE580D194822CB00991BE4 /* SBWeekDayVireCell.h */,
+				F2DE580E194822CB00991BE4 /* SBWeekDayVireCell.m */,
 			);
 			name = weekView;
 			sourceTree = "<group>";
@@ -545,6 +555,7 @@
 				F24381DB192DEA460008BAB5 /* calendarDayCell.m in Sources */,
 				F2629503192CEE1600178DCD /* calendarAccessCheck.m in Sources */,
 				F2C00E56193311590027C06F /* SBTriangleView.m in Sources */,
+				F2DE580C19481F9C00991BE4 /* SBWeekDayCollectionViewFlowLayout.m in Sources */,
 				F251BC86193E9DBA008182F2 /* SBRemindarAccessCheck.m in Sources */,
 				F2C00E501932CF950027C06F /* SBWeekDayView.m in Sources */,
 				F2DBD070192A1C2F00DC72ED /* SBAppDelegate.m in Sources */,
@@ -554,6 +565,7 @@
 				F26294F9192CB15100178DCD /* SBSettingViewController.m in Sources */,
 				F26294F0192CB11300178DCD /* SBAddViewController.m in Sources */,
 				F24381DC192DEA460008BAB5 /* calendarFlowLayout.m in Sources */,
+				F2DE580F194822CB00991BE4 /* SBWeekDayVireCell.m in Sources */,
 				F26294F6192CB14200178DCD /* SBReminderViewController.m in Sources */,
 				F2DBD091192A1C7B00DC72ED /* SBMainViewController.m in Sources */,
 				F26294FC192CEE0100178DCD /* DataUtility.m in Sources */,

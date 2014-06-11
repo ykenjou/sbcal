@@ -128,6 +128,10 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     
+    NSDateFormatter *timeDateFormat = [NSDateFormatter new];
+    [timeDateFormat setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"US"]];
+    [timeDateFormat setDateFormat:@"H:mm"];
+    
     if ([_rowArray count] > 0) {
         
         if ([[_rowArray objectAtIndex:indexPath.row] isKindOfClass:[EKEvent class]]) {
@@ -186,10 +190,6 @@
             eventTimeLabel.textColor = [UIColor blackColor];
             eventTimeLabel.tag = 2;
             //eventTimeLabel.backgroundColor = [UIColor grayColor];
-        
-            NSDateFormatter *timeDateFormat = [NSDateFormatter new];
-            [timeDateFormat setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"US"]];
-            [timeDateFormat setDateFormat:@"H:mm"];
         
             BOOL oneLineTime = NO;
         
@@ -283,7 +283,36 @@
             [cell addSubview:squareView];
         
         } else if ([[_rowArray objectAtIndex:indexPath.row] isKindOfClass:[EKReminder class]]) {
-            NSLog(@"reminder");
+            EKReminder *reminder = [_rowArray objectAtIndex:indexPath.row];
+            
+            UILabel *eventTitle = [UILabel new];
+            eventTitle.frame = CGRectMake(80, 10, 200, 15);
+            eventTitle.font = [UIFont fontWithName:@"Helvetica" size:15.0f];
+            eventTitle.textColor = [UIColor blackColor];
+            eventTitle.text = reminder.title;
+            eventTitle.numberOfLines = 1;
+            eventTitle.tag = 1;
+            eventTitle.lineBreakMode = NSLineBreakByTruncatingTail;
+            [eventTitle sizeToFit];
+            
+            UILabel *eventTimeLabel = [UILabel new];
+            eventTimeLabel.font = [UIFont fontWithName:@"Helvetica" size:11.0f];
+            eventTimeLabel.textColor = [UIColor blackColor];
+            eventTimeLabel.tag = 2;
+            
+            eventTimeLabel.textAlignment = NSTextAlignmentRight;
+            eventTimeLabel.numberOfLines = 1;
+            //[eventTimeLabel sizeToFit];
+            
+            eventTimeLabel.frame = CGRectMake(5, 13, 40, 11);
+            
+            NSCalendar *calendar = [[NSCalendar alloc]initWithCalendarIdentifier:NSGregorianCalendar];
+            NSString *dueTime = [timeDateFormat stringFromDate:[calendar dateFromComponents:reminder.dueDateComponents]];
+            
+            eventTimeLabel.text = dueTime;
+            
+            [cell addSubview:eventTimeLabel];
+            [cell addSubview:eventTitle];
         }
     
     } else {

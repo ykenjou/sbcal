@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import "SBWeekDayCollectionViewFlowLayout.h"
+#import "SBWeekDayVireCell.h"
+#import "DataUtility.h"
+#import "getEKData.h"
+#import "SBEventManager.h"
 
-@interface SBWeekViewController : UIViewController
+@interface SBWeekViewController : UIViewController<UINavigationBarDelegate,UICollectionViewDataSource,UICollectionViewDelegate,getEKDateDelegate>
 
 @end

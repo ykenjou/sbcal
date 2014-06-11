@@ -98,6 +98,83 @@
     return [calendar dateByAddingComponents:dateComponents toDate:self options:0];
 }
 
++(NSDate *)setStartDate:(NSDate *)date
+{
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    
+    NSDate *nowDate = date;
+    
+    NSDate *pastDate = [calendar dateByAddingComponents:((^{
+        NSDateComponents *datecomponents = [NSDateComponents new];
+        datecomponents.month = -3;
+        return datecomponents;
+    })()) toDate:nowDate options:0];
+    
+    NSDateComponents *pastComponents = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSWeekdayCalendarUnit fromDate:pastDate];
+    [pastComponents setDay:1];
+    
+    pastDate = [calendar dateFromComponents:pastComponents];
+    
+    pastComponents = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit|NSWeekdayCalendarUnit fromDate:pastDate];
+    
+    NSInteger pastWeekDay = pastComponents.weekday;
+    
+    NSDate *firstDate = [calendar dateByAddingComponents:((^{
+        NSDateComponents *datecomponents = [NSDateComponents new];
+        datecomponents.day = -pastWeekDay + 1;
+        return datecomponents;
+    })()) toDate:pastDate options:0];
+    
+    NSDateComponents *firstDateComponents = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:firstDate];
+    
+    date = [calendar dateFromComponents:firstDateComponents];
+    
+    NSTimeZone *timeZone = [NSTimeZone systemTimeZone];
+    NSInteger seconds = [timeZone secondsFromGMTForDate:nowDate];
+    date = [date dateByAddingTimeInterval:seconds];
+    return date;
+}
+
++(NSDate *)setEndDate:(NSDate *)date
+{
+    NSDate *nowDate = date;
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDate *futureDate = [calendar dateByAddingComponents:((^{
+        NSDateComponents *datecomponents = [NSDateComponents new];
+        datecomponents.month = 11;
+        return datecomponents;
+    })()) toDate:nowDate options:0];
+    
+    NSDateComponents *futureDateComponents = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit fromDate:futureDate];
+    
+    futureDate = [calendar dateFromComponents:futureDateComponents];
+    
+    NSDate *preEndDate = [calendar dateByAddingComponents:((^{
+        NSDateComponents *datecomponents = [NSDateComponents new];
+        datecomponents.month = 1;
+        datecomponents.day = -1;
+        return datecomponents;
+    })()) toDate:futureDate options:0];
+    
+    futureDateComponents = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit|NSWeekdayCalendarUnit fromDate:preEndDate];
+    NSInteger weekDay = futureDateComponents.weekday;
+    
+    if (weekDay != 7) {
+        weekDay = 7 - weekDay;
+        preEndDate = [calendar dateByAddingComponents:((^{
+            NSDateComponents *datecomponents = [NSDateComponents new];
+            datecomponents.day = weekDay;
+            return datecomponents;
+        })()) toDate:preEndDate options:0];
+    }
+    
+    NSTimeZone *timeZone = [NSTimeZone systemTimeZone];
+    NSInteger seconds = [timeZone secondsFromGMTForDate:nowDate];
+    preEndDate = [preEndDate dateByAddingTimeInterval:seconds];
+    
+    return preEndDate;
+}
+
 //nsdateをセット
 /*+(NSDate *)dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day
 {

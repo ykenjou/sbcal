@@ -17,7 +17,7 @@
 @end
 
 @interface getEKData : NSObject
--(NSMutableDictionary *)EKDataDictionary:(EKEventStore *)eventStore;
+-(void)EKDataDictionary:(EKEventStore *)eventStore;
 
 @property (nonatomic) NSMutableDictionary *sections;
 @property (nonatomic) NSArray *sortedDays;

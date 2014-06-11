@@ -13,7 +13,7 @@
 #import "DataUtility.h"
 #import "SBEventManager.h"
 
-@interface SBListViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,UINavigationBarDelegate,UIBarPositioningDelegate>
+@interface SBListViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,UINavigationBarDelegate,UIBarPositioningDelegate,getEKDateDelegate>
 
 @property (nonatomic) NSMutableDictionary *sections;
 @property (nonatomic) NSArray *sortedDays;

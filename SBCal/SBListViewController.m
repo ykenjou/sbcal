@@ -81,9 +81,10 @@ float sectionHeight = 28.0f;
     //タブバー非透過設定
     self.tabBarController.tabBar.translucent = NO;
     
-    calendarAccessCheck *check = [calendarAccessCheck new];
-    [check EKAccessCheck];
+    _ekData.delegate = self;
     
+    [_ekData EKDataDictionary:_eventMg.sharedEventKitStore];
+    /*
     self.sections = [_ekData EKDataDictionary:_eventMg.sharedEventKitStore];
     
     NSArray *unsortedDays = [self.sections allKeys];
@@ -97,6 +98,66 @@ float sectionHeight = 28.0f;
     _isNowDate = [unsortedDays containsObject:nowZeroTime];
     //NSLog(@"isNowDate %hhd",_isNowDate);
     
+    if (!_isNowDate) {
+        EKEvent *nowEnptyEvent = [EKEvent eventWithEventStore:_eventMg.sharedEventKitStore];
+        [nowEnptyEvent setTitle:@"予定が登録されていません"];
+        [nowEnptyEvent setAllDay:YES];
+        NSMutableArray *nowEnptyArray = [NSMutableArray arrayWithObject:nowEnptyEvent];
+        [_sections setObject:nowEnptyArray forKey:nowZeroTime];
+        unsortedDays = [_sections allKeys];
+    }
+    
+    self.sortedDays = [unsortedDays sortedArrayUsingSelector:@selector(compare:)];
+    
+    _nowDayObjectIndex = [_sortedDays indexOfObject:nowZeroTime];
+    */
+     
+    //NSLog(@"_nowdayIndex %d",_nowDayObjectIndex);
+    
+    
+    /*
+    UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeLeftTab:)];
+    [swipeLeft setDirection:UISwipeGestureRecognizerDirectionLeft];
+    [self.view addGestureRecognizer:swipeLeft];
+    
+    UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeRightTab:)];
+    [swipeRight setDirection:UISwipeGestureRecognizerDirectionRight];
+    [self.view addGestureRecognizer:swipeRight];
+     */
+    
+    
+    //初期スクロール設定
+    /*
+    
+    */
+}
+
+-(UIBarPosition)positionForBar:(id<UIBarPositioning>)bar
+{
+    return UIBarPositionTopAttached;
+}
+
+-(void)todayScroll:(UIBarButtonItem *)btn
+{
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:_nowDayObjectIndex];
+    [_tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+}
+
+-(void)dateReloadDelegate:(NSDictionary *)dictionary
+{
+    NSLog(@"complete");
+    _sections = [dictionary mutableCopy];
+    
+    NSArray *unsortedDays = [self.sections allKeys];
+    //NSLog(@"unsort : %@",[unsortedDays description]);
+    
+    NSDate *now = [NSDate date];
+    NSDate *nowZeroTime = [DataUtility dateAtBeginningOfDayForDate:now];
+    
+    //NSLog(@"nowzero %@",nowZeroTime);
+    
+    _isNowDate = [unsortedDays containsObject:nowZeroTime];
+    //NSLog(@"isNowDate %hhd",_isNowDate);
     
     if (!_isNowDate) {
         EKEvent *nowEnptyEvent = [EKEvent eventWithEventStore:_eventMg.sharedEventKitStore];
@@ -111,48 +172,10 @@ float sectionHeight = 28.0f;
     
     _nowDayObjectIndex = [_sortedDays indexOfObject:nowZeroTime];
     
-    //NSLog(@"sortedDays %@",[self.sortedDays description]);
+    [_tableView reloadData];
     
-    //NSLog(@"ekDictionary = %@",[self.sections description]);
-    
-    //NSLog(@"_nowdayIndex %d",_nowDayObjectIndex);
-    
-    
-    UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeLeftTab:)];
-    [swipeLeft setDirection:UISwipeGestureRecognizerDirectionLeft];
-    [self.view addGestureRecognizer:swipeLeft];
-    
-    UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeRightTab:)];
-    [swipeRight setDirection:UISwipeGestureRecognizerDirectionRight];
-    [self.view addGestureRecognizer:swipeRight];
-    
-    
-    //初期スクロール設定
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:_nowDayObjectIndex];
-    [_tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
-    
-}
-
--(UIBarPosition)positionForBar:(id<UIBarPositioning>)bar
-{
-    return UIBarPositionTopAttached;
-}
-
--(void)swipeLeftTab:(id)sendar
-{
-    NSUInteger selectedIndex = [self.tabBarController selectedIndex];
-    [self.tabBarController setSelectedIndex:selectedIndex+1];
-}
-
--(void)swipeRightTab:(id)sendar
-{
-    NSLog(@"swipeRight");
-}
-
--(void)todayScroll:(UIBarButtonItem *)btn
-{
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:_nowDayObjectIndex];
-    [_tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    [_tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:NO];
 }
 
 //viewの表示直前の処理
@@ -180,6 +203,8 @@ float sectionHeight = 28.0f;
 
 -(void)reloadTable:(NSNotification *)notification
 {
+    [_ekData EKDataDictionary:_eventMg.sharedEventKitStore];
+    /*
     _sections = [_ekData EKDataDictionary:_eventMg.sharedEventKitStore];
     
     NSArray *unsortedDays = [_sections allKeys];
@@ -206,6 +231,7 @@ float sectionHeight = 28.0f;
     NSLog(@"reloadTable");
     
     [self.tableView reloadData];
+     */
     
 }
 
@@ -269,16 +295,18 @@ float sectionHeight = 28.0f;
     calendarTitle = event.calendar.title;
     //NSLog(@"calendarTitle : %@",calendarTitle);
     
-    HoliDay = YES;
+    HoliDay = NO;
     
     for (int i = 0;i < [eventsOnThisDay count];i++) {
-        event = [eventsOnThisDay objectAtIndex:i];
-        calendarTitle = event.calendar.title;
-        if ([calendarTitle isEqualToString: @"日本の祝日"]) {
-            HoliDay = YES;
-            break;
-        } else {
-            HoliDay = NO;
+        if ([[eventsOnThisDay objectAtIndex:i] isKindOfClass:[EKEvent class]]) {
+            event = [eventsOnThisDay objectAtIndex:i];
+            calendarTitle = event.calendar.title;
+            if ([calendarTitle isEqualToString: @"日本の祝日"]) {
+                HoliDay = YES;
+                break;
+            } else {
+                HoliDay = NO;
+            }
         }
     }
     
@@ -366,150 +394,186 @@ float sectionHeight = 28.0f;
     
     NSDate *cellDate = [self.sortedDays objectAtIndex:indexPath.section];
     NSArray *eventsOnThisDay = [self.sections objectForKey:cellDate];
-    EKEvent *event = [eventsOnThisDay objectAtIndex:indexPath.row];
-    
-    _eventCalendar = event.calendar;
-    
-    //EKCalendar *calendar = event.calendar;
-    NSString *eventCalendarTitle = _eventCalendar.title;
-    UIColor *eventCalendarColor = [UIColor colorWithCGColor:_eventCalendar.CGColor];
-    
-    NSDate *eventStartDate = [DataUtility dateAtBeginningOfDayForDate:event.startDate];
-    NSDate *eventEndDate = [DataUtility dateAtBeginningOfDayForDate:event.endDate];
-    
-    //NSLog(@"cellDate %@ startDate %@ endDate %@",cellDate,eventStartDate,eventEndDate);
-    
-    NSString *dateStatus = @"";
-    
-    //cellDateが開始日と終了日と同じ
-    if ([cellDate compare:eventStartDate] == NSOrderedSame && [cellDate compare:eventEndDate] == NSOrderedSame) {
-        dateStatus = @"complete";
-    }
-    
-    //cellDateが開始日のみ同じ
-    if ([cellDate compare:eventStartDate] == NSOrderedSame && [cellDate compare:eventEndDate] != NSOrderedSame) {
-        dateStatus = @"startDateOnly";
-    }
-    
-    //cellDateが終了日のみ同じ
-    if ([cellDate compare:eventStartDate] != NSOrderedSame && [cellDate compare:eventEndDate] == NSOrderedSame) {
-        dateStatus = @"endDateOnly";
-    }
-    
-    //cellDateが開始日でも終了日でもない
-    if ([cellDate compare:eventStartDate] != NSOrderedSame && [cellDate compare:eventEndDate] != NSOrderedSame) {
-        dateStatus = @"continue";
-    }
-    
-    UILabel *eventTitle = [[UILabel alloc] initWithFrame:CGRectMake(85, 13, 200, 20)];
-    UIFont *eventTitleFont = [UIFont fontWithName:@"Helvetica" size:15.0f];
-    eventTitle.font = eventTitleFont;
-    eventTitle.textColor = [UIColor blackColor];
-    eventTitle.text = event.title;
-    eventTitle.numberOfLines = 1;
-    eventTitle.tag = 1;
-    eventTitle.lineBreakMode = NSLineBreakByTruncatingTail;
-    //eventTitle.backgroundColor = [UIColor grayColor];
-    [eventTitle sizeToFit];
-    
-    float timeWidth = 45.0f;
-    //static float timeMarginLeft = 10.0f;
-    //static float blockMarginLeft = 10.0f;
-    
-    UILabel *eventTimeLabel = [[UILabel alloc] init];
-    UIFont * eventTimeLabelFont = [UIFont fontWithName:@"Helvetica" size:12.0f];
-    eventTimeLabel.font = eventTimeLabelFont;
-    eventTimeLabel.textColor = [UIColor blackColor];
-    eventTimeLabel.tag = 2;
-    //eventTimeLabel.backgroundColor = [UIColor grayColor];
     
     NSDateFormatter *timeDateFormat = [NSDateFormatter new];
     [timeDateFormat setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"US"]];
     
     [timeDateFormat setDateFormat:@"H:mm"];
     
-    BOOL oneLineTime = NO;
-    
-    if ([eventCalendarTitle isEqualToString:@"日本の祝日"])
-    {
-        eventTimeLabel.text = @"祝日";
-        oneLineTime = YES;
-    } else if ([_eventCalendar.title isEqualToString:@"Birthdays"]) {
-        eventTimeLabel.text = @"誕生日";
-        oneLineTime = YES;
-    } else if (event.allDay) {
-        eventTimeLabel.text = @"終日";
-        oneLineTime = YES;
-    } else if ([dateStatus isEqualToString:@"continue"]) {
-        eventTimeLabel.text = @"継続";
-        oneLineTime = YES;
-    } else {
+    if ([[eventsOnThisDay objectAtIndex:indexPath.row] isKindOfClass:[EKEvent class]]) {
         
-        if ([dateStatus isEqualToString:@"complete"] || [dateStatus isEqualToString:@"startDateOnly"] || [dateStatus isEqualToString:@"endDateOnly"]) {
-            
-            NSString *startTime;
-            NSString *endTime;
+        EKEvent *event = [eventsOnThisDay objectAtIndex:indexPath.row];
         
-            if ([dateStatus isEqualToString:@"complete"]) {
-                startTime = [timeDateFormat stringFromDate:event.startDate];
-                endTime = [timeDateFormat stringFromDate:event.endDate];
-            }
+        _eventCalendar = event.calendar;
         
-            if ([dateStatus isEqualToString:@"startDateOnly"]) {
-                startTime = [timeDateFormat stringFromDate:event.startDate];
-                endTime = @"継続";
-            }
+        //EKCalendar *calendar = event.calendar;
+        NSString *eventCalendarTitle = _eventCalendar.title;
+        UIColor *eventCalendarColor = [UIColor colorWithCGColor:_eventCalendar.CGColor];
         
-            if ([dateStatus isEqualToString:@"endDateOnly"]) {
-                startTime = @"終了";
-                endTime = [timeDateFormat stringFromDate:event.endDate];
-            }
+        NSDate *eventStartDate = [DataUtility dateAtBeginningOfDayForDate:event.startDate];
+        NSDate *eventEndDate = [DataUtility dateAtBeginningOfDayForDate:event.endDate];
         
-            NSAttributedString *startAttributeTime = [[NSAttributedString alloc] initWithString:startTime attributes:@{NSForegroundColorAttributeName: [UIColor blackColor]}];
+        //NSLog(@"cellDate %@ startDate %@ endDate %@",cellDate,eventStartDate,eventEndDate);
         
-            NSAttributedString *endAttributeTime = [[NSAttributedString alloc] initWithString:endTime attributes:@{NSForegroundColorAttributeName: [UIColor grayColor]}];
+        NSString *dateStatus = @"";
         
-            NSAttributedString *newLine = [[NSAttributedString alloc] initWithString:@"\n"];
-        
-            NSMutableAttributedString *timeString = [[NSMutableAttributedString alloc] initWithAttributedString:startAttributeTime];
-            [timeString appendAttributedString:newLine];
-            [timeString appendAttributedString:endAttributeTime];
-            eventTimeLabel.attributedText = timeString;
+        //cellDateが開始日と終了日と同じ
+        if ([cellDate compare:eventStartDate] == NSOrderedSame && [cellDate compare:eventEndDate] == NSOrderedSame) {
+            dateStatus = @"complete";
         }
-    }
-    eventTimeLabel.numberOfLines = 0;
-    [eventTimeLabel sizeToFit];
-    
-    if (oneLineTime) {
-        eventTimeLabel.frame = CGRectMake(5, 15, timeWidth, eventTimeLabel.frame.size.height);
-    } else {
-        eventTimeLabel.frame = CGRectMake(5, 9, timeWidth, eventTimeLabel.frame.size.height);
-    }
-    eventTimeLabel.textAlignment = NSTextAlignmentRight;
-    
-    UIImage *circle = [self imageWithColor:eventCalendarColor];
-    UIImageView *circleView = [[UIImageView alloc] initWithImage:circle];
-    circleView.center = CGPointMake(70, 22);
-    circleView.tag = 3;
-    
-    if (event.location) {
-        UILabel *locationTitle = [[UILabel alloc] initWithFrame:CGRectMake(85, 32, 200, 20)];
-        locationTitle.text = event.location;
-        locationTitle.numberOfLines = 1;
-        locationTitle.font = [UIFont fontWithName:@"Helvetica" size:12.0f];
-        locationTitle.tag = 4;
-        [cell addSubview:locationTitle];
         
-        UIImage *mapIcon = [UIImage imageNamed:@"map.png"];
-        UIImageView *mapIconView = [[UIImageView alloc] initWithImage:mapIcon];
-        mapIconView.frame = CGRectMake(67, 37, 7, 10);
-        mapIconView.tag = 5;
-        [cell addSubview:mapIconView];
+        //cellDateが開始日のみ同じ
+        if ([cellDate compare:eventStartDate] == NSOrderedSame && [cellDate compare:eventEndDate] != NSOrderedSame) {
+            dateStatus = @"startDateOnly";
+        }
+        
+        //cellDateが終了日のみ同じ
+        if ([cellDate compare:eventStartDate] != NSOrderedSame && [cellDate compare:eventEndDate] == NSOrderedSame) {
+            dateStatus = @"endDateOnly";
+        }
+        
+        //cellDateが開始日でも終了日でもない
+        if ([cellDate compare:eventStartDate] != NSOrderedSame && [cellDate compare:eventEndDate] != NSOrderedSame) {
+            dateStatus = @"continue";
+        }
+        
+        UILabel *eventTitle = [[UILabel alloc] initWithFrame:CGRectMake(85, 13, 200, 20)];
+        UIFont *eventTitleFont = [UIFont fontWithName:@"Helvetica" size:15.0f];
+        eventTitle.font = eventTitleFont;
+        eventTitle.textColor = [UIColor blackColor];
+        eventTitle.text = event.title;
+        eventTitle.numberOfLines = 1;
+        eventTitle.tag = 1;
+        eventTitle.lineBreakMode = NSLineBreakByTruncatingTail;
+        //eventTitle.backgroundColor = [UIColor grayColor];
+        [eventTitle sizeToFit];
+        
+        float timeWidth = 45.0f;
+        //static float timeMarginLeft = 10.0f;
+        //static float blockMarginLeft = 10.0f;
+        
+        UILabel *eventTimeLabel = [[UILabel alloc] init];
+        UIFont * eventTimeLabelFont = [UIFont fontWithName:@"Helvetica" size:12.0f];
+        eventTimeLabel.font = eventTimeLabelFont;
+        eventTimeLabel.textColor = [UIColor blackColor];
+        eventTimeLabel.tag = 2;
+        //eventTimeLabel.backgroundColor = [UIColor grayColor];
+        
+        BOOL oneLineTime = NO;
+        
+        if ([eventCalendarTitle isEqualToString:@"日本の祝日"])
+        {
+            eventTimeLabel.text = @"祝日";
+            oneLineTime = YES;
+        } else if ([_eventCalendar.title isEqualToString:@"Birthdays"]) {
+            eventTimeLabel.text = @"誕生日";
+            oneLineTime = YES;
+        } else if (event.allDay) {
+            eventTimeLabel.text = @"終日";
+            oneLineTime = YES;
+        } else if ([dateStatus isEqualToString:@"continue"]) {
+            eventTimeLabel.text = @"継続";
+            oneLineTime = YES;
+        } else {
+            
+            if ([dateStatus isEqualToString:@"complete"] || [dateStatus isEqualToString:@"startDateOnly"] || [dateStatus isEqualToString:@"endDateOnly"]) {
+                
+                NSString *startTime;
+                NSString *endTime;
+            
+                if ([dateStatus isEqualToString:@"complete"]) {
+                    startTime = [timeDateFormat stringFromDate:event.startDate];
+                    endTime = [timeDateFormat stringFromDate:event.endDate];
+                }
+            
+                if ([dateStatus isEqualToString:@"startDateOnly"]) {
+                    startTime = [timeDateFormat stringFromDate:event.startDate];
+                    endTime = @"継続";
+                }
+            
+                if ([dateStatus isEqualToString:@"endDateOnly"]) {
+                    startTime = @"終了";
+                    endTime = [timeDateFormat stringFromDate:event.endDate];
+                }
+            
+                NSAttributedString *startAttributeTime = [[NSAttributedString alloc] initWithString:startTime attributes:@{NSForegroundColorAttributeName: [UIColor blackColor]}];
+            
+                NSAttributedString *endAttributeTime = [[NSAttributedString alloc] initWithString:endTime attributes:@{NSForegroundColorAttributeName: [UIColor grayColor]}];
+            
+                NSAttributedString *newLine = [[NSAttributedString alloc] initWithString:@"\n"];
+            
+                NSMutableAttributedString *timeString = [[NSMutableAttributedString alloc] initWithAttributedString:startAttributeTime];
+                [timeString appendAttributedString:newLine];
+                [timeString appendAttributedString:endAttributeTime];
+                eventTimeLabel.attributedText = timeString;
+            }
+        }
+        eventTimeLabel.numberOfLines = 0;
+        [eventTimeLabel sizeToFit];
+        
+        if (oneLineTime) {
+            eventTimeLabel.frame = CGRectMake(5, 15, timeWidth, eventTimeLabel.frame.size.height);
+        } else {
+            eventTimeLabel.frame = CGRectMake(5, 9, timeWidth, eventTimeLabel.frame.size.height);
+        }
+        eventTimeLabel.textAlignment = NSTextAlignmentRight;
+        
+        UIImage *circle = [self imageWithColor:eventCalendarColor];
+        UIImageView *circleView = [[UIImageView alloc] initWithImage:circle];
+        circleView.center = CGPointMake(70, 22);
+        circleView.tag = 3;
+        
+        if (event.location) {
+            UILabel *locationTitle = [[UILabel alloc] initWithFrame:CGRectMake(85, 32, 200, 20)];
+            locationTitle.text = event.location;
+            locationTitle.numberOfLines = 1;
+            locationTitle.font = [UIFont fontWithName:@"Helvetica" size:12.0f];
+            locationTitle.tag = 4;
+            [cell addSubview:locationTitle];
+            
+            UIImage *mapIcon = [UIImage imageNamed:@"map.png"];
+            UIImageView *mapIconView = [[UIImageView alloc] initWithImage:mapIcon];
+            mapIconView.frame = CGRectMake(67, 37, 7, 10);
+            mapIconView.tag = 5;
+            [cell addSubview:mapIconView];
+        }
+        
+        [cell addSubview:circleView];
+        [cell addSubview:eventTitle];
+        [cell addSubview:eventTimeLabel];
+        
+    } else if ([[eventsOnThisDay objectAtIndex:indexPath.row] isKindOfClass:[EKReminder class]]) {
+        EKReminder *reminder = [eventsOnThisDay objectAtIndex:indexPath.row];
+        
+        UILabel *eventTitle = [[UILabel alloc] initWithFrame:CGRectMake(85, 13, 200, 20)];
+        UIFont *eventTitleFont = [UIFont fontWithName:@"Helvetica" size:15.0f];
+        eventTitle.font = eventTitleFont;
+        eventTitle.textColor = [UIColor blackColor];
+        eventTitle.text = reminder.title;
+        eventTitle.numberOfLines = 1;
+        eventTitle.tag = 1;
+        eventTitle.lineBreakMode = NSLineBreakByTruncatingTail;
+        //eventTitle.backgroundColor = [UIColor grayColor];
+        [eventTitle sizeToFit];
+        
+        [cell addSubview:eventTitle];
+        
+        UILabel *eventTimeLabel = [[UILabel alloc] init];
+        UIFont * eventTimeLabelFont = [UIFont fontWithName:@"Helvetica" size:12.0f];
+        eventTimeLabel.font = eventTimeLabelFont;
+        eventTimeLabel.textColor = [UIColor blackColor];
+        eventTimeLabel.tag = 2;
+        eventTimeLabel.frame = CGRectMake(5, 15, 45, 12);
+        eventTimeLabel.textAlignment = NSTextAlignmentRight;
+        eventTitle.numberOfLines = 1;
+        
+        NSCalendar *calendar = [[NSCalendar alloc]initWithCalendarIdentifier:NSGregorianCalendar];
+        NSString *dueTime = [timeDateFormat stringFromDate:[calendar dateFromComponents:reminder.dueDateComponents]];
+        
+        eventTimeLabel.text = dueTime;
+        
+        [cell addSubview:eventTimeLabel];
     }
-    
-    [cell addSubview:circleView];
-    [cell addSubview:eventTitle];
-    [cell addSubview:eventTimeLabel];
     
     return cell;
 }

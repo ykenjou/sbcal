@@ -12,11 +12,12 @@
 #import "dayListView.h"
 #import "getEKData.h"
 #import "SBEventManager.h"
+#import "calendarDayCell.h"
 
-@interface SBMonthViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UINavigationBarDelegate,getEKDateDelegate>
+@interface SBMonthViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UINavigationBarDelegate,getEKDateDelegate,calendarDayCellDelegate>
 {
     UICollectionView *_collectionView;
-    UICollectionViewCell *dayCell;
+    //UICollectionViewCell *dayCell;
     UILabel *monthlyLabel;
     UILabel *monthlyLabel2;
     NSInteger allDays;
@@ -41,5 +42,6 @@
 @property (nonatomic) EKEvent *event;
 @property (nonatomic) SBEventManager *eventMg;
 @property (nonatomic) NSCalendar *calendar;
+//@property (nonatomic) calendarDayCell *dayCell;
 
 @end
