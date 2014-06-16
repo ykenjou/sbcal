@@ -19,12 +19,12 @@
 @property (nonatomic) NSArray *sortedDays;
 @property (nonatomic) NSDateFormatter *sectionDateFormatter;
 @property (nonatomic) NSDateFormatter *cellDateFormatter;
-@property (nonatomic,retain) EKEventStore *eventStore;
 @property (nonatomic) EKCalendar *eventCalendar;
 @property (nonatomic) getEKData *ekData;
 @property (nonatomic) EKEvent *cellEvent;
 @property (nonatomic) BOOL isNowDate;
 @property (nonatomic) int nowDayObjectIndex;
 @property (nonatomic) SBEventManager *eventMg;
+@property (nonatomic) NSDate *nowDate;
 
 @end

@@ -37,7 +37,7 @@
     
     UILabel *naviTitle = [[UILabel alloc] init];
     naviTitle.frame = CGRectMake(0, 0, 200, 44);
-    naviTitle.text = @"今日と明日の予定";
+    naviTitle.text = @"今日の予定";
     naviTitle.font = [UIFont fontWithName:@"Helvetica-Bold" size:17.0f];
     naviTitle.textAlignment = NSTextAlignmentCenter;
     naviTitle.textColor = [UIColor whiteColor];

@@ -13,6 +13,7 @@
 @interface dayListView()
 
 @property (nonatomic) UITableView *tableView;
+@property (nonatomic) NSDateFormatter *timeDateFormat;
 
 @end
 
@@ -37,6 +38,10 @@
         topView.backgroundColor = [UIColor grayColor];
         [self addSubview:_tableView];
         [self addSubview:topView];
+        
+        _timeDateFormat = [NSDateFormatter new];
+        [_timeDateFormat setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"US"]];
+        [_timeDateFormat setDateFormat:@"H:mm"];
         
     }
     return self;
@@ -128,9 +133,6 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     
-    NSDateFormatter *timeDateFormat = [NSDateFormatter new];
-    [timeDateFormat setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"US"]];
-    [timeDateFormat setDateFormat:@"H:mm"];
     
     if ([_rowArray count] > 0) {
         
@@ -214,18 +216,18 @@
                     NSString *endTime;
             
                     if ([dateStatus isEqualToString:@"complete"]) {
-                        startTime = [timeDateFormat stringFromDate:event.startDate];
-                        endTime = [timeDateFormat stringFromDate:event.endDate];
+                        startTime = [_timeDateFormat stringFromDate:event.startDate];
+                        endTime = [_timeDateFormat stringFromDate:event.endDate];
                     }
                 
                     if ([dateStatus isEqualToString:@"startDateOnly"]) {
-                        startTime = [timeDateFormat stringFromDate:event.startDate];
+                        startTime = [_timeDateFormat stringFromDate:event.startDate];
                         endTime = @"継続";
                     }
                 
                     if ([dateStatus isEqualToString:@"endDateOnly"]) {
                         startTime = @"終了";
-                        endTime = [timeDateFormat stringFromDate:event.endDate];
+                        endTime = [_timeDateFormat stringFromDate:event.endDate];
                     }
                 
                     NSAttributedString *startAttributeTime = [[NSAttributedString alloc] initWithString:startTime attributes:@{NSForegroundColorAttributeName: [UIColor blackColor]}];
@@ -307,7 +309,7 @@
             eventTimeLabel.frame = CGRectMake(5, 13, 40, 11);
             
             NSCalendar *calendar = [[NSCalendar alloc]initWithCalendarIdentifier:NSGregorianCalendar];
-            NSString *dueTime = [timeDateFormat stringFromDate:[calendar dateFromComponents:reminder.dueDateComponents]];
+            NSString *dueTime = [_timeDateFormat stringFromDate:[calendar dateFromComponents:reminder.dueDateComponents]];
             
             eventTimeLabel.text = dueTime;
             

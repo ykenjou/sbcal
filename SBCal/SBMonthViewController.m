@@ -267,11 +267,12 @@ static float cellWidth = 45.6f;
 -(void)viewWillAppear:(BOOL)animated
 {
     [self calendarChangeNotification];
+    [self dateChangeNotification];
     
     [super viewWillAppear:animated];
     
     //日付が変わっている場合にカレンダー表示を再設定する
-    [self dateChangeNotification];
+    
     
     //view切り替え前の位置がセットされている場合にはその位置に戻し、セットされていない場合には今日の日付の位置を表示する
     if (_offsetPoint.y == 0) {
@@ -287,6 +288,7 @@ static float cellWidth = 45.6f;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadCalendar:) name:UIApplicationSignificantTimeChangeNotification object:nil];
 }
 
+//日付変更時の処理
 -(void)reloadCalendar:(NSNotification *)notification
 {
     _nowDate = [NSDate date];
@@ -393,8 +395,8 @@ static float cellWidth = 45.6f;
         return datecomponents;
     })()) toDate:startDate options:0];
     
-    //NSDateComponents *weekDayComp = [_calendar components:NSWeekdayCalendarUnit fromDate:cellDate];
-    //NSInteger weekDay = weekDayComp.weekday;
+    NSDateComponents *weekDayComp = [_calendar components:NSWeekdayCalendarUnit fromDate:cellDate];
+    NSInteger weekDay = weekDayComp.weekday;
     //NSLog(@"weekDay %d",weekDay);
     
     //NSLog(@"cellDate : %@",cellDate);
@@ -403,14 +405,14 @@ static float cellWidth = 45.6f;
     NSInteger seconds = [timeZone secondsFromGMT];
     NSDate *gtmDate = [cellDate dateByAddingTimeInterval:-seconds];
     
-    //NSArray *events = [_sections objectForKey:gtmDate];
+    NSArray *events = [_sections objectForKey:gtmDate];
     
     //EKEvent *event;
-    //float labelHeight = 13.0f;
+    float labelHeight = 13.0f;
     
-    //BOOL Holiday = NO;
+    BOOL Holiday = NO;
     
-    /*
+    
     NSInteger rows = 0;
     NSInteger restRows = 0;
     if ([events count] > 4) {
@@ -419,13 +421,13 @@ static float cellWidth = 45.6f;
     } else {
         rows = [events count];
     }
-     */
     
-    [dayCell setDate:cellDate nowDate:_nowDate events:[_sections objectForKey:gtmDate] rowIndexs:_rowIndexs eventStore:_eventMg.sharedEventKitStore];
+    
+    //[dayCell setDate:cellDate nowDate:_nowDate events:[_sections objectForKey:gtmDate] rowIndexs:_rowIndexs eventStore:_eventMg.sharedEventKitStore];
     
     
     //イベントラベル生成
-    /*
+    
     if (events) {
         for (int i = 0; i < rows; i++) {
             
@@ -474,7 +476,7 @@ static float cellWidth = 45.6f;
                 eventLabel.adjustsFontSizeToFitWidth = NO;
                 eventLabel.lineBreakMode = NSLineBreakByClipping;
                 //eventLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-                eventLabel.font = [UIFont fontWithName:@"Helvetica" size:10.0f];
+                eventLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10.0f];
                 //eventLabel.layer.zPosition = MAXFLOAT;
                 //eventLabel.textAlignment = NSTextAlignmentCenter;
                 //[self.view bringSubviewToFront:eventLabel];
@@ -501,27 +503,54 @@ static float cellWidth = 45.6f;
                 if ([eventDateStatus isEqualToString:@"continue"]) {
                     eventView.frame = CGRectMake(0, (labelHeight * numInt) + 3 , dayCell.bounds.size.width, 12.0);
                     //[dayCell sendSubviewToBack:eventView];
+                    
+                    UIView *upLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0, eventView.frame.size.width, 0.5)];
+                    upLine.backgroundColor = [UIColor lightGrayColor];
+                    [eventView addSubview:upLine];
+                    UIView *bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0, eventView.frame.size.height - 0.5, eventView.frame.size.width, 0.5)];
+                    bottomLine.backgroundColor = [UIColor lightGrayColor];
+                    [eventView addSubview:bottomLine];
                 }
             
                 if ([eventDateStatus isEqualToString:@"startOnly"]) {
                     eventView.frame = CGRectMake(1, (labelHeight * numInt) + 3 , dayCell.bounds.size.width -1, 12.0);
-                    eventLabel.frame = CGRectMake(4, 1.5 , dayCell.bounds.size.width * restDays -5, 10.0);
-                    //NSLog(@"%f",dayCell.bounds.size.width * restDays);
+                    //eventLabel.frame = CGRectMake(4, 1.5 , dayCell.bounds.size.width * restDays -5, 10.0);
+                    eventLabel.frame = CGRectMake(4, 1.5 , dayCell.bounds.size.width -5, 10.0);
+                    
+                    UIView *upLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0, eventView.frame.size.width, 0.5)];
+                    upLine.backgroundColor = [UIColor lightGrayColor];
+                    [eventView addSubview:upLine];
+                    UIView *bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0, eventView.frame.size.height - 0.5, eventView.frame.size.width, 0.5)];
+                    bottomLine.backgroundColor = [UIColor lightGrayColor];
+                    [eventView addSubview:bottomLine];
                 }
             
                 if ([eventDateStatus isEqualToString:@"endOnly"]) {
                     eventView.frame = CGRectMake(0, (labelHeight * numInt) + 3 , dayCell.bounds.size.width -1, 12.0);
+                    
+                    UIView *upLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0, eventView.frame.size.width, 0.5)];
+                    upLine.backgroundColor = [UIColor lightGrayColor];
+                    [eventView addSubview:upLine];
+                    UIView *bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0, eventView.frame.size.height - 0.5, eventView.frame.size.width, 0.5)];
+                    bottomLine.backgroundColor = [UIColor lightGrayColor];
+                    [eventView addSubview:bottomLine];
+                    UIView *rightLine = [[UIView alloc] initWithFrame:CGRectMake(eventView.frame.size.width - 0.5, 0, 0.5, eventView.frame.size.height)];
+                    rightLine.backgroundColor = [UIColor lightGrayColor];
+                    [eventView addSubview:rightLine];
                 }
                 
                 if (![eventDateStatus isEqualToString:@"complete"]) {
                     eventView.backgroundColor = alphaColor;
                 } else {
-                    eventView.backgroundColor = [UIColor whiteColor];
+                    eventView.backgroundColor = alphaColor;
+                    //eventView.backgroundColor = [UIColor whiteColor];
                 }
             
                 if ([eventDateStatus isEqualToString:@"continue"] && weekDay == 1) {
                     eventLabel.text = event.title;
-                    eventLabel.frame = CGRectMake(1, 1.5 , dayCell.bounds.size.width * restDaysContinue - 1, 10.0);
+                    eventLabel.frame = CGRectMake(4, 1.5 , dayCell.bounds.size.width - 4, 10.0);
+                    //eventLabel.frame = CGRectMake(1, 1.5 , dayCell.bounds.size.width * restDaysContinue - 1, 10.0);
+                    
                 }
             
                 if ([eventDateStatus isEqualToString:@"endOnly"] && weekDay == 1) {
@@ -572,9 +601,9 @@ static float cellWidth = 45.6f;
                 eventLabel.numberOfLines = 1;
                 eventLabel.adjustsFontSizeToFitWidth = NO;
                 eventLabel.lineBreakMode = NSLineBreakByClipping;
-                eventLabel.font = [UIFont fontWithName:@"Helvetica" size:10.0f];
+                eventLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10.0f];
                 eventLabel.text = reminder.title;
-                eventLabel.frame = CGRectMake(12, 1.5 ,30.6, 10.0);
+                eventLabel.frame = CGRectMake(11, 1.5 ,31.6, 10.0);
                 
                 [eventView addSubview:leftSquareView];
                 [eventView addSubview:eventLabel];
@@ -582,32 +611,32 @@ static float cellWidth = 45.6f;
             }
         }
     }
-     */
+    
     
     //三角の追加
-    /*
+    
     if (restRows > 0) {
         SBTriangleView *triangle = [[SBTriangleView alloc] initWithFrame:CGRectMake(31.6, 56, 14, 14)];
         UILabel *restRowsLabel = [[UILabel alloc] initWithFrame:CGRectMake(8, 5, 9, 9)];
         restRowsLabel.textColor = [UIColor whiteColor];
         NSString *restRowsLabelText = [NSString stringWithFormat:@"%ld",(long)restRows];
         restRowsLabel.text = restRowsLabelText;
-        restRowsLabel.font = [UIFont fontWithName:@"Helvetica" size:9.0f];
+        restRowsLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:9.0f];
         
         triangle.tag = 11;
         
         [triangle addSubview:restRowsLabel];
         [dayCell addSubview:triangle];
     }
-     */
+    
     
     NSDateComponents *cellDateComponents = [_calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit|NSWeekdayCalendarUnit fromDate:cellDate];
     
     NSDateComponents *nowDateComponents = [_calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:_nowDate];
     
-    /*
+    
     //日付ラベル処理
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(1, 1, cellWidth-2,13)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(1, 1, cellWidth - 2 ,13)];
     //NSString *strYear = @(cellDateComponents.year).stringValue;
     NSString *strMonth = @(cellDateComponents.month).stringValue;
     NSString *strDay = @(cellDateComponents.day).stringValue;
@@ -640,11 +669,18 @@ static float cellWidth = 45.6f;
     label.tag = 1;
     
     [dayCell.contentView addSubview:label];
-    */
+    
      
     //日付が今日だった場合の処理
     if (nowDateComponents.year == cellDateComponents.year && nowDateComponents.month == cellDateComponents.month && nowDateComponents.day == cellDateComponents.day) {
         dayCell.backgroundColor = [UIColor colorWithRed:0.949 green:0.973 blue:0.992 alpha:1.0];
+    }
+    
+    //日付が今日だった場合の処理
+    if (nowDateComponents.year == cellDateComponents.year && nowDateComponents.month == cellDateComponents.month && nowDateComponents.day == cellDateComponents.day) {
+        //self.contentView.backgroundColor = [UIColor colorWithRed:0.949 green:0.973 blue:0.992 alpha:1.0];
+        label.backgroundColor = [UIColor colorWithRed:0.282 green:0.024 blue:0.647 alpha:1.0];
+        label.textColor = [UIColor whiteColor];
     }
     
     

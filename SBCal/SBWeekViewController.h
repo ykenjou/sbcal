@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "SBWeekDayCollectionViewFlowLayout.h"
 #import "SBWeekDayVireCell.h"
+#import "SBWeekDayScrollView.h"
 #import "DataUtility.h"
 #import "getEKData.h"
 #import "SBEventManager.h"

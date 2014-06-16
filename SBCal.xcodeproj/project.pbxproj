@@ -56,6 +56,11 @@
 		F2629509192CEFA000178DCD /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2629507192CEFA000178DCD /* EventKitUI.framework */; };
 		F262950B192CEFB700178DCD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F262950A192CEFB700178DCD /* QuartzCore.framework */; };
 		F26AEE84192EEC27001316B3 /* SBEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AEE83192EEC27001316B3 /* SBEventManager.m */; };
+		F26F687A1949AD7500131763 /* SBWeekDayScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F68791949AD7500131763 /* SBWeekDayScrollView.m */; };
+		F28ECDBD194C52B6004EE50F /* SBRightTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F28ECDBC194C52B6004EE50F /* SBRightTriangleView.m */; };
+		F28ECDC0194C5758004EE50F /* SBLeftTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F28ECDBF194C5758004EE50F /* SBLeftTriangleView.m */; };
+		F2966173194EB36C007515B1 /* checkBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = F2966171194EB36C007515B1 /* checkBtn.png */; };
+		F2966174194EB36C007515B1 /* checkBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2966172194EB36C007515B1 /* checkBtn@2x.png */; };
 		F2C00E501932CF950027C06F /* SBWeekDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C00E4F1932CF950027C06F /* SBWeekDayView.m */; };
 		F2C00E56193311590027C06F /* SBTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C00E55193311590027C06F /* SBTriangleView.m */; };
 		F2DBD060192A1C2F00DC72ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DBD05F192A1C2F00DC72ED /* Foundation.framework */; };
@@ -87,6 +92,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F22A82CD194AAEF30081DF38 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F22A82CE194AAEF30081DF38 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F24381D5192DEA460008BAB5 /* calendarDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = calendarDayCell.h; sourceTree = "<group>"; };
 		F24381D6192DEA460008BAB5 /* calendarDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = calendarDayCell.m; sourceTree = "<group>"; };
 		F24381D7192DEA460008BAB5 /* calendarFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = calendarFlowLayout.h; sourceTree = "<group>"; };
@@ -152,6 +159,14 @@
 		F262950A192CEFB700178DCD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F26AEE82192EEC27001316B3 /* SBEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBEventManager.h; sourceTree = "<group>"; };
 		F26AEE83192EEC27001316B3 /* SBEventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBEventManager.m; sourceTree = "<group>"; };
+		F26F68781949AD7500131763 /* SBWeekDayScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBWeekDayScrollView.h; sourceTree = "<group>"; };
+		F26F68791949AD7500131763 /* SBWeekDayScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBWeekDayScrollView.m; sourceTree = "<group>"; };
+		F28ECDBB194C52B6004EE50F /* SBRightTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRightTriangleView.h; sourceTree = "<group>"; };
+		F28ECDBC194C52B6004EE50F /* SBRightTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRightTriangleView.m; sourceTree = "<group>"; };
+		F28ECDBE194C5758004EE50F /* SBLeftTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBLeftTriangleView.h; sourceTree = "<group>"; };
+		F28ECDBF194C5758004EE50F /* SBLeftTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBLeftTriangleView.m; sourceTree = "<group>"; };
+		F2966171194EB36C007515B1 /* checkBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkBtn.png; sourceTree = "<group>"; };
+		F2966172194EB36C007515B1 /* checkBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkBtn@2x.png"; sourceTree = "<group>"; };
 		F2C00E4E1932CF950027C06F /* SBWeekDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBWeekDayView.h; sourceTree = "<group>"; };
 		F2C00E4F1932CF950027C06F /* SBWeekDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBWeekDayView.m; sourceTree = "<group>"; };
 		F2C00E54193311590027C06F /* SBTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTriangleView.h; sourceTree = "<group>"; };
@@ -212,6 +227,8 @@
 		F257C14C1939A3B700A313C1 /* eventIcon */ = {
 			isa = PBXGroup;
 			children = (
+				F2966171194EB36C007515B1 /* checkBtn.png */,
+				F2966172194EB36C007515B1 /* checkBtn@2x.png */,
 				F257C14D1939A3E100A313C1 /* map.png */,
 				F257C14E1939A3E100A313C1 /* map@2x.png */,
 			);
@@ -232,6 +249,12 @@
 				F2DE580B19481F9C00991BE4 /* SBWeekDayCollectionViewFlowLayout.m */,
 				F2DE580D194822CB00991BE4 /* SBWeekDayVireCell.h */,
 				F2DE580E194822CB00991BE4 /* SBWeekDayVireCell.m */,
+				F26F68781949AD7500131763 /* SBWeekDayScrollView.h */,
+				F26F68791949AD7500131763 /* SBWeekDayScrollView.m */,
+				F28ECDBB194C52B6004EE50F /* SBRightTriangleView.h */,
+				F28ECDBC194C52B6004EE50F /* SBRightTriangleView.m */,
+				F28ECDBE194C5758004EE50F /* SBLeftTriangleView.h */,
+				F28ECDBF194C5758004EE50F /* SBLeftTriangleView.m */,
 			);
 			name = weekView;
 			sourceTree = "<group>";
@@ -479,6 +502,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ja,
 			);
 			mainGroup = F2DBD053192A1C2F00DC72ED;
 			productRefGroup = F2DBD05D192A1C2F00DC72ED /* Products */;
@@ -512,7 +536,9 @@
 				F243820B192E4FEA0008BAB5 /* reminder_select.png in Resources */,
 				F2438206192E4FEA0008BAB5 /* month.png in Resources */,
 				F2438204192E4FEA0008BAB5 /* list_select@2x.png in Resources */,
+				F2966174194EB36C007515B1 /* checkBtn@2x.png in Resources */,
 				F24381FE192E4FEA0008BAB5 /* day.png in Resources */,
+				F2966173194EB36C007515B1 /* checkBtn.png in Resources */,
 				F2438214192E4FEA0008BAB5 /* week_select@2x.png in Resources */,
 				F2438210192E4FEA0008BAB5 /* setting_select@2x.png in Resources */,
 				F243820D192E4FEA0008BAB5 /* reminder@2x.png in Resources */,
@@ -546,11 +572,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28ECDBD194C52B6004EE50F /* SBRightTriangleView.m in Sources */,
 				F2629505192CEE1600178DCD /* UICircleView.m in Sources */,
 				F2629504192CEE1600178DCD /* getEKData.m in Sources */,
 				F2DBD06C192A1C2F00DC72ED /* main.m in Sources */,
 				F24381DD192DEA460008BAB5 /* dayListView.m in Sources */,
 				F26294EA192CB0EE00178DCD /* SBWeekViewController.m in Sources */,
+				F26F687A1949AD7500131763 /* SBWeekDayScrollView.m in Sources */,
+				F28ECDC0194C5758004EE50F /* SBLeftTriangleView.m in Sources */,
 				F26AEE84192EEC27001316B3 /* SBEventManager.m in Sources */,
 				F24381DB192DEA460008BAB5 /* calendarDayCell.m in Sources */,
 				F2629503192CEE1600178DCD /* calendarAccessCheck.m in Sources */,
@@ -596,6 +625,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F2DBD069192A1C2F00DC72ED /* en */,
+				F22A82CD194AAEF30081DF38 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -604,6 +634,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F2DBD082192A1C2F00DC72ED /* en */,
+				F22A82CE194AAEF30081DF38 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

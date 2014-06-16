@@ -73,7 +73,7 @@
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
-    
+    /*
     NSCalendar *calendar = [[NSCalendar alloc]initWithCalendarIdentifier:NSGregorianCalendar];
     BOOL Holiday = NO;
     NSDateComponents *weekDayComp = [calendar components:NSWeekdayCalendarUnit fromDate:_cellDate];
@@ -150,7 +150,7 @@
                 EKEvent *event = [EKEvent eventWithEventStore:_eventStore];
                 event = [_events objectAtIndex:i];
                 
-                /*
+                
                 NSString *title = event.title;
                 UIFont *font = [UIFont fontWithName:@"Helvetica" size:10.0f];
                 NSMutableParagraphStyle *style = [NSMutableParagraphStyle new];
@@ -163,7 +163,7 @@
                                             };
                 
                 [title drawInRect:CGRectMake(0, labelHeight * i + 13, 100, 10) withAttributes:attribute];
-                 */
+     
                 
                 //NSLog(@"event %@" ,event);
                 NSDate *eventStartDate = [[DataUtility dateAtBeginningOfDayForDate:event.startDate] dateByAddingTimeInterval:seconds];
@@ -332,7 +332,7 @@
         [triangle addSubview:restRowsLabel];
         [self.contentView addSubview:triangle];
     }
-
+    */
     
 }
 

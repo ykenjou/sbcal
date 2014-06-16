@@ -4,11 +4,14 @@ r1
 cCheck dependencies
 cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/SBCal.app/ResourceRules.plist
 cProcessPCH /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch.pch SBCal/SBCal-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBRightTriangleView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBRightTriangleView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/UICircleView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/UICircleView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/getEKData.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/getEKData.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/main.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/dayListView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/dayListView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayScrollView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekDayScrollView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBLeftTriangleView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBLeftTriangleView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBEventManager.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBEventManager.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarDayCell.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/calendarDayCell.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarAccessCheck.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/calendarAccessCheck.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -45,7 +48,9 @@ cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iph
 cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder_select.png SBCal/reminder_select.png
 cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/month.png SBCal/month.png
 cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list_select@2x.png SBCal/list_select@2x.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/checkBtn@2x.png SBCal/checkBtn@2x.png
 cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day.png SBCal/day.png
+cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/checkBtn.png SBCal/checkBtn.png
 cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/week_select@2x.png SBCal/week_select@2x.png
 cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting_select@2x.png SBCal/setting_select@2x.png
 cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/reminder@2x.png SBCal/reminder@2x.png
@@ -57,6 +62,7 @@ cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iph
 cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting@2x.png SBCal/setting@2x.png
 cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/setting_select.png SBCal/setting_select.png
 cCopyStringsFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/en.lproj/InfoPlist.strings SBCal/en.lproj/InfoPlist.strings
+cCopyStringsFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/ja.lproj/InfoPlist.strings SBCal/ja.lproj/InfoPlist.strings
 cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day_select.png SBCal/day_select.png
 cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list_select.png SBCal/list_select.png
 cCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list.png SBCal/list.png
@@ -346,33 +352,37 @@ t1400685618
 s40244
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o
-t1402504261
+t1402740869
 s73012
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBCal.LinkFileList
-c000000005397EBC60000000000000D5F
-t1402465222
-s3423
+c00000000539C20850000000000000F11
+t1402740869
+s3857
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBDayViewController.o
-t1400810824
-s50464
+t1402763113
+s50456
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBEventManager.o
 t1401847173
 s16484
 
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBLeftTriangleView.o
+t1402740869
+s41072
+
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBListViewController.o
-t1402503444
-s140764
+t1402905208
+s150924
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o
-t1402504261
-s73652
+t1402740869
+s73644
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMonthViewController.o
-t1402504903
-s159692
+t1402925849
+s194244
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBRemindarAccessCheck.o
 t1401845500
@@ -381,6 +391,10 @@ s52440
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBReminderViewController.o
 t1400685618
 s40328
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBRightTriangleView.o
+t1402740153
+s41080
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBSettingViewController.o
 t1400685618
@@ -398,6 +412,10 @@ N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug
 t1402464748
 s38540
 
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayScrollView.o
+t1402741437
+s57200
+
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayView.o
 t1401069451
 s45940
@@ -407,8 +425,8 @@ t1402466291
 s39700
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekViewController.o
-t1402517821
-s134596
+t1402888191
+s148200
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/UICircleView.o
 t1400685618
@@ -419,16 +437,16 @@ t1401845115
 s54756
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarDayCell.o
-t1402495159
-s94884
+t1402631709
+s55816
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarFlowLayout.o
 t1402075697
 s39440
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/dayListView.o
-t1402495159
-s114920
+t1402887098
+s116428
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/getEKData.o
 t1402503444
@@ -439,7 +457,7 @@ t1400754386
 s3784
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent
-t1402515432
+t1402904321
 s412
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/assetcatalog_dependencies.txt
@@ -451,11 +469,11 @@ t1400637646
 s525
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app
-t1402517821
-s1394
+t1402925849
+s1496
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app.dSYM
-t1402517789
+t1402905387
 s102
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/Info.plist
@@ -471,8 +489,8 @@ t1400637641
 s150
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal
-t1402517821
-s302000
+t1402925849
+s324796
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add.png
 t1400772720
@@ -489,6 +507,14 @@ s4439
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add_select@2x.png
 t1400772720
 s6022
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/checkBtn.png
+t1402895512
+s4243
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/checkBtn@2x.png
+t1402895512
+s5613
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day.png
 t1400772720
@@ -512,6 +538,10 @@ s7431
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/en.lproj/InfoPlist.strings
 t1400637641
+s42
+
+N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/ja.lproj/InfoPlist.strings
+t1402632053
 s42
 
 N/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/list.png
@@ -653,9 +683,9 @@ t1400810718
 s258
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBDayViewController.m
-c00000000537EAD4500000000000007FD
-t1400810821
-s2045
+c00000000539C776600000000000007F4
+t1402763110
+s2036
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBEventManager.h
 c00000000537F7F1E0000000000000164
@@ -667,15 +697,25 @@ c00000000538E7CEB00000000000003B1
 t1401847019
 s945
 
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBLeftTriangleView.h
+c00000000539C1FD800000000000000DD
+t1402740696
+s221
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBLeftTriangleView.m
+c00000000539C200500000000000003C9
+t1402740741
+s969
+
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBListViewController.h
-c0000000053916E7E00000000000003F5
-t1402039934
-s1013
+c00000000539B270600000000000003E5
+t1402676998
+s997
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBListViewController.m
-c00000000539180200000000000005B76
-t1402044448
-s23414
+c00000000539EA2750000000000006859
+t1402905205
+s26713
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMainViewController.h
 c000000005397D0190000000000000328
@@ -688,14 +728,14 @@ t1402458204
 s3115
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMonthViewController.h
-c000000005396E0850000000000000615
-t1402396805
+c00000000539972DD0000000000000615
+t1402565341
 s1557
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMonthViewController.m
-c00000000539886C70000000000007EE6
-t1402504903
-s32486
+c00000000539EB8CD0000000000008929
+t1402910925
+s35113
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBRemindarAccessCheck.h
 c00000000538E76460000000000000143
@@ -716,6 +756,16 @@ N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBReminderViewController.m
 c00000000537C79C20000000000000449
 t1400666562
 s1097
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBRightTriangleView.h
+c00000000539C1B3500000000000000DF
+t1402739509
+s223
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBRightTriangleView.m
+c00000000539C1B8B00000000000003C9
+t1402739595
+s969
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBSettingViewController.h
 c00000000537C79D100000000000000F1
@@ -757,6 +807,16 @@ c000000005397E81C000000000000010D
 t1402464284
 s269
 
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayScrollView.h
+c00000000539C2085000000000000017C
+t1402740869
+s380
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayScrollView.m
+c00000000539C22BA0000000000000BB7
+t1402741434
+s2999
+
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayView.h
 c0000000053829F80000000000000010D
 t1401069440
@@ -778,14 +838,14 @@ t1402466286
 s1484
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekViewController.h
-c00000000539883900000000000000201
-t1402504080
-s513
+c00000000539C18B70000000000000221
+t1402738871
+s545
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekViewController.m
-c000000005398B93B00000000000053D4
-t1402517819
-s21460
+c00000000539E5FFF0000000000006B36
+t1402888191
+s27446
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/UICircleView.h
 c0000000053690108000000000000015B
@@ -833,9 +893,9 @@ t1402407944
 s867
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/calendarDayCell.m
-c000000005397CB390000000000003A09
-t1402456889
-s14857
+c00000000539A761B0000000000003A01
+t1402631707
+s14849
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/calendarFlowLayout.h
 c0000000053065FB100000000000000F2
@@ -846,6 +906,16 @@ N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/calendarFlowLayout.m
 c000000005391FA300000000000000453
 t1402075696
 s1107
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/checkBtn.png
+c00000000539E7B860000000000001132
+t1402895238
+s4402
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/checkBtn@2x.png
+c00000000539E7B4F0000000000001537
+t1402895183
+s5431
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/day.png
 c00000000537E16F30000000000000F84
@@ -863,9 +933,9 @@ t1401476769
 s503
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/dayListView.m
-c0000000053915C750000000000003B4F
-t1402035317
-s15183
+c00000000539E5BB80000000000003B92
+t1402887096
+s15250
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/day_select.png
 c00000000537E1547000000000000110F
@@ -891,6 +961,11 @@ N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/getEKData.m
 c000000005398810E000000000000159F
 t1402503438
 s5535
+
+N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/ja.lproj/InfoPlist.strings
+c000000005379E4AF000000000000002D
+t1400497327
+s45
 
 N/Users/kenjou/Desktop/xcode project/SBCal/SBCal/list.png
 c00000000537E178F0000000000000FA4
@@ -1033,6 +1108,9 @@ r0
 CBuild AST from /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBEventManager.m
 r0
 
+CBuild AST from /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBLeftTriangleView.m
+r0
+
 CBuild AST from /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBListViewController.m
 r0
 
@@ -1048,6 +1126,9 @@ r0
 CBuild AST from /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBReminderViewController.m
 r0
 
+CBuild AST from /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBRightTriangleView.m
+r0
+
 CBuild AST from /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBSettingViewController.m
 r0
 
@@ -1058,6 +1139,9 @@ CBuild AST from /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBTriangleView.
 r0
 
 CBuild AST from /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekDayCollectionViewFlowLayout.m
+r0
+
+CBuild AST from /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekDayScrollView.m
 r0
 
 CBuild AST from /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekDayView.m
@@ -1092,16 +1176,16 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies593508bdf048b941^577b08bdf048b941^---0#1#1#--18"Check dependencies36"C357284B-2C6C-4C05-A4F3-5CF7A921F0EE-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies43ada1992a4fb941^d4f0a1992a4fb941^---0#1#1#--18"Check dependencies36"294A8CC2-CBED-4EE9-B2A0-AD4057209170-
 
 CCodeSign /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app
-s424210621.262940
-e424210621.472150
+s424618649.906947
+e424618650.135731
 r1
 xCodeSign
 x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"CodeSign Build/Products/Debug-iphoneos/SBCal.app48"CodeSign Build/Products/Debug-iphoneos/SBCal.app566143bdf048b941^dfdf78bdf048b941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/kenjou/Desktop/xcode%20project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/0000000000000000^1009"CodeSign Build/Products/Debug-iphoneos/SBCal.app    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    Using code signing identity "iPhone Developer: YUTAKA KENJO (EPTFARKL9F)" and provisioning profile "iOS Team Provisioning Profile: *" (39B7F3AE-F05E-446F-A127-CE012A1DFF10)    /usr/bin/codesign --force --sign BA80B1EE8DD01327B88F7530149943C9987972D3 --resource-rules=/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/ResourceRules.plist --entitlements /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app36"BE01B2A6-48CE-4FA3-9344-4AD5ABFB2F34-
-b0869BCBF-2312-4094-AE36-1BD68C6729CC
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"CodeSign Build/Products/Debug-iphoneos/SBCal.app48"CodeSign Build/Products/Debug-iphoneos/SBCal.app103ee8992a4fb941^a8c7229a2a4fb941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/kenjou/Desktop/xcode%20project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/0000000000000000^1009"CodeSign Build/Products/Debug-iphoneos/SBCal.app    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    Using code signing identity "iPhone Developer: YUTAKA KENJO (EPTFARKL9F)" and provisioning profile "iOS Team Provisioning Profile: *" (39B7F3AE-F05E-446F-A127-CE012A1DFF10)    /usr/bin/codesign --force --sign BA80B1EE8DD01327B88F7530149943C9987972D3 --resource-rules=/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/ResourceRules.plist --entitlements /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app36"8E698041-5590-4892-9F66-76C122EB5B1C-
+bF488CAC3-61D9-4742-A1B1-6ED463920DB1
 
 CCompileAssetCatalog /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/Images.xcassets
 s422330441.645311
@@ -1134,6 +1218,9 @@ r0
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/arm64/SBEventManager.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBEventManager.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/arm64/SBLeftTriangleView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBLeftTriangleView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/arm64/SBListViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBListViewController.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
@@ -1149,6 +1236,9 @@ r0
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/arm64/SBReminderViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBReminderViewController.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/arm64/SBRightTriangleView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBRightTriangleView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/arm64/SBSettingViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBSettingViewController.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
@@ -1158,7 +1248,16 @@ r0
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/arm64/SBTriangleView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBTriangleView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/arm64/SBWeekDayCollectionViewFlowLayout.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekDayCollectionViewFlowLayout.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/arm64/SBWeekDayScrollView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekDayScrollView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/arm64/SBWeekDayView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekDayView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/arm64/SBWeekDayVireCell.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekDayVireCell.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/arm64/SBWeekViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekViewController.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -1200,6 +1299,9 @@ r0
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7/SBEventManager.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBEventManager.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7/SBLeftTriangleView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBLeftTriangleView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7/SBListViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBListViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
@@ -1215,6 +1317,9 @@ r0
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7/SBReminderViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBReminderViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7/SBRightTriangleView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBRightTriangleView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7/SBSettingViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBSettingViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
@@ -1224,7 +1329,16 @@ r0
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7/SBTriangleView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBTriangleView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7/SBWeekDayCollectionViewFlowLayout.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekDayCollectionViewFlowLayout.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7/SBWeekDayScrollView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekDayScrollView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7/SBWeekDayView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekDayView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7/SBWeekDayVireCell.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekDayVireCell.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7/SBWeekViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -1292,8 +1406,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile
 bE20F2D23-7B94-4D1C-91A1-0E197A93642F
 
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s424197061.799007
-e424197061.914858
+s424433669.691539
+e424433669.785118
 r1
 xCompileC
 xBuild/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o
@@ -1310,6 +1424,9 @@ d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBDayViewController.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekViewController.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayCollectionViewFlowLayout.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayVireCell.h
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayScrollView.h
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBRightTriangleView.h
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBLeftTriangleView.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/DataUtility.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/getEKData.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBEventManager.h
@@ -1320,15 +1437,15 @@ d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/dayListView.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/calendarDayCell.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBTriangleView.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBRemindarAccessCheck.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBAppDelegate.m197"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o SBCal/SBAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerf9a3ccc5bb48b941^e943ebc5bb48b941^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBAppDelegate.m0000000000000000^3499"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o SBCal/SBAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBAppDelegate.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o36"C2EE3FE7-7774-4D81-A6BE-869D45544876-
-bFFF9988F-8D2D-44F4-A85C-57C151193511
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBAppDelegate.m197"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o SBCal/SBAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerb323b105584cb941^15fec805584cb941^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBAppDelegate.m0000000000000000^3499"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o SBCal/SBAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBAppDelegate.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBAppDelegate.o36"25CBA735-C1CD-4701-84F3-91FA2C694385-
+b3035873F-BF7D-4A7B-A562-4FE09F917EA7
 
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBDayView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBDayView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBDayViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBDayViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422503624.080512
-e422503624.140262
+s424455913.059854
+e424455913.121149
 r1
 xCompileC
 xBuild/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBDayViewController.o
@@ -1339,8 +1456,8 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBDayViewController.m
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBDayViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBDayViewController.m209"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBDayViewController.o SBCal/SBDayViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler9bad14c8e42eb941^a3ea23c8e42eb941^---0#0#1#-19%DVTDocumentLocation2@78"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBDayViewController.m0000000000000000^3535"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBDayViewController.o SBCal/SBDayViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBDayViewController.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBDayViewController.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBDayViewController.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBDayViewController.o36"E9D3140C-5161-4377-A0AD-7D89EEC1EADD-
-b2906035C-4972-42F5-B4AE-55912A33392C
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBDayViewController.m209"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBDayViewController.o SBCal/SBDayViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler1b670fe9ae4cb941^e2031fe9ae4cb941^---0#0#1#-19%DVTDocumentLocation2@78"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBDayViewController.m0000000000000000^3535"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBDayViewController.o SBCal/SBDayViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBDayViewController.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBDayViewController.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBDayViewController.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBDayViewController.o36"3C7FB2D5-982E-41A5-8D02-1E44F7A2E466-
+b82E90613-8C39-4221-8A03-B013D7040160
 
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBEventLabel.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBEventLabel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
@@ -1361,9 +1478,25 @@ d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBEventManager.h
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBEventManager.m199"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBEventManager.o SBCal/SBEventManager.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler21407205b53eb941^fa978405b53eb941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBEventManager.m0000000000000000^3505"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBEventManager.o SBCal/SBEventManager.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBEventManager.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBEventManager.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBEventManager.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBEventManager.o36"9333677A-8695-4C83-867C-486F545E2B1C-
 bBC263AD1-47E8-4FBB-B592-65C8F4797798
 
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBLeftTriangleView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBLeftTriangleView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s424433669.768946
+e424433669.832417
+r1
+xCompileC
+xBuild/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBLeftTriangleView.o
+x/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBLeftTriangleView.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBLeftTriangleView.m
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBLeftTriangleView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBLeftTriangleView.m207"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBLeftTriangleView.o SBCal/SBLeftTriangleView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler2cf1c405584cb941^ce19d505584cb941^---0#0#1#-19%DVTDocumentLocation2@77"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBLeftTriangleView.m0000000000000000^3529"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBLeftTriangleView.o SBCal/SBLeftTriangleView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBLeftTriangleView.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBLeftTriangleView.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBLeftTriangleView.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBLeftTriangleView.o36"396910BC-7FAC-4938-A366-32FA5700DEB5-
+b3035873F-BF7D-4A7B-A562-4FE09F917EA7
+
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBListViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBListViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s424196244.538313
-e424196244.696261
+s424598007.988099
+e424598008.114429
 r1
 xCompileC
 xBuild/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBListViewController.o
@@ -1382,12 +1515,12 @@ o/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBListViewController.m:273:15: 
 o    NSInteger calWeekDay = nowComps.weekday;
 o              ^
 o1 warning generated.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBListViewController.m211"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBListViewController.o SBCal/SBListViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler75028a94b848b941^a644b294b848b941^-219"/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBListViewController.m:273:15: warning: unused variable 'calWeekDay' [-Wunused-variable]    NSInteger calWeekDay = nowComps.weekday;              ^1 warning generated.-0#0#1#-19%DVTDocumentLocation2@79"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBListViewController.m0000000000000000^3541"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBListViewController.o SBCal/SBListViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBListViewController.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBListViewController.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBListViewController.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBListViewController.o36"9744E6B7-CDD8-43F3-949B-6708642B2070-
-bDD8ED246-57BF-499A-B076-C36DBFA673F3
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBListViewController.m211"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBListViewController.o SBCal/SBListViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compileree0afdf7d94eb941^b24a1df8d94eb941^-219"/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBListViewController.m:273:15: warning: unused variable 'calWeekDay' [-Wunused-variable]    NSInteger calWeekDay = nowComps.weekday;              ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@28"Unused variable 'calWeekDay'-424598008#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@79"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBListViewController.m0000000000000000^272#14#272#14#9510#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@79"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBListViewController.m0000000000000000^3541"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBListViewController.o SBCal/SBListViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBListViewController.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBListViewController.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBListViewController.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBListViewController.o36"E0AEA40D-2A70-414F-B7BC-06F81FC7BFFE-
+b6BA6F50C-A6AA-4C47-A256-E452A735CDB3
 
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBMainViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s424197061.801286
-e424197061.915526
+s424433669.696387
+e424433669.797784
 r1
 xCompileC
 xBuild/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o
@@ -1403,6 +1536,9 @@ d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBDayViewController.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekViewController.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayCollectionViewFlowLayout.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayVireCell.h
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayScrollView.h
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBRightTriangleView.h
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBLeftTriangleView.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/DataUtility.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/getEKData.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBEventManager.h
@@ -1413,12 +1549,12 @@ d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/dayListView.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/calendarDayCell.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBTriangleView.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBRemindarAccessCheck.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMainViewController.m211"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o SBCal/SBMainViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler7940cdc5bb48b941^54e1ebc5bb48b941^---0#0#1#-19%DVTDocumentLocation2@79"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBMainViewController.m0000000000000000^3541"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o SBCal/SBMainViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBMainViewController.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o36"850E027B-662D-45CD-965A-6C241BC550D8-
-bFFF9988F-8D2D-44F4-A85C-57C151193511
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMainViewController.m211"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o SBCal/SBMainViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler2d5cb205584cb941^a48dcf05584cb941^---0#0#1#-19%DVTDocumentLocation2@79"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBMainViewController.m0000000000000000^3541"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o SBCal/SBMainViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBMainViewController.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMainViewController.o36"4ECD4B1D-6398-42C2-99F4-4188900A067F-
+b3035873F-BF7D-4A7B-A562-4FE09F917EA7
 
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMonthViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBMonthViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s424197703.105226
-e424197703.249488
+s424618649.635284
+e424618649.792618
 r1
 xCompileC
 xBuild/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMonthViewController.o
@@ -1439,8 +1575,15 @@ d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/calendarFlowLayout.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/calendarAccessCheck.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBRemindarAccessCheck.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayView.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMonthViewController.m213"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMonthViewController.o SBCal/SBMonthViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler0f091b47be48b941^cee03f47be48b941^---0#0#1#-19%DVTDocumentLocation2@80"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBMonthViewController.m0000000000000000^3547"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMonthViewController.o SBCal/SBMonthViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMonthViewController.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMonthViewController.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBMonthViewController.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMonthViewController.o36"2CC7A74E-B15B-4166-8489-7B47C678C754-
-b82B78460-10C4-458B-8BBC-F2986E037BF8
+o/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMonthViewController.m:442:27: warning: unused variable 'restDays' [-Wunused-variable]
+o                NSInteger restDays = [DataUtility daysBetween:eventStartDate and:eventEndDate]+1;
+o                          ^
+o/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMonthViewController.m:443:27: warning: unused variable 'restDaysContinue' [-Wunused-variable]
+o                NSInteger restDaysContinue = [DataUtility daysBetween:cellDate and:eventEndDate]+1;
+o                          ^
+o2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMonthViewController.m213"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMonthViewController.o SBCal/SBMonthViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler89b7a2992a4fb941^d1e8ca992a4fb941^-556"/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMonthViewController.m:442:27: warning: unused variable 'restDays' [-Wunused-variable]                NSInteger restDays = [DataUtility daysBetween:eventStartDate and:eventEndDate]+1;                          ^/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBMonthViewController.m:443:27: warning: unused variable 'restDaysContinue' [-Wunused-variable]                NSInteger restDaysContinue = [DataUtility daysBetween:cellDate and:eventEndDate]+1;                          ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@26"Unused variable 'restDays'-424618649#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@80"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBMonthViewController.m0000000000000000^441#26#441#26#16126#0#19"Unused Entity Issue--2@34"Unused variable 'restDaysContinue'-424618649#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBMonthViewController.m0000000000000000^442#26#442#26#16224#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@80"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBMonthViewController.m0000000000000000^3547"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMonthViewController.o SBCal/SBMonthViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMonthViewController.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMonthViewController.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBMonthViewController.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBMonthViewController.o36"5A7B7C9F-39E1-435E-9EE0-54D4E82AB74D-
+bF488CAC3-61D9-4742-A1B1-6ED463920DB1
 
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBRemindarAccessCheck.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBRemindarAccessCheck.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s423538300.006494
@@ -1478,6 +1621,22 @@ d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBReminderViewController.m
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBReminderViewController.h
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBReminderViewController.m219"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBReminderViewController.o SBCal/SBReminderViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler445283b2fb2cb941^772f93b2fb2cb941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBReminderViewController.m0000000000000000^3565"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBReminderViewController.o SBCal/SBReminderViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBReminderViewController.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBReminderViewController.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBReminderViewController.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBReminderViewController.o36"DE98F199-43B6-4AEE-B67C-B7D0D447BFEA-
 bE20F2D23-7B94-4D1C-91A1-0E197A93642F
+
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBRightTriangleView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBRightTriangleView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s424432953.163096
+e424432953.221775
+r1
+xCompileC
+xBuild/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBRightTriangleView.o
+x/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBRightTriangleView.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBRightTriangleView.m
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBRightTriangleView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBRightTriangleView.m209"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBRightTriangleView.o SBCal/SBRightTriangleView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler5ed92939554cb941^a75b3a39554cb941^---0#0#1#-19%DVTDocumentLocation2@78"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBRightTriangleView.m0000000000000000^3535"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBRightTriangleView.o SBCal/SBRightTriangleView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBRightTriangleView.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBRightTriangleView.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBRightTriangleView.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBRightTriangleView.o36"8C5B3A58-B562-403F-BFC3-9FAD50574A69-
+b9E50A91E-D783-4B80-93FA-B621DED2B44A
 
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBSettingViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBSettingViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s422378418.474456
@@ -1543,6 +1702,24 @@ d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayCollectionViewFlowLayo
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayCollectionViewFlowLayout.m237"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayCollectionViewFlowLayout.o SBCal/SBWeekDayCollectionViewFlowLayout.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerb186836c2148b941^d6c9956c2148b941^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBWeekDayCollectionViewFlowLayout.m0000000000000000^3619"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayCollectionViewFlowLayout.o SBCal/SBWeekDayCollectionViewFlowLayout.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayCollectionViewFlowLayout.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayCollectionViewFlowLayout.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekDayCollectionViewFlowLayout.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayCollectionViewFlowLayout.o36"B631CC15-C2CA-4F43-8E19-714ECC54C1C1-
 bA0B954BD-56C5-49D2-B5DD-F65C8E205594
 
+CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayScrollView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekDayScrollView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s424434237.238760
+e424434237.307297
+r1
+xCompileC
+xBuild/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayScrollView.o
+x/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayScrollView.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayScrollView.m
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayScrollView.h
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBRightTriangleView.h
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBLeftTriangleView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayScrollView.m209"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayScrollView.o SBCal/SBWeekDayScrollView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler9b3c3d3d5a4cb941^e36d513d5a4cb941^---0#0#1#-19%DVTDocumentLocation2@78"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBWeekDayScrollView.m0000000000000000^3535"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayScrollView.o SBCal/SBWeekDayScrollView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayScrollView.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayScrollView.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekDayScrollView.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayScrollView.o36"99001728-6461-4DF5-9679-8E952029F9EE-
+b5A05A824-8285-4FC1-9F4A-8A8090BE0833
+
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekDayView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s422762251.348975
 e422762251.717307
@@ -1576,8 +1753,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile
 bF3B9B769-E569-4BFF-B79A-9205EF0369AC
 
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekViewController.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s424210621.034259
-e424210621.167497
+s424580991.121400
+e424580991.263883
 r1
 xCompileC
 xBuild/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekViewController.o
@@ -1590,18 +1767,21 @@ d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekViewController.m
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekViewController.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayCollectionViewFlowLayout.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayVireCell.h
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekDayScrollView.h
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBRightTriangleView.h
+d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBLeftTriangleView.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/DataUtility.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/getEKData.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBEventManager.h
-o/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekViewController.m:69:15: warning: unused variable 'nowWeekOfYear' [-Wunused-variable]
+o/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekViewController.m:76:15: warning: unused variable 'nowWeekOfYear' [-Wunused-variable]
 o    NSInteger nowWeekOfYear = [nowDateComponents weekOfYear];
 o              ^
-o/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekViewController.m:73:15: warning: unused variable 'startWeekOfYear' [-Wunused-variable]
+o/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekViewController.m:80:15: warning: unused variable 'startWeekOfYear' [-Wunused-variable]
 o    NSInteger startWeekOfYear = [startDateComponents weekOfYear];
 o              ^
 o2 warnings generated.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekViewController.m211"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekViewController.o SBCal/SBWeekViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler27db08bdf048b941^5de02abdf048b941^-462"/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekViewController.m:69:15: warning: unused variable 'nowWeekOfYear' [-Wunused-variable]    NSInteger nowWeekOfYear = [nowDateComponents weekOfYear];              ^/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekViewController.m:73:15: warning: unused variable 'startWeekOfYear' [-Wunused-variable]    NSInteger startWeekOfYear = [startDateComponents weekOfYear];              ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@31"Unused variable 'nowWeekOfYear'-424210621#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@79"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBWeekViewController.m0000000000000000^68#14#68#14#2332#0#19"Unused Entity Issue--2@33"Unused variable 'startWeekOfYear'-424210621#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@79"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBWeekViewController.m0000000000000000^72#14#72#14#2567#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@79"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBWeekViewController.m0000000000000000^3541"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekViewController.o SBCal/SBWeekViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekViewController.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekViewController.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekViewController.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekViewController.o36"79BDEB4E-FA02-46A9-B498-12BB02632ED0-
-b0869BCBF-2312-4094-AE36-1BD68C6729CC
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekViewController.m211"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekViewController.o SBCal/SBWeekViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerae2a1f7f974eb941^698f437f974eb941^-462"/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekViewController.m:76:15: warning: unused variable 'nowWeekOfYear' [-Wunused-variable]    NSInteger nowWeekOfYear = [nowDateComponents weekOfYear];              ^/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBWeekViewController.m:80:15: warning: unused variable 'startWeekOfYear' [-Wunused-variable]    NSInteger startWeekOfYear = [startDateComponents weekOfYear];              ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@31"Unused variable 'nowWeekOfYear'-424580991#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@79"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBWeekViewController.m0000000000000000^75#14#75#14#2689#0#19"Unused Entity Issue--2@33"Unused variable 'startWeekOfYear'-424580991#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@79"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBWeekViewController.m0000000000000000^79#14#79#14#2924#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@79"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/SBWeekViewController.m0000000000000000^3541"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekViewController.o SBCal/SBWeekViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekViewController.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekViewController.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBWeekViewController.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekViewController.o36"46E75027-4ABE-4A89-9216-4FE213F78AA9-
+bF867F108-E2DF-4ACE-B9D6-F623E7352736
 
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/UICircleView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/UICircleView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s422378418.174065
@@ -1637,8 +1817,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile
 b7EA52EA5-31BD-4D9C-B4E9-21B86FD868BB
 
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarDayCell.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/calendarDayCell.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s424187958.975455
-e424187959.122167
+s424324507.838967
+e424324509.222717
 r1
 xCompileC
 xBuild/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarDayCell.o
@@ -1651,8 +1831,8 @@ d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/calendarDayCell.m
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/calendarDayCell.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/DataUtility.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/SBTriangleView.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/calendarDayCell.m201"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarDayCell.o SBCal/calendarDayCell.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerba11fa369848b941^4b5c1f379848b941^---0#0#1#-19%DVTDocumentLocation2@74"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/calendarDayCell.m0000000000000000^3511"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarDayCell.o SBCal/calendarDayCell.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarDayCell.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarDayCell.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/calendarDayCell.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarDayCell.o36"C71016F3-B920-40FB-9799-897F09874C8B-
-b86B1C146-481D-4CFF-84C8-E95B6AC0D333
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/calendarDayCell.m201"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarDayCell.o SBCal/calendarDayCell.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler1bf3d69bad4ab941^7d05399dad4ab941^---0#0#1#-19%DVTDocumentLocation2@74"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/calendarDayCell.m0000000000000000^3511"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarDayCell.o SBCal/calendarDayCell.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarDayCell.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarDayCell.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/calendarDayCell.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarDayCell.o36"609E434A-D0D9-4399-8255-39224E97AA62-
+b2E899F9D-0EF6-4FAA-8245-D386520E4562
 
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarFlowLayout.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/calendarFlowLayout.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s423768496.113734
@@ -1671,8 +1851,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile
 bF57B0368-D69B-498B-AD74-AFC6FAE8CF1B
 
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/dayListView.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/dayListView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s424187958.973656
-e424187959.145203
+s424579898.752140
+e424579898.862759
 r1
 xCompileC
 xBuild/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/dayListView.o
@@ -1684,8 +1864,8 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/dayListView.m
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/dayListView.h
 d/Users/kenjou/Desktop/xcode project/SBCal/SBCal/DataUtility.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/dayListView.m193"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/dayListView.o SBCal/dayListView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler2b84f9369848b941^e33325379848b941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/dayListView.m0000000000000000^3487"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/dayListView.o SBCal/dayListView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/dayListView.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/dayListView.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/dayListView.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/dayListView.o36"584900A8-88D1-4317-87D4-E860B68F07CC-
-b86B1C146-481D-4CFF-84C8-E95B6AC0D333
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/kenjou/Desktop/xcode project/SBCal/SBCal/dayListView.m193"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/dayListView.o SBCal/dayListView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler33a6c03a934eb941^48dfdc3a934eb941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/dayListView.m0000000000000000^3487"CompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/dayListView.o SBCal/dayListView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/kenjou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-generated-files.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-own-target-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-all-target-headers.hmap -iquote /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal-project-headers.hmap -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources/armv7s -I/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/DerivedSources -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -include /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/PrecompiledHeaders/SBCal-Prefix-cjemjccpkcarrxfkzbrjorvouvhw/SBCal-Prefix.pch -MMD -MT dependencies -MF /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/dayListView.d --serialize-diagnostics /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/dayListView.dia -c /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/dayListView.m -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/dayListView.o36"ACCB04DF-1B14-48DA-8223-9FB26C763CC4-
+b615E15D2-10E4-4313-9CD1-ABE678EF93A9
 
 CCompileC Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/getEKData.o /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/getEKData.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s424196244.536050
@@ -1761,6 +1941,26 @@ x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.a
 xSBCal/add_select@2x.png
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/add_select@2x.png SBCal/add_select@2x.png93"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/add_select@2x.png SBCal/add_select@2x.pngaeb72df04f2eb941^ca1635f04f2eb941^---0#0#1#-19%DVTDocumentLocation2@74"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/add_select@2x.png0000000000000000^612"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/add_select@2x.png SBCal/add_select@2x.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/add_select@2x.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/add_select@2x.png36"51B41F85-FD45-48A3-B06C-5335F97D271B-
 b70E753E8-2950-45B5-A689-67B73A617D2E
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/checkBtn.png SBCal/checkBtn.png
+s424588312.545780
+e424588312.613737
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/checkBtn.png
+xSBCal/checkBtn.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/checkBtn.png SBCal/checkBtn.png83"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/checkBtn.png SBCal/checkBtn.pngc5c78b18b44eb941^b81e9d18b44eb941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/checkBtn.png0000000000000000^592"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/checkBtn.png SBCal/checkBtn.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/checkBtn.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/checkBtn.png36"931CFEAB-D91A-4968-93D3-6FA1AFB60C25-
+b8CE715CC-FC58-487C-A3AA-BD681BADE8D6
+
+CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/checkBtn@2x.png SBCal/checkBtn@2x.png
+s424588312.545519
+e424588312.615677
+r1
+xCopyPNGFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/checkBtn@2x.png
+xSBCal/checkBtn@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/checkBtn@2x.png SBCal/checkBtn@2x.png89"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/checkBtn@2x.png SBCal/checkBtn@2x.pngdbbe8b18b44eb941^06a09d18b44eb941^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/checkBtn@2x.png0000000000000000^604"CopyPNGFile Build/Products/Debug-iphoneos/SBCal.app/checkBtn@2x.png SBCal/checkBtn@2x.png    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/checkBtn@2x.png /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/checkBtn@2x.png36"812CED06-C28F-4570-9575-0390652024FD-
+b8CE715CC-FC58-487C-A3AA-BD681BADE8D6
 
 CCopyPNGFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/day.png SBCal/day.png
 s422465520.121662
@@ -2032,6 +2232,16 @@ xSBCal/en.lproj/InfoPlist.strings
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Copy SBCal/en.lproj/InfoPlist.strings115"CopyStringsFile Build/Products/Debug-iphoneos/SBCal.app/en.lproj/InfoPlist.strings SBCal/en.lproj/InfoPlist.strings49d59e49402cb941^fca9a149402cb941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/en.lproj/InfoPlist.strings0000000000000000^573"CopyStringsFile Build/Products/Debug-iphoneos/SBCal.app/en.lproj/InfoPlist.strings SBCal/en.lproj/InfoPlist.strings    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/en.lproj -- SBCal/en.lproj/InfoPlist.strings36"A7E4E959-0C10-42B3-8FD4-BD55329ACB7E-
 bA5D169F8-18F7-460F-9778-EB73D71A53AE
 
+CCopyStringsFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/ja.lproj/InfoPlist.strings SBCal/ja.lproj/InfoPlist.strings
+s424324853.673743
+e424324853.676644
+r1
+xCopyStringsFile
+x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/ja.lproj/InfoPlist.strings
+xSBCal/ja.lproj/InfoPlist.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Copy SBCal/ja.lproj/InfoPlist.strings115"CopyStringsFile Build/Products/Debug-iphoneos/SBCal.app/ja.lproj/InfoPlist.strings SBCal/ja.lproj/InfoPlist.strings6d91acf5ae4ab941^5439adf5ae4ab941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/kenjou/Desktop/xcode%20project/SBCal/SBCal/ja.lproj/InfoPlist.strings0000000000000000^573"CopyStringsFile Build/Products/Debug-iphoneos/SBCal.app/ja.lproj/InfoPlist.strings SBCal/ja.lproj/InfoPlist.strings    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/ja.lproj -- SBCal/ja.lproj/InfoPlist.strings36"149DEFE5-DA94-4C96-BF06-85A16A983779-
+bEFE7D38B-34B1-4804-AABE-0294A464CC22
+
 CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/SBCal.app/ResourceRules.plist
 s422330441.244266
 e422330441.245266
@@ -2046,14 +2256,14 @@ CCreateUniversalBinary /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products
 r0
 
 CGenerateDSYMFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app.dSYM /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal
-s424210621.215096
-e424210621.261129
+s424618649.838347
+e424618649.905369
 r1
 xGenerateDSYMFile
 x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app.dSYM
 x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Generate /Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app.dSYM107"GenerateDSYMFile Build/Products/Debug-iphoneos/SBCal.app.dSYM Build/Products/Debug-iphoneos/SBCal.app/SBCal821d37bdf048b941^ad8743bdf048b941^---0#0#1#-19%DVTDocumentLocation2@96"file:///Users/kenjou/Desktop/xcode%20project/SBCal/Build/Products/Debug-iphoneos/SBCal.app.dSYM/0000000000000000^627"GenerateDSYMFile Build/Products/Debug-iphoneos/SBCal.app.dSYM Build/Products/Debug-iphoneos/SBCal.app/SBCal    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app.dSYM36"CD775866-EDCE-4B83-A709-9AF736482C7B-
-b0869BCBF-2312-4094-AE36-1BD68C6729CC
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Generate /Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app.dSYM107"GenerateDSYMFile Build/Products/Debug-iphoneos/SBCal.app.dSYM Build/Products/Debug-iphoneos/SBCal.app/SBCalf8a9d6992a4fb941^b9c6e7992a4fb941^---0#0#1#-19%DVTDocumentLocation2@96"file:///Users/kenjou/Desktop/xcode%20project/SBCal/Build/Products/Debug-iphoneos/SBCal.app.dSYM/0000000000000000^627"GenerateDSYMFile Build/Products/Debug-iphoneos/SBCal.app.dSYM Build/Products/Debug-iphoneos/SBCal.app/SBCal    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app.dSYM36"B68FEA55-F70A-406E-80F6-D6DA42700F1E-
+bF488CAC3-61D9-4742-A1B1-6ED463920DB1
 
 CLd /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/arm64/SBCal normal arm64
 r0
@@ -2065,19 +2275,22 @@ CLd /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/D
 r0
 
 CLd /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal normal armv7s
-s424210621.169602
-e424210621.210761
+s424618649.794865
+e424618649.833671
 r1
 xLd
 x/Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal
 xnormal
 xarmv7s
 d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBCal.LinkFileList
+d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBRightTriangleView.o
 d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/UICircleView.o
 d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/getEKData.o
 d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/main.o
 d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/dayListView.o
 d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekViewController.o
+d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBWeekDayScrollView.o
+d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBLeftTriangleView.o
 d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBEventManager.o
 d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarDayCell.o
 d/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/calendarAccessCheck.o
@@ -2106,15 +2319,16 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Develope
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libobjc.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libSystem.dylib
 d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework/Security
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework/Security
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcache.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcommonCrypto.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcompiler_rt.dylib
@@ -2143,9 +2357,8 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Develope
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_stats.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libunwind.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libxpc.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Link /Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal62"Ld Build/Products/Debug-iphoneos/SBCal.app/SBCal normal armv7sfb792bbdf048b941^9df535bdf048b941^---0#0#1#--1343"Ld Build/Products/Debug-iphoneos/SBCal.app/SBCal normal armv7s    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7s -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -filelist /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBCal.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=7.0 -framework QuartzCore -framework EventKit -framework EventKitUI -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBCal_dependency_info.dat -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal36"933503E8-3ABF-4EAF-9A61-92D9DEFC6A25-
-b0869BCBF-2312-4094-AE36-1BD68C6729CC
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Link /Users/kenjou/Desktop/xcode project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal62"Ld Build/Products/Debug-iphoneos/SBCal.app/SBCal normal armv7s488bcb992a4fb941^c66cd5992a4fb941^---0#0#1#--1343"Ld Build/Products/Debug-iphoneos/SBCal.app/SBCal normal armv7s    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7s -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -F/Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos -filelist /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBCal.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=7.0 -framework QuartzCore -framework EventKit -framework EventKitUI -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/Objects-normal/armv7s/SBCal_dependency_info.dat -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/SBCal36"F9A25D8C-6E63-4DC4-8702-F068BF382635-
+bF488CAC3-61D9-4742-A1B1-6ED463920DB1
 
 CProcessInfoPlistFile /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/Info.plist /Users/kenjou/Desktop/xcode\ project/SBCal/SBCal/SBCal-Info.plist
 s422383494.243258
@@ -2188,14 +2401,14 @@ CProcessPCH /Users/kenjou/Library/Developer/Xcode/DerivedData/SBCal-dfzbxrgqtatu
 r0
 
 CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent
-s424208232.620024
-e424208232.621036
+s424597120.994853
+e424597121.001965
 r1
 xProcessProductPackaging
 x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist
 x/Users/kenjou/Desktop/xcode project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection215"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent215"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent50c89e68e748b941^33fd9e68e748b941^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/kenjou/Desktop/xcode%20project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent0000000000000000^755"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent36"D1EBC49A-089D-43D2-82AB-8B6D447C0284-
-b6334A3DA-3E3A-4C4B-98CB-83DC6FCCF180
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection215"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent215"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent3fc8fe80d64eb941^b1890081d64eb941^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/kenjou/Desktop/xcode%20project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent0000000000000000^755"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent    cd "/Users/kenjou/Desktop/xcode project/SBCal"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Intermediates/SBCal.build/Debug-iphoneos/SBCal.build/SBCal.xcent36"75FC8370-3999-4585-AC8F-9FA4EA676921-
+b3389C59D-B305-49C8-9A1E-7CAA93AA5615
 
 CProcessProductPackaging /Users/kenjou/Library/MobileDevice/Provisioning\ Profiles/39B7F3AE-F05E-446F-A127-CE012A1DFF10.mobileprovision /Users/kenjou/Desktop/xcode\ project/SBCal/Build/Products/Debug-iphoneos/SBCal.app/embedded.mobileprovision
 s422330446.598151

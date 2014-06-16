@@ -25,6 +25,9 @@
 @property (nonatomic) NSMutableDictionary *sections;
 @property (nonatomic) NSArray *sortedDays;
 @property (nonatomic) NSDateFormatter *timeDateFormat;
+@property (nonatomic) NSDateFormatter *dayFormatter;
+@property (nonatomic) NSDateFormatter *monthDayFormatter;
+@property (nonatomic) SBWeekDayScrollView *dayScrollView;
 
 @end
 
@@ -42,6 +45,10 @@ static NSString *cellIdentifier = @"cellIdentifier";
         _timeDateFormat = [NSDateFormatter new];
         [_timeDateFormat setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"US"]];
         [_timeDateFormat setDateFormat:@"H:mm"];
+        _dayFormatter = [NSDateFormatter new];
+        _dayFormatter.dateFormat = @"d";
+        _monthDayFormatter = [NSDateFormatter new];
+        _monthDayFormatter.dateFormat = @"M/d";
     }
     return self;
 }
@@ -131,8 +138,8 @@ static NSString *cellIdentifier = @"cellIdentifier";
     _collectionView.pagingEnabled = YES;
     
     [_collectionView setBackgroundColor:[UIColor whiteColor]];
-    
     [_collectionView registerClass:[SBWeekDayVireCell class] forCellWithReuseIdentifier:cellIdentifier];
+    _collectionView.showsVerticalScrollIndicator = NO;
     
     [self.view addSubview:_collectionView];
     
@@ -204,20 +211,6 @@ static NSString *cellIdentifier = @"cellIdentifier";
         return datecomponents;
     })()) toDate:_startDate options:0];
     
-    
-    
-    NSDateFormatter *dayFormatter = [NSDateFormatter new];
-    dayFormatter.dateFormat = @"d";
-    
-    NSDateFormatter *monthDayFormatter = [NSDateFormatter new];
-    monthDayFormatter.dateFormat = @"M/d";
-    
-    //NSDateFormatter *monthDayFormatterKanji = [NSDateFormatter new];
-    //monthDayFormatter.dateFormat = @"M月d日";
-    
-    NSDateFormatter *yearMonthDayFormatter = [NSDateFormatter new];
-    yearMonthDayFormatter.dateFormat = @"yyyy年M月d日";
-    
     //NSLog(@"cellDate %@",cellDate);
     
     static NSString * const weekArray[] = {nil,@"（日）",@"（月）",@"（火）",@"（水）",@"（木）",@"（金）",@"（土）"};
@@ -243,22 +236,32 @@ static NSString *cellIdentifier = @"cellIdentifier";
         
         UIView *dayView = [[UIView alloc] initWithFrame:CGRectMake(0, viewHeight * i, _screenRect.size.width, viewHeight)];
         UIView *underLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _screenRect.size.width, 0.5)];
-        underLine.backgroundColor = [UIColor lightGrayColor];
+        underLine.backgroundColor = [UIColor colorWithRed:0.867 green:0.867 blue:0.867 alpha:1];
         [dayView addSubview:underLine];
         dayView.tag = 1 + i;
         
+        UIView *dayEventsView = [[UIView alloc] initWithFrame:CGRectMake(40, 0, dayView.frame.size.width - 40, viewHeight)];
+        
+        [dayView addSubview:dayEventsView];
+        
         UIView *dayBaseView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 40, viewHeight)];
         
-        UILabel *dayLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 15, 40, 40)];
+        /*
+        UIView *baseRightView = [[UIView alloc] initWithFrame:CGRectMake(40 - 0.5, 0, 0.5, viewHeight)];
+        baseRightView.backgroundColor = [UIColor colorWithRed:0.867 green:0.867 blue:0.867 alpha:1];
+        [dayBaseView addSubview:baseRightView];
+        */
+         
+        UILabel *dayLabel = [[UILabel alloc] initWithFrame:CGRectMake(2, 18, 38, 40)];
         dayLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:13.0f];
         
         
-        NSString *dayString = [dayFormatter stringFromDate:viewDate];
+        NSString *dayString = [_dayFormatter stringFromDate:viewDate];
         if ([dayString isEqualToString:@"1"]) {
-            dayString = [monthDayFormatter stringFromDate:viewDate];
+            dayString = [_monthDayFormatter stringFromDate:viewDate];
         }
         if (i == 0) {
-            dayString = [monthDayFormatter stringFromDate:viewDate];
+            dayString = [_monthDayFormatter stringFromDate:viewDate];
         }
         
         NSDateComponents *comps = [_calendar components:NSWeekdayCalendarUnit fromDate:viewDate];
@@ -283,7 +286,7 @@ static NSString *cellIdentifier = @"cellIdentifier";
         }
         
         NSString *weekDayString = weekArray[weekday];
-        UIFont *dayStringFont = [UIFont fontWithName:@"Helvetica" size:13.0f];
+        UIFont *dayStringFont = [UIFont fontWithName:@"Helvetica-Bold" size:13.0f];
         UIFont *weekStringFont = [UIFont fontWithName:@"Helvetica" size:11.0f];
         
         NSAttributedString *dayAttribute = [[NSAttributedString alloc] initWithString:dayString attributes:@{NSForegroundColorAttributeName: dayAndWeekColor,NSFontAttributeName:dayStringFont}];
@@ -304,6 +307,22 @@ static NSString *cellIdentifier = @"cellIdentifier";
         [dayBaseView addSubview:dayLabel];
         [dayView addSubview:dayBaseView];
         
+        float rightPosition = (eventWidth * [events count]) - dayEventsView.frame.size.width;
+        
+        BOOL isNeedScroll = NO;
+        _dayScrollView = [[SBWeekDayScrollView alloc] initWithFrame:CGRectMake(0, 0, dayEventsView.frame.size.width, viewHeight) rightPosition:rightPosition];
+        
+        //_dayScrollView.delegate = self;
+        //dayScrollView.frame = CGRectMake(0, 0, dayEventsView.frame.size.width, viewHeight);
+        if ([events count] > 4) {
+            _dayScrollView.contentSize = CGSizeMake(eventWidth * [events count], viewHeight);
+            isNeedScroll = YES;
+        }
+        //[_dayScrollView flashScrollIndicators];
+        
+        //NSLog(@"width %d",eventWidth * [events count]);
+        
+        //NSLog(@"%hhd",isNeedScroll);
         
         if (events) {
             for (int i = 0; i < [events count]; i++) {
@@ -311,7 +330,7 @@ static NSString *cellIdentifier = @"cellIdentifier";
                     EKEvent *event = [EKEvent eventWithEventStore:_eventMg.sharedEventKitStore];
                     event = [events objectAtIndex:i];
                     
-                    UIView *eventView = [[UIView alloc] initWithFrame:CGRectMake(41 + eventWidth * i, 1, eventWidth -1, viewHeight - 2)];
+                    UIView *eventView = [[UIView alloc] initWithFrame:CGRectMake(1 + eventWidth * i, 1, eventWidth -1, viewHeight - 1.5)];
                     
                     UIColor *eventColor = [UIColor colorWithCGColor:event.calendar.CGColor];
                     UIColor *alphaColor = [eventColor colorWithAlphaComponent:0.1];
@@ -321,6 +340,11 @@ static NSString *cellIdentifier = @"cellIdentifier";
                     eventView.backgroundColor = alphaColor;
                     //eventView.backgroundColor = [UIColor whiteColor];
                     
+                    /*
+                    eventView.layer.cornerRadius = 3;
+                    eventView.clipsToBounds = YES;
+                    */
+                     
                     UIView *eventLeftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 4, viewHeight-2)];
                     eventLeftView.backgroundColor = eventColor;
                     
@@ -330,11 +354,24 @@ static NSString *cellIdentifier = @"cellIdentifier";
                     eventTitle.text = event.title;
                     eventTitle.numberOfLines = 2;
                     eventTitle.lineBreakMode = NSLineBreakByCharWrapping;
-                    eventTitle.font = [UIFont fontWithName:@"Helvetica-Bold" size:10.0f];
+                    eventTitle.font = [UIFont fontWithName:@"Helvetica-Bold" size:11.0f];
                     [eventTitle sizeToFit];
                     
+                    if (event.location) {
+                        
+                        UILabel *eventLocation = [[UILabel alloc] initWithFrame:CGRectMake(6, viewHeight - 26, eventWidth - 8, 10)];
+                        eventLocation.text = event.location;
+                        eventLocation.font = [UIFont fontWithName:@"Helvetica" size:10.0f];
+                        eventLocation.numberOfLines = 1;
+                        eventLocation.lineBreakMode = NSLineBreakByCharWrapping;
+                        [eventView addSubview:eventLocation];
+                        
+                    }
+                    
                     NSDate *eventStartDate = [DataUtility dateAtBeginningOfDayForDate:event.startDate];
+                    eventStartDate = [eventStartDate dateByAddingTimeInterval:seconds];
                     NSDate *eventEndDate = [DataUtility dateAtBeginningOfDayForDate:event.endDate];
+                    eventEndDate = [eventEndDate dateByAddingTimeInterval:seconds];
                     
                     NSString *dateStatus = @"";
                     
@@ -358,8 +395,8 @@ static NSString *cellIdentifier = @"cellIdentifier";
                         dateStatus = @"continue";
                     }
                     
-                    UILabel *eventTimeLabel = [[UILabel alloc] initWithFrame:CGRectMake(6, viewHeight - 12, eventWidth - 8, 10)];
-                    eventTimeLabel.font = [UIFont fontWithName:@"Helvetica" size:9.0f];
+                    UILabel *eventTimeLabel = [[UILabel alloc] initWithFrame:CGRectMake(6, viewHeight - 14, eventWidth - 8, 10)];
+                    eventTimeLabel.font = [UIFont fontWithName:@"Helvetica" size:10.0f];
                     eventTimeLabel.textColor = [UIColor blackColor];
                     
                     NSString *eventCalendarTitle = event.calendar.title;
@@ -372,7 +409,11 @@ static NSString *cellIdentifier = @"cellIdentifier";
                     } else if (event.allDay) {
                         eventTimeLabel.text = @"終日";
                     } else if ([dateStatus isEqualToString:@"continue"]) {
-                        eventTimeLabel.text = @"継続";
+                        NSInteger betweenDays = [DataUtility daysBetween:eventStartDate and:viewDate];
+                        //NSLog(@"%d",betweenDays);
+                        betweenDays += 1;
+                        //@eventTimeLabel.text = @"継続";
+                        eventTimeLabel.text = [NSString stringWithFormat:@"継続 (%d日目)",betweenDays];
                     } else {
                         
                         if ([dateStatus isEqualToString:@"complete"] || [dateStatus isEqualToString:@"startDateOnly"] || [dateStatus isEqualToString:@"endDateOnly"]) {
@@ -380,42 +421,104 @@ static NSString *cellIdentifier = @"cellIdentifier";
                             NSString *startTime;
                             NSString *endTime;
                             
+                            NSString *timeString;
+                            
                             if ([dateStatus isEqualToString:@"complete"]) {
                                 startTime = [_timeDateFormat stringFromDate:event.startDate];
                                 endTime = [_timeDateFormat stringFromDate:event.endDate];
+                                timeString = [NSString stringWithFormat:@"%@〜%@",startTime,endTime];
                             }
                             
                             if ([dateStatus isEqualToString:@"startDateOnly"]) {
                                 startTime = [_timeDateFormat stringFromDate:event.startDate];
                                 endTime = @"継続";
+                                timeString = [NSString stringWithFormat:@"%@〜(%@)",startTime,endTime];
                             }
                             
                             if ([dateStatus isEqualToString:@"endDateOnly"]) {
                                 startTime = @"終了";
                                 endTime = [_timeDateFormat stringFromDate:event.endDate];
+                                timeString = [NSString stringWithFormat:@"〜%@(%@)",endTime,startTime];
                             }
                             
-                            NSAttributedString *startAttributeTime = [[NSAttributedString alloc] initWithString:startTime attributes:@{NSForegroundColorAttributeName: [UIColor blackColor]}];
-                            
-                            NSAttributedString *endAttributeTime = [[NSAttributedString alloc] initWithString:endTime attributes:@{NSForegroundColorAttributeName: [UIColor grayColor]}];
-                            
-                            NSAttributedString *newLine = [[NSAttributedString alloc] initWithString:@"〜"];
-                            
-                            NSMutableAttributedString *timeString = [[NSMutableAttributedString alloc] initWithAttributedString:startAttributeTime];
-                            [timeString appendAttributedString:newLine];
-                            [timeString appendAttributedString:endAttributeTime];
-                            eventTimeLabel.attributedText = timeString;
+                            eventTimeLabel.text = timeString;
                         }
                     }
-
                     
                     [eventView addSubview:eventTimeLabel];
                     [eventView addSubview:eventTitle];
-                    [dayView addSubview:eventView];
+                    
+                    if (isNeedScroll) {
+                        [_dayScrollView addSubview:eventView];
+                        [dayEventsView addSubview:_dayScrollView];
+                        //NSLog(@"use scroll view");
+                    } else {
+                        [dayEventsView addSubview:eventView];
+                    }
+                    
+                    //[dayEventsView addSubview:eventView];
+                    
+                    //[dayView addSubview:eventView];
                     
                 } else if ([[events objectAtIndex:i] isKindOfClass:[EKReminder class]]) {
                     EKReminder *reminder = [EKReminder reminderWithEventStore:_eventMg.sharedEventKitStore];
                     reminder = [events objectAtIndex:i];
+                    
+                    UIView *eventView = [[UIView alloc] initWithFrame:CGRectMake(1 + eventWidth * i, 1, eventWidth -1, viewHeight - 1.5)];
+                    
+                    UIColor *eventColor = [UIColor colorWithCGColor:reminder.calendar.CGColor];
+                    //UIColor *alphaColor = [eventColor colorWithAlphaComponent:0.2];
+                    
+                    eventView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+                    eventView.layer.borderWidth = 0.5f;
+                    //eventView.backgroundColor = alphaColor;
+                    //eventView.backgroundColor = eventColor;
+                    //eventView.backgroundColor = [UIColor whiteColor];
+                    
+                    UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(4, 0, eventView.frame.size.width - 4, eventView.frame.size.height)];
+                    contentView.backgroundColor = eventColor;
+                    [eventView addSubview:contentView];
+                    
+                    UIView *eventLeftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 4, viewHeight-2)];
+                    //eventLeftView.backgroundColor = eventColor;
+                    eventLeftView.backgroundColor = [eventColor colorWithAlphaComponent:0.6];
+                    //eventLeftView.backgroundColor = [UIColor blueColor];
+                    
+                    [eventView addSubview:eventLeftView];
+                    
+                    UILabel *eventTitle = [[UILabel alloc] initWithFrame:CGRectMake(6, 2, eventWidth - 8, 10)];
+                    eventTitle.text = reminder.title;
+                    eventTitle.numberOfLines = 2;
+                    eventTitle.lineBreakMode = NSLineBreakByCharWrapping;
+                    eventTitle.font = [UIFont fontWithName:@"Helvetica-Bold" size:11.0f];
+                    eventTitle.textColor = [UIColor whiteColor];
+                    //eventTitle.textColor = [UIColor blackColor];
+                    [eventTitle sizeToFit];
+                    
+                    UILabel *reminderCalendarTitle = [[UILabel alloc] initWithFrame:CGRectMake(6, viewHeight - 14, eventWidth - 8, 10)];
+                    reminderCalendarTitle.font = [UIFont fontWithName:@"Helvetica" size:10.0f];
+                    //reminderCalendarTitle.textColor = [UIColor blackColor];
+                    reminderCalendarTitle.textColor = [UIColor whiteColor];
+                    reminderCalendarTitle.text = reminder.calendar.title;
+                    
+                    /*
+                    UIView *squareView = [[UIView alloc] initWithFrame:CGRectMake(6, viewHeight - 28, 10, 10)];
+                    squareView.backgroundColor = [UIColor whiteColor];
+                    squareView.layer.borderColor = [UIColor colorWithRed:0.867 green:0.867 blue:0.867 alpha:1].CGColor;
+                    squareView.layer.borderWidth = 0.5f;
+                    */
+                     
+                    //[eventView addSubview:squareView];
+                    [eventView addSubview:reminderCalendarTitle];
+                    [eventView addSubview:eventTitle];
+                    
+                    if (isNeedScroll) {
+                        [_dayScrollView addSubview:eventView];
+                        [dayEventsView addSubview:_dayScrollView];
+                    } else {
+                        [dayEventsView addSubview:eventView];
+                    }
+
                 }
             }
         }
@@ -443,13 +546,13 @@ static NSString *cellIdentifier = @"cellIdentifier";
     
     
     if (cellDateMonth == cellEndDateMonth) {
-        NSString *sameMonthTitle = [[NSString alloc] initWithFormat:@"%ld年 %ld月%ld日 〜 %ld日",(long)cellDateYear, (long)cellDateMonth,(long)cellDateDay,(long)cellEndDateDay];
+        NSString *sameMonthTitle = [[NSString alloc] initWithFormat:@"%ld年 %ld月%ld日〜%ld日",(long)cellDateYear, (long)cellDateMonth,(long)cellDateDay,(long)cellEndDateDay];
         
         _naviTitle.text = sameMonthTitle;
     }
     
     if (cellDateMonth != cellEndDateMonth) {
-        NSString *difMonthTitle = [[NSString alloc] initWithFormat:@"%ld年 %ld月%ld日 〜 %ld月%ld日",(long)cellDateYear ,(long)cellDateMonth,(long)cellDateDay,(long)cellEndDateMonth, (long)cellEndDateDay];
+        NSString *difMonthTitle = [[NSString alloc] initWithFormat:@"%ld年 %ld月%ld日〜%ld月%ld日",(long)cellDateYear ,(long)cellDateMonth,(long)cellDateDay,(long)cellEndDateMonth, (long)cellEndDateDay];
         
         _naviTitle.text = difMonthTitle;
     }
@@ -480,6 +583,12 @@ static NSString *cellIdentifier = @"cellIdentifier";
     [[cell viewWithTag:8] removeFromSuperview];
     [[cell viewWithTag:9] removeFromSuperview];
 }
+
+/*
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    NSLog(@"scroll");
+}*/
 
 /*
 #pragma mark - Navigation

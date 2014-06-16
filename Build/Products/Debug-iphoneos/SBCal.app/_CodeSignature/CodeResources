@@ -32,6 +32,14 @@
 		<data>
 		wGztMZuvRZfp7iu0fws5q1ot1D0=
 		</data>
+		<key>checkBtn.png</key>
+		<data>
+		cX1HNjgYw49HBS6Hzf45OiTmxGk=
+		</data>
+		<key>checkBtn@2x.png</key>
+		<data>
+		DRD0UO183ZkMpZ3NU1G8UF8xYsw=
+		</data>
 		<key>day.png</key>
 		<data>
 		gZiT4V/sviB/VZp2liUrLfo+IsM=
@@ -53,6 +61,10 @@
 		iocIEzth2M1Djx1s9iW4bopRRFU=
 		</data>
 		<key>en.lproj/InfoPlist.strings</key>
+		<data>
+		zmV6UqBSo6r1NOz798vd5O4zTBA=
+		</data>
+		<key>ja.lproj/InfoPlist.strings</key>
 		<data>
 		zmV6UqBSo6r1NOz798vd5O4zTBA=
 		</data>
@@ -175,6 +187,14 @@
 		<data>
 		wGztMZuvRZfp7iu0fws5q1ot1D0=
 		</data>
+		<key>checkBtn.png</key>
+		<data>
+		cX1HNjgYw49HBS6Hzf45OiTmxGk=
+		</data>
+		<key>checkBtn@2x.png</key>
+		<data>
+		DRD0UO183ZkMpZ3NU1G8UF8xYsw=
+		</data>
 		<key>day.png</key>
 		<data>
 		gZiT4V/sviB/VZp2liUrLfo+IsM=
@@ -196,6 +216,10 @@
 		iocIEzth2M1Djx1s9iW4bopRRFU=
 		</data>
 		<key>en.lproj/InfoPlist.strings</key>
+		<data>
+		zmV6UqBSo6r1NOz798vd5O4zTBA=
+		</data>
+		<key>ja.lproj/InfoPlist.strings</key>
 		<data>
 		zmV6UqBSo6r1NOz798vd5O4zTBA=
 		</data>
